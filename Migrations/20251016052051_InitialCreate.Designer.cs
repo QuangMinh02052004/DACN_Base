@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bloomie.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251016031023_InitialCreate")]
+    [Migration("20251016052051_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

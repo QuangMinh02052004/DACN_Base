@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <style>
         /* === Reset CSS === */
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -41,20 +46,20 @@
             align-items: center;
         }
 
-            .top-bar a {
-                color: #fff;
-                text-decoration: none;
-            }
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-                .top-bar a:hover {
-                    text-decoration: underline;
-                }
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
 
-            .top-bar .language-selector img {
-                width: 20px;
-                height: 20px;
-                margin-left: 5px;
-            }
+        .top-bar .language-selector img {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
 
         /* === Header === */
         .header-top {
@@ -75,19 +80,19 @@
             gap: 12px;
         }
 
-            .header-brand img {
-                height: 100px; 
-                width: auto;
-                object-fit: cover;
-                border-radius: 50%;
-            }
+        .header-brand img {
+            height: 100px;
+            width: auto;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-            .header-brand .tagline {
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.1rem;
-                color: #D0021B;
-                font-weight: 700;
-            }
+        .header-brand .tagline {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: #D0021B;
+            font-weight: 700;
+        }
 
         .header-search {
             flex: 1;
@@ -109,38 +114,38 @@
             width: 100%;
         }
 
-            .search-bar:focus-within {
-                border-color: #D0021B;
-                box-shadow: 0 0 10px rgba(208, 2, 27, 0.3);
-            }
+        .search-bar:focus-within {
+            border-color: #D0021B;
+            box-shadow: 0 0 10px rgba(208, 2, 27, 0.3);
+        }
 
-            .search-bar input[type="text"] {
-                border: none;
-                background: transparent;
-                font-size: 1rem;
-                color: #333;
-                outline: none;
-                flex: 1;
-                font-family: 'Roboto', sans-serif;
-            }
+        .search-bar input[type="text"] {
+            border: none;
+            background: transparent;
+            font-size: 1rem;
+            color: #333;
+            outline: none;
+            flex: 1;
+            font-family: 'Roboto', sans-serif;
+        }
 
-            .search-bar input[type="file"] {
-                display: none;
-            }
+        .search-bar input[type="file"] {
+            display: none;
+        }
 
-            .search-bar button {
-                background: transparent;
-                border: none;
-                color: #D0021B;
-                font-size: 1.2rem;
-                cursor: pointer;
-                transition: color 0.3s ease;
-                padding: 0 8px;
-            }
+        .search-bar button {
+            background: transparent;
+            border: none;
+            color: #D0021B;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            padding: 0 8px;
+        }
 
-                .search-bar button:hover {
-                    color: #F5A623;
-                }
+        .search-bar button:hover {
+            color: #F5A623;
+        }
 
         .header-actions {
             display: flex;
@@ -163,23 +168,23 @@
             gap: 6px;
         }
 
-            .action-btn:hover {
-                color: #D0021B;
-            }
+        .action-btn:hover {
+            color: #D0021B;
+        }
 
-            .action-btn i {
-                font-size: 1.1rem;
-            }
+        .action-btn i {
+            font-size: 1.1rem;
+        }
 
-            .action-btn .badge {
-                font-size: 0.75rem;
-                padding: 3px 6px;
-                border-radius: 12px;
-                top: -8px;
-                right: -10px;
-                background-color: #D0021B;
-                color: #fff;
-            }
+        .action-btn .badge {
+            font-size: 0.75rem;
+            padding: 3px 6px;
+            border-radius: 12px;
+            top: -8px;
+            right: -10px;
+            background-color: #D0021B;
+            color: #fff;
+        }
 
         .login-partial {
             display: flex;
@@ -188,31 +193,33 @@
             line-height: 1;
         }
 
-            .login-partial a {
-                text-decoration: none;
-            }
+        .login-partial a {
+            text-decoration: none;
+        }
 
-            .login-partial .dropdown-toggle {
-                display: flex;
-                align-items: center;
-                text-decoration: none;
-            }
+        .login-partial .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
 
-                .login-partial .dropdown-toggle:hover {
-                    color: #D0021B;
-                }
+        .login-partial .dropdown-toggle:hover {
+            color: #D0021B;
+        }
 
         .dropdown-item .logout-icon {
             display: inline-flex;
             align-items: center;
             gap: 0;
-            margin-right: 6px; /* Khoảng cách giữa biểu tượng và chữ "Đăng xuất" */
+            margin-right: 6px;
+            /* Khoảng cách giữa biểu tượng và chữ "Đăng xuất" */
         }
 
-            .dropdown-item .logout-icon i {
-                font-size: 1.1rem;
-                margin-right: -2px; /* Kéo sát biểu tượng với dấu ] */
-            }
+        .dropdown-item .logout-icon i {
+            font-size: 1.1rem;
+            margin-right: -2px;
+            /* Kéo sát biểu tượng với dấu ] */
+        }
 
         .dropdown-item .dropdown-icon {
             display: inline-flex;
@@ -221,96 +228,101 @@
             margin-right: 6px;
         }
 
-            .dropdown-item .dropdown-icon i {
-                font-size: 1.1rem;
-                margin-right: -2px;
-            }
+        .dropdown-item .dropdown-icon i {
+            font-size: 1.1rem;
+            margin-right: -2px;
+        }
 
         /* === Main Navigation === */
         .main-nav {
             background: #fff;
             padding: 12px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ để làm nổi */
-            border-bottom: 1px solid #ddd; /* Đường viền dưới */
-            border-top: 1px solid #ddd; /* Đường viền trên */
-            position: relative; /* Đảm bảo z-index hoạt động nếu cần */
-            z-index: 900; /* Đặt z-index thấp hơn header-top nhưng cao hơn nội dung */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Thêm bóng đổ để làm nổi */
+            border-bottom: 1px solid #ddd;
+            /* Đường viền dưới */
+            border-top: 1px solid #ddd;
+            /* Đường viền trên */
+            position: relative;
+            /* Đảm bảo z-index hoạt động nếu cần */
+            z-index: 900;
+            /* Đặt z-index thấp hơn header-top nhưng cao hơn nội dung */
         }
 
-            .main-nav .navbar-nav {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                flex-wrap: wrap;
-                margin: 0;
-                padding: 0;
-            }
+        .main-nav .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
 
-            .main-nav .nav-item {
-                position: relative;
-                list-style: none;
-            }
+        .main-nav .nav-item {
+            position: relative;
+            list-style: none;
+        }
 
-            .main-nav .nav-link {
-                color: #333 !important;
-                font-weight: 700;
-                font-size: 0.95rem;
-                padding: 8px 15px !important;
-                text-transform: uppercase;
-                transition: color 0.3s ease;
-                white-space: nowrap;
-            }
+        .main-nav .nav-link {
+            color: #333 !important;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 8px 15px !important;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
 
-                .main-nav .nav-link:hover {
-                    color: #D0021B !important;
-                }
+        .main-nav .nav-link:hover {
+            color: #D0021B !important;
+        }
 
-                .main-nav .nav-link.active {
-                    color: #D0021B !important;
-                }
+        .main-nav .nav-link.active {
+            color: #D0021B !important;
+        }
 
-            .main-nav .dropdown-menu {
-                background: #fff;
-                border: none;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                padding: 8px 0;
-                margin-top: 0;
-                border-radius: 8px;
-                position: absolute;
-                z-index: 1000;
-                display: none;
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(10px);
-                transition: all 0.3s ease;
-            }
+        .main-nav .dropdown-menu {
+            background: #fff;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 8px 0;
+            margin-top: 0;
+            border-radius: 8px;
+            position: absolute;
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
 
-            .main-nav .nav-item.dropdown:hover .dropdown-menu {
-                display: block;
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
+        .main-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
 
-            .main-nav .dropdown-item {
-                color: #333;
-                font-weight: 700;
-                font-size: 0.9rem;
-                padding: 8px 25px;
-                transition: all 0.3s ease;
-            }
+        .main-nav .dropdown-item {
+            color: #333;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 8px 25px;
+            transition: all 0.3s ease;
+        }
 
-                .main-nav .dropdown-item:hover {
-                    background: #f5f5f5;
-                    color: #D0021B;
-                }
+        .main-nav .dropdown-item:hover {
+            background: #f5f5f5;
+            color: #D0021B;
+        }
 
-                .main-nav .dropdown-item.active {
-                    color: #D0021B !important;
-                    background: #f5f5f5;
-                }
+        .main-nav .dropdown-item.active {
+            color: #D0021B !important;
+            background: #f5f5f5;
+        }
 
         /* === Divider === */
         hr.divider {
@@ -372,9 +384,9 @@
             border-radius: 10px;
         }
 
-            .carousel-media[src$=".gif"] {
-                background-color: transparent;
-            }
+        .carousel-media[src$=".gif"] {
+            background-color: transparent;
+        }
 
         .carousel-caption {
             position: absolute;
@@ -389,30 +401,30 @@
             animation: slideUp 0.5s ease-out;
         }
 
-            .carousel-caption h5 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.6rem;
-                margin-bottom: 6px;
-            }
+        .carousel-caption h5 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            margin-bottom: 6px;
+        }
 
-            .carousel-caption p {
-                font-size: 1rem;
-                margin-bottom: 12px;
-            }
+        .carousel-caption p {
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
 
-            .carousel-caption .btn {
-                background: #D0021B;
-                color: #fff;
-                border: none;
-                padding: 8px 18px;
-                border-radius: 5px;
-                font-size: 0.95rem;
-                transition: background 0.3s ease;
-            }
+        .carousel-caption .btn {
+            background: #D0021B;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            transition: background 0.3s ease;
+        }
 
-                .carousel-caption .btn:hover {
-                    background: #F5A623;
-                }
+        .carousel-caption .btn:hover {
+            background: #F5A623;
+        }
 
         .carousel-inner {
             transition: transform 0.6s ease-in-out;
@@ -449,26 +461,26 @@
             margin-bottom: 25px;
         }
 
-            .category-section h2 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 2.2rem;
-                font-weight: 700;
-                color: #D0021B;
-                margin-bottom: 20px;
-                text-align: center;
-                position: relative;
-            }
+        .category-section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #D0021B;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
 
-                .category-section h2::after {
-                    content: '';
-                    width: 80px;
-                    height: 4px;
-                    background: #D0021B;
-                    position: absolute;
-                    bottom: -8px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
+        .category-section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #D0021B;
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
         .category-grid {
             display: grid;
@@ -507,26 +519,26 @@
             padding: 50px 0;
         }
 
-            .product-section h2 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 2.2rem;
-                font-weight: 700;
-                color: #D0021B;
-                margin-bottom: 35px;
-                text-align: center;
-                position: relative;
-            }
+        .product-section h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #D0021B;
+            margin-bottom: 35px;
+            text-align: center;
+            position: relative;
+        }
 
-                .product-section h2::after {
-                    content: '';
-                    width: 80px;
-                    height: 4px;
-                    background: #D0021B;
-                    position: absolute;
-                    bottom: -12px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
+        .product-section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #D0021B;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
         .product-grid {
             display: grid;
@@ -549,90 +561,90 @@
             position: relative;
         }
 
-            .product-card:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
 
-            .product-card img {
-                width: 100%;
-                height: 230px;
-                object-fit: cover;
-                margin-bottom: 15px;
-                border-radius: 10px;
-            }
+        .product-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
 
-            .product-card h3 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.3rem;
-                font-weight: 700;
-                margin-bottom: 10px;
-                color: #333;
-                height: 50px;
-                line-height: 1.2;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-            }
+        .product-card h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+            height: 50px;
+            line-height: 1.2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
 
-            .product-card .price {
-                font-size: 1.2rem;
-                font-weight: 700;
-                color: #D0021B;
-                margin-bottom: 15px;
-                flex-grow: 0;
-            }
+        .product-card .price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #D0021B;
+            margin-bottom: 15px;
+            flex-grow: 0;
+        }
 
-            .product-card .promo-badge {
-                position: absolute;
-                top: 15px;
-                left: 15px;
-                background: #D0021B;
-                color: #fff;
-                font-size: 0.8rem;
-                padding: 5px 10px;
-                border-radius: 5px;
-                z-index: 1;
-            }
+        .product-card .promo-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #D0021B;
+            color: #fff;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
 
-            .product-card .btn {
-                background: #D0021B;
-                color: #fff;
-                font-weight: 700;
-                padding: 10px 20px;
-                border-radius: 5px;
-                transition: all 0.3s ease;
-                width: 100%;
-                flex-grow: 0;
-                font-family: 'Roboto', sans-serif;
-                margin-bottom: 8px;
-            }
+        .product-card .btn {
+            background: #D0021B;
+            color: #fff;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            width: 100%;
+            flex-grow: 0;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 8px;
+        }
 
-                .product-card .btn:hover {
-                    background: #F5A623;
-                    transform: translateY(-2px);
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-                }
+        .product-card .btn:hover {
+            background: #F5A623;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-            .product-card .quick-view {
-                background: #f5f5f5;
-                color: #333;
-                font-weight: 700;
-                padding: 8px 15px;
-                border-radius: 5px;
-                transition: all 0.3s ease;
-                width: 100%;
-                flex-grow: 0;
-                font-family: 'Roboto', sans-serif;
-            }
+        .product-card .quick-view {
+            background: #f5f5f5;
+            color: #333;
+            font-weight: 700;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            width: 100%;
+            flex-grow: 0;
+            font-family: 'Roboto', sans-serif;
+        }
 
-                .product-card .quick-view:hover {
-                    background: #ddd;
-                    transform: translateY(-2px);
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-                }
+        .product-card .quick-view:hover {
+            background: #ddd;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
         /* === Footer === */
         .footer {
@@ -643,48 +655,49 @@
             width: 100%;
         }
 
-            .footer .container {
-                max-width: 1300px;
-                padding-bottom: 0;
-            }
+        .footer .container {
+            max-width: 1300px;
+            padding-bottom: 0;
+        }
 
-            .footer .row {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 25px;
-            }
+        .footer .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
 
-            .footer h5 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.3rem;
-                font-weight: 700;
-                color: #D0021B;
-                margin-bottom: 20px;
-            }
+        .footer h5 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #D0021B;
+            margin-bottom: 20px;
+        }
 
-            .footer p, .footer a {
-                font-size: 0.95rem;
-                color: #333;
-                transition: color 0.3s ease;
-                font-family: 'Roboto', sans-serif;
-            }
+        .footer p,
+        .footer a {
+            font-size: 0.95rem;
+            color: #333;
+            transition: color 0.3s ease;
+            font-family: 'Roboto', sans-serif;
+        }
 
-                .footer a:hover {
-                    color: #D0021B !important;
-                }
+        .footer a:hover {
+            color: #D0021B !important;
+        }
 
-            .footer .text-muted {
-                color: #666 !important;
-            }
+        .footer .text-muted {
+            color: #666 !important;
+        }
 
-            .footer .text-warning {
-                color: #D0021B !important;
-            }
+        .footer .text-warning {
+            color: #D0021B !important;
+        }
 
-                .footer .text-warning:hover {
-                    color: #F5A623 !important;
-                }
+        .footer .text-warning:hover {
+            color: #F5A623 !important;
+        }
 
         .footer-col {
             flex: 1;
@@ -697,16 +710,16 @@
             margin: 0;
         }
 
-            .footer-links ul li {
-                margin-bottom: 10px;
-            }
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
 
-                .footer-links ul li a {
-                    display: flex;
-                    align-items: center;
-                    gap: 6px;
-                    text-decoration: none;
-                }
+        .footer-links ul li a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+        }
 
         .social-links {
             display: flex;
@@ -730,17 +743,17 @@
             text-decoration: none;
         }
 
-            .social-btn img {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
+        .social-btn img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-            .social-btn:hover {
-                background-color: #f5f5f5;
-                color: #333;
-            }
+        .social-btn:hover {
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
         .newsletter-form {
             display: flex;
@@ -749,38 +762,38 @@
             max-width: 320px;
         }
 
-            .newsletter-form input {
-                flex: 1;
-                padding: 8px 12px;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                background: #fff;
-                font-size: 0.9rem;
-                font-family: 'Roboto', sans-serif;
-                color: #333;
-                outline: none;
-                transition: border-color 0.3s ease;
-            }
+        .newsletter-form input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+            font-size: 0.9rem;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
 
-                .newsletter-form input:focus {
-                    border-color: #D0021B;
-                }
+        .newsletter-form input:focus {
+            border-color: #D0021B;
+        }
 
-            .newsletter-form button {
-                background: #D0021B;
-                color: #fff;
-                font-weight: 500;
-                padding: 8px 15px;
-                border: none;
-                border-radius: 5px;
-                font-size: 0.9rem;
-                cursor: pointer;
-                transition: background 0.3s ease;
-            }
+        .newsletter-form button {
+            background: #D0021B;
+            color: #fff;
+            font-weight: 500;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
 
-                .newsletter-form button:hover {
-                    background: #F5A623;
-                }
+        .newsletter-form button:hover {
+            background: #F5A623;
+        }
 
         .footer-divider {
             border-top: 1px solid #ddd;
@@ -794,9 +807,9 @@
             margin-top: 20px;
         }
 
-            .footer-bottom-links a {
-                font-size: 0.9rem;
-            }
+        .footer-bottom-links a {
+            font-size: 0.9rem;
+        }
 
         .footer .text-center {
             margin-bottom: 0;
@@ -817,29 +830,30 @@
             flex-direction: column;
         }
 
-            .camera-modal video, .camera-modal canvas {
-                max-width: 90%;
-                max-height: 70%;
-                border-radius: 10px;
-            }
+        .camera-modal video,
+        .camera-modal canvas {
+            max-width: 90%;
+            max-height: 70%;
+            border-radius: 10px;
+        }
 
-            .camera-modal .btn {
-                margin: 10px;
-                background: #D0021B;
-                color: #fff;
-                padding: 10px 20px;
-                border-radius: 5px;
-            }
+        .camera-modal .btn {
+            margin: 10px;
+            background: #D0021B;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
 
-                .camera-modal .btn:hover {
-                    background: #F5A623;
-                }
+        .camera-modal .btn:hover {
+            background: #F5A623;
+        }
 
-            .camera-modal img {
-                max-width: 90%;
-                max-height: 70%;
-                border-radius: 10px;
-            }
+        .camera-modal img {
+            max-width: 90%;
+            max-height: 70%;
+            border-radius: 10px;
+        }
 
         /* === Analysis Modal === */
         .analysis-modal {
@@ -857,40 +871,40 @@
             gap: 20px;
         }
 
-            .analysis-modal img {
-                max-width: 90%;
-                max-height: 60%;
-                border-radius: 10px;
-                border: 2px solid #D0021B;
-            }
+        .analysis-modal img {
+            max-width: 90%;
+            max-height: 60%;
+            border-radius: 10px;
+            border: 2px solid #D0021B;
+        }
 
-            .analysis-modal .loading-text {
-                color: #fff;
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.2rem;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
+        .analysis-modal .loading-text {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-            .analysis-modal .spinner-border {
-                border-color: #D0021B;
-                border-right-color: transparent;
-            }
+        .analysis-modal .spinner-border {
+            border-color: #D0021B;
+            border-right-color: transparent;
+        }
 
-            .analysis-modal .btn {
-                background: #D0021B;
-                color: #fff;
-                padding: 10px 20px;
-                border-radius: 5px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 700;
-            }
+        .analysis-modal .btn {
+            background: #D0021B;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
 
-                .analysis-modal .btn:hover {
-                    background: #F5A623;
-                }
+        .analysis-modal .btn:hover {
+            background: #F5A623;
+        }
     </style>
 </head>
 
@@ -915,11 +929,15 @@
         </div>
         <div class="header-search">
             <form asp-controller="Product" asp-action="Index" method="get" class="search-bar">
-                <input type="text" name="searchString" id="searchInput" placeholder="Tìm kiếm hoa hoặc tải ảnh..." aria-label="Tìm kiếm sản phẩm hoặc tải ảnh" />
+                @Html.AntiForgeryToken()
+                <input type="text" name="searchString" id="searchInput" placeholder="Tìm kiếm hoa hoặc tải ảnh..."
+                    aria-label="Tìm kiếm sản phẩm hoặc tải ảnh" />
                 <input type="file" id="imageFile" accept="image/*" aria-label="Tải hình ảnh lên để tìm kiếm" />
                 <button type="submit" aria-label="Tìm kiếm"><i class="bi bi-search"></i></button>
-                <button type="button" onclick="document.getElementById('imageFile').click()" aria-label="Tải ảnh"><i class="bi bi-upload"></i></button>
-                <button type="button" onclick="openCameraModal()" aria-label="Chụp ảnh"><i class="bi bi-camera"></i></button>
+                <button type="button" onclick="document.getElementById('imageFile').click()" aria-label="Tải ảnh"><i
+                        class="bi bi-upload"></i></button>
+                <button type="button" onclick="openCameraModal()" aria-label="Chụp ảnh"><i
+                        class="bi bi-camera"></i></button>
             </form>
         </div>
         <div class="header-actions">
@@ -927,7 +945,8 @@
                 @if (User.Identity?.IsAuthenticated ?? false)
                 {
                     <div class="dropdown">
-                        <a class="dropdown-toggle action-btn" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="dropdown-toggle action-btn" href="#" id="userDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-person"></i> Xin chào, @User.Identity.Name
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="userDropdown">
@@ -939,7 +958,8 @@
                             @if (User.Identity.IsAuthenticated && User.IsInRole("User"))
                             {
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Order" asp-action="History" aria-label="Xem lịch sử đơn hàng">
+                                    <a class="dropdown-item" asp-controller="Order" asp-action="History"
+                                        aria-label="Xem lịch sử đơn hàng">
                                         <span class="dropdown-icon"><i class="fas fa-shopping-bag"></i></span> Đơn hàng của bạn
                                     </a>
                                 </li>
@@ -954,7 +974,8 @@
                 }
                 else
                 {
-                    <a class="action-btn login-btn" asp-controller="Account" asp-action="Login" aria-label="Đăng nhập hoặc đăng ký">
+                    <a class="action-btn login-btn" asp-controller="Account" asp-action="Login"
+                        aria-label="Đăng nhập hoặc đăng ký">
                         <span class="login-icon"><i class="fas fa-sign-in-alt"></i></span> Đăng nhập
                     </a>
                 }
@@ -977,14 +998,15 @@
         <img id="capturedImage" style="display: none;" />
         <div>
             <button class="btn" onclick="captureImage()" id="captureBtn">Chụp ảnh</button>
-            <button class="btn" onclick="submitImageFromCamera()" id="submitBtn" style="display: none;">Tìm kiếm</button>
+            <button class="btn" onclick="submitImageFromCamera()" id="submitBtn" style="display: none;">Tìm
+                kiếm</button>
             <button class="btn" onclick="closeCameraModal()">Đóng</button>
         </div>
     </div>
 
     <!-- Analysis Modal -->
     <div class="analysis-modal" id="analysisModal">
-        <img id="analysisImage" style="display: none;" />
+        <img id="analysisImage" alt="Ảnh đang phân tích" style="display: none;" />
         <div class="loading-text">
             <span>Đang phân tích...</span>
             <div class="spinner-border" role="status">
@@ -1004,15 +1026,20 @@
 
     <!-- Main Content -->
     <main role="main" class="pb-5">
-        @if (ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["Action"]?.ToString() == "Index")
+        @if (ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" &&
+                ViewContext.RouteData.Values["Action"]?.ToString() == "Index")
         {
             <!-- Carousel Banner -->
             <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -1048,11 +1075,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev" aria-label="Previous slide">
+                <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev"
+                    aria-label="Previous slide">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next" aria-label="Next slide">
+                <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next"
+                    aria-label="Next slide">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -1106,11 +1135,13 @@
                 <!-- Cột 1: Thông tin công ty -->
                 <div class="footer-col">
                     <h5>🌸 Bloomie Flower Shop</h5>
-                    <p class="text-muted">Cửa hàng hoa tươi hàng đầu Việt Nam, mang đến những bó hoa ý nghĩa cho mọi dịp đặc biệt.</p>
+                    <p class="text-muted">Cửa hàng hoa tươi hàng đầu Việt Nam, mang đến những bó hoa ý nghĩa cho mọi dịp
+                        đặc biệt.</p>
                     <p class="mb-1"><i class="bi bi-geo-alt me-2"></i> Trụ sở: 456 Đường Hoa Hồng, Quận 3, TP. HCM</p>
                     <p class="mb-1"><i class="bi bi-telephone me-2"></i> Hotline: (028) 9876-5432</p>
                     <p class="mb-1"><i class="bi bi-envelope me-2"></i> Email: bloomieshop25@gmail.vn</p>
-                    <p><i class="bi bi-globe me-2"></i> Website: <a href="https://bloomieshop.vn" target="_blank">bloomieshop.vn</a></p>
+                    <p><i class="bi bi-globe me-2"></i> Website: <a href="https://bloomieshop.vn"
+                            target="_blank">bloomieshop.vn</a></p>
                 </div>
 
                 <!-- Cột 2: Hỗ trợ khách hàng -->
@@ -1118,11 +1149,16 @@
                     <h5>🌺 Hỗ trợ khách hàng</h5>
                     <div class="footer-links">
                         <ul>
-                            <li><a asp-controller="Home" asp-action="FAQ"><i class="bi bi-question-circle me-2"></i> Câu hỏi thường gặp</a></li>
-                            <li><a asp-controller="Home" asp-action="Contact"><i class="bi bi-headset me-2"></i> Liên hệ hỗ trợ</a></li>
-                            <li><a asp-controller="Home" asp-action="ShippingPolicy"><i class="bi bi-truck me-2"></i> Chính sách giao hàng</a></li>
-                            <li><a asp-controller="Home" asp-action="ReturnPolicy"><i class="bi bi-arrow-return-left me-2"></i> Chính sách đổi trả</a></li>
-                            <li><a asp-controller="Home" asp-action="PaymentMethods"><i class="bi bi-credit-card me-2"></i> Phương thức thanh toán</a></li>
+                            <li><a asp-controller="Home" asp-action="FAQ"><i class="bi bi-question-circle me-2"></i> Câu
+                                    hỏi thường gặp</a></li>
+                            <li><a asp-controller="Home" asp-action="Contact"><i class="bi bi-headset me-2"></i> Liên hệ
+                                    hỗ trợ</a></li>
+                            <li><a asp-controller="Home" asp-action="ShippingPolicy"><i class="bi bi-truck me-2"></i>
+                                    Chính sách giao hàng</a></li>
+                            <li><a asp-controller="Home" asp-action="ReturnPolicy"><i
+                                        class="bi bi-arrow-return-left me-2"></i> Chính sách đổi trả</a></li>
+                            <li><a asp-controller="Home" asp-action="PaymentMethods"><i
+                                        class="bi bi-credit-card me-2"></i> Phương thức thanh toán</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1132,11 +1168,16 @@
                     <h5>💐 Danh mục sản phẩm</h5>
                     <div class="footer-links">
                         <ul>
-                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="1"><i class="bi bi-flower1 me-2"></i> Hoa sinh nhật</a></li>
-                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="2"><i class="bi bi-flower1 me-2"></i> Hoa chúc mừng</a></li>
-                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="3"><i class="bi bi-flower1 me-2"></i> Hoa tình yêu</a></li>
-                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="4"><i class="bi bi-flower1 me-2"></i> Hoa chia buồn</a></li>
-                            <li><a asp-controller="Product" asp-action="Index"><i class="bi bi-flower1 me-2"></i> Xem tất cả</a></li>
+                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="1"><i
+                                        class="bi bi-flower1 me-2"></i> Hoa sinh nhật</a></li>
+                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="2"><i
+                                        class="bi bi-flower1 me-2"></i> Hoa chúc mừng</a></li>
+                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="3"><i
+                                        class="bi bi-flower1 me-2"></i> Hoa tình yêu</a></li>
+                            <li><a asp-controller="Product" asp-action="Index" asp-route-categoryId="4"><i
+                                        class="bi bi-flower1 me-2"></i> Hoa chia buồn</a></li>
+                            <li><a asp-controller="Product" asp-action="Index"><i class="bi bi-flower1 me-2"></i> Xem
+                                    tất cả</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1146,11 +1187,16 @@
                     <h5>🌹 Thông tin cửa hàng</h5>
                     <div class="footer-links">
                         <ul>
-                            <li><a asp-controller="Home" asp-action="About"><i class="bi bi-info-circle me-2"></i> Về Bloomie</a></li>
-                            <li><a asp-controller="Home" asp-action="StoreLocations"><i class="bi bi-geo-alt me-2"></i> Danh sách cửa hàng</a></li>
-                            <li><a href="https://www.facebook.com/bloomie" target="_blank"><i class="bi bi-facebook me-2"></i> Fanpage Bloomie</a></li>
-                            <li><a asp-controller="Home" asp-action="FlowerMeanings"><i class="bi bi-flower1 me-2"></i> Ý nghĩa các loài hoa</a></li>
-                            <li><a asp-controller="Blog" asp-action="Index"><i class="bi bi-book me-2"></i> Blog về hoa</a></li>
+                            <li><a asp-controller="Home" asp-action="About"><i class="bi bi-info-circle me-2"></i> Về
+                                    Bloomie</a></li>
+                            <li><a asp-controller="Home" asp-action="StoreLocations"><i class="bi bi-geo-alt me-2"></i>
+                                    Danh sách cửa hàng</a></li>
+                            <li><a href="https://www.facebook.com/bloomie" target="_blank"><i
+                                        class="bi bi-facebook me-2"></i> Fanpage Bloomie</a></li>
+                            <li><a asp-controller="Home" asp-action="FlowerMeanings"><i class="bi bi-flower1 me-2"></i>
+                                    Ý nghĩa các loài hoa</a></li>
+                            <li><a asp-controller="Blog" asp-action="Index"><i class="bi bi-book me-2"></i> Blog về
+                                    hoa</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1184,7 +1230,10 @@
                 <!-- Cột 2: Giới thiệu -->
                 <div class="footer-col" style="flex: 2;">
                     <h5>🌷 Giới thiệu về Bloomie</h5>
-                    <p class="text-muted">Bloomie Flower Shop là địa chỉ cung cấp hoa tươi uy tín tại Việt Nam. Chúng tôi tự hào mang đến những bó hoa tinh tế, ý nghĩa, giúp bạn gửi gắm tình cảm trong mọi dịp đặc biệt. Với hệ thống cửa hàng tại TP.HCM, Hà Nội, Đà Nẵng và Cần Thơ, Bloomie luôn sẵn sàng phục vụ bạn với dịch vụ giao hoa nhanh chóng và tận tâm.</p>
+                    <p class="text-muted">Bloomie Flower Shop là địa chỉ cung cấp hoa tươi uy tín tại Việt Nam. Chúng
+                        tôi tự hào mang đến những bó hoa tinh tế, ý nghĩa, giúp bạn gửi gắm tình cảm trong mọi dịp đặc
+                        biệt. Với hệ thống cửa hàng tại TP.HCM, Hà Nội, Đà Nẵng và Cần Thơ, Bloomie luôn sẵn sàng phục
+                        vụ bạn với dịch vụ giao hoa nhanh chóng và tận tâm.</p>
                 </div>
 
                 <!-- Cột 3: Theo dõi và đăng ký -->
@@ -1207,7 +1256,8 @@
                     <div class="newsletter mt-3">
                         <h5>Đăng ký nhận tin</h5>
                         <div class="newsletter-form">
-                            <input type="email" placeholder="Email của bạn" aria-label="Email đăng ký nhận tin" required>
+                            <input type="email" placeholder="Email của bạn" aria-label="Email đăng ký nhận tin"
+                                required>
                             <button type="submit" aria-label="Đăng ký nhận tin">Đăng ký</button>
                         </div>
                     </div>
@@ -1224,7 +1274,9 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script>
@@ -1417,7 +1469,15 @@
                     controller.abort();
                 }, 15000);
 
-                submitImage(file, file.name, controller.signal).finally(() => clearTimeout(timeoutId));
+                const tokenInput = document.querySelector('input[name="__RequestVerificationToken"]');
+                const tokenValue = tokenInput ? tokenInput.value : null;
+
+                fetch('/Product/ImageSearch', {
+                    method: 'POST',
+                    headers: tokenValue ? { 'RequestVerificationToken': tokenValue } : {},
+                    body: formData,
+                    signal: controller.signal
+                }).finally(() => clearTimeout(timeoutId));
             }
         });
 
@@ -1434,7 +1494,87 @@
             isImageSearch = false;
             document.getElementById('imageFile').value = '';
         });
+
+        // Upload image file automatically when user picks a file
+        document.addEventListener('DOMContentLoaded', function () {
+            const imageFileInput = document.getElementById('imageFile');
+            const analysisModal = document.getElementById('analysisModal');
+            const analysisImage = document.getElementById('analysisImage');
+            if (!imageFileInput) return;
+
+            // defensive replace to remove duplicate listeners
+            const newInput = imageFileInput.cloneNode(true);
+            imageFileInput.parentNode.replaceChild(newInput, imageFileInput);
+
+            newInput.addEventListener('change', async function (e) {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+
+                // client-side validation
+                const allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
+                if (!allowedTypes.includes(file.type)) {
+                    alert('Vui lòng chọn file ảnh JPG/PNG/WebP.');
+                    e.target.value = '';
+                    return;
+                }
+                if (file.size > 15 * 1024 * 1024) {
+                    alert('Ảnh quá lớn (tối đa 15MB).');
+                    e.target.value = '';
+                    return;
+                }
+
+                if (analysisImage) {
+                    analysisImage.src = URL.createObjectURL(file);
+                    analysisImage.style.display = 'block';
+                }
+                if (analysisModal) analysisModal.style.display = 'flex';
+
+                const formData = new FormData();
+                formData.append('imageFile', file);
+
+                const tokenInput = document.querySelector('input[name="__RequestVerificationToken"]');
+                const tokenValue = tokenInput ? tokenInput.value : null;
+                const headers = tokenValue ? { 'RequestVerificationToken': tokenValue } : {};
+
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 25000);
+
+                try {
+                    const resp = await fetch('/Product/ImageSearch', {
+                        method: 'POST',
+                        headers: headers,
+                        body: formData,
+                        signal: controller.signal
+                    });
+                    clearTimeout(timeoutId);
+
+                    const text = await resp.text();
+                    let data;
+                    try { data = JSON.parse(text); }
+                    catch {
+                        console.error('ImageSearch non-JSON response:', text);
+                        alert('Phân tích thất bại: server trả về lỗi. Kiểm tra Console/Network.');
+                        if (analysisModal) analysisModal.style.display = 'none';
+                        return;
+                    }
+
+                    if (data.success && data.redirectUrl) {
+                        window.location.href = data.redirectUrl;
+                    } else {
+                        alert('Phân tích thất bại: ' + (data.message || 'Không xác định'));
+                        if (analysisModal) analysisModal.style.display = 'none';
+                    }
+                } catch (err) {
+                    console.error(err);
+                    alert('Lỗi khi upload hình: ' + (err && err.message ? err.message : err));
+                    if (analysisModal) analysisModal.style.display = 'none';
+                } finally {
+                    e.target.value = '';
+                }
+            });
+        });
     </script>
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>

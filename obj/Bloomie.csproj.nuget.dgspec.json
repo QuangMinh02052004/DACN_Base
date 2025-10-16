@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/daokhoa/Documents/MAIN/Bloomie/Bloomie.csproj": {}
+    "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj": {}
   },
   "projects": {
-    "/Users/daokhoa/Documents/MAIN/Bloomie/Bloomie.csproj": {
+    "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/daokhoa/Documents/MAIN/Bloomie/Bloomie.csproj",
+        "projectUniqueName": "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj",
         "projectName": "Bloomie",
-        "projectPath": "/Users/daokhoa/Documents/MAIN/Bloomie/Bloomie.csproj",
-        "packagesPath": "/Users/daokhoa/.nuget/packages/",
-        "outputPath": "/Users/daokhoa/Documents/MAIN/Bloomie/obj/",
+        "projectPath": "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj",
+        "packagesPath": "/Users/lequangminh/.nuget/packages/",
+        "outputPath": "/Users/lequangminh/DACN_Base/Bloomie (1)/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/daokhoa/.nuget/NuGet/NuGet.Config"
+          "/Users/lequangminh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -133,7 +133,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

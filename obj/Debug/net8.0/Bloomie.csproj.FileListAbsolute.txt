@@ -1,0 +1,1398 @@
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.AssemblyReference.cache
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.GeneratedMSBuildEditorConfig.editorconfig
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfoInputs.cache
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfo.cs
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.CoreCompileInputs.cache
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cache
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cache
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cs
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/appsettings.Development.json
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/appsettings.json
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.runtime.json
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.endpoints.json
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.exe
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.deps.json
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.runtimeconfig.json
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.pdb
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Azure.Core.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Azure.Identity.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Humanizer.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Mono.TextTemplating.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.ClientModel.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.CodeDom.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Convention.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Hosting.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Runtime.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.TypedParts.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Drawing.Common.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Formats.Asn1.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.IO.Pipelines.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Memory.Data.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Runtime.Caching.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Security.Permissions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Text.Json.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Windows.Extensions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/bundle/Bloomie.styles.css
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/projectbundle/Bloomie.bundle.scp.css
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.build.json
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.development.json
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssets.props
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.build.Bloomie.props
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Bloomie.props
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Bloomie.props
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.pack.json
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.upToDateCheck.txt
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.Up2Date
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.dll
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/refint/Bloomie.dll
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.pdb
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.genruntimeconfig.cache
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/ref/Bloomie.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+D:/MAIN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cs
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.Framework.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Elfie.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Features.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DiaSymReader.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.Scaffolding.Shared.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.NET.StringTools.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/dotnet-aspnet-codegenerator-design.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Newtonsoft.Json.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Common.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Configuration.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.DependencyResolver.Core.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Frameworks.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.LibraryModel.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Packaging.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.ProjectModel.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Protocol.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Versioning.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/af/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ar/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/az/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/bg/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/bn-BD/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/da/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/el/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fa/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fi-FI/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr-BE/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/he/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/hr/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/hu/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/hy/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/id/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/is/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko-KR/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ku/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/lv/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ms-MY/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/mt/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/nb/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/nb-NO/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/nl/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ro/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/sk/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/sl/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/sr/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/sr-Latn/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/sv/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/th-TH/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/uk/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/uz-Cyrl-UZ/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/uz-Latn-UZ/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/vi/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-CN/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Humanizer.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.core.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ClosedXML.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ClosedXML.Parser.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/ExcelNumberFormat.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/RBush.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/SixLabors.Fonts.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/System.IO.Packaging.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.barcodes.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.bouncy-castle-connector.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.forms.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.io.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.kernel.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.layout.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.pdfa.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.pdfua.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.sign.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.styledxmlparser.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.svg.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/itext.commons.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.PlatformAbstractions.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.Interfaces.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.System.Drawing.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IO.RecyclableMemoryStream.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/RestSharp.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Google.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Facebook.dll
+D:/MAIN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Twitter.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/appsettings.Development.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.endpoints.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/appsettings.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.runtime.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.exe
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.deps.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.runtimeconfig.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.pdb
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Azure.Core.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Azure.Identity.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ClosedXML.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ClosedXML.Parser.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.Interfaces.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.System.Drawing.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ExcelNumberFormat.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Humanizer.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.barcodes.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.bouncy-castle-connector.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.forms.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.io.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.kernel.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.layout.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.pdfa.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.pdfua.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.sign.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.styledxmlparser.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.svg.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/itext.commons.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Facebook.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Google.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Twitter.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.Framework.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Elfie.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Features.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DiaSymReader.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.PlatformAbstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.Scaffolding.Shared.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IO.RecyclableMemoryStream.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.NET.StringTools.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/dotnet-aspnet-codegenerator-design.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Mono.TextTemplating.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Newtonsoft.Json.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Common.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Configuration.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.DependencyResolver.Core.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Frameworks.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.LibraryModel.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Packaging.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.ProjectModel.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Protocol.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Versioning.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/RBush.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/RestSharp.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/SixLabors.Fonts.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.core.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.ClientModel.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.CodeDom.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Convention.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Hosting.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Runtime.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.TypedParts.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Drawing.Common.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Formats.Asn1.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.IO.Packaging.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.IO.Pipelines.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Memory.Data.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Runtime.Caching.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Security.Permissions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Text.Json.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/System.Windows.Extensions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/af/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ar/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/az/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/bg/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/bn-BD/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/da/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/el/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fa/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fi-FI/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr-BE/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/he/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/hr/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/hu/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/hy/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/id/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/is/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko-KR/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ku/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/lv/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ms-MY/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/mt/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/nb/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/nb-NO/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/nl/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ro/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/sk/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/sl/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/sr/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/sr-Latn/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/sv/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/th-TH/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/uk/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/uz-Cyrl-UZ/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/uz-Latn-UZ/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/vi/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-CN/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Humanizer.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.AssemblyReference.cache
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.GeneratedMSBuildEditorConfig.editorconfig
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfoInputs.cache
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfo.cs
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.CoreCompileInputs.cache
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cs
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cache
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cache
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cs
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/bundle/Bloomie.styles.css
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/projectbundle/Bloomie.bundle.scp.css
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.build.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.development.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssets.props
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.build.Bloomie.props
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Bloomie.props
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Bloomie.props
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.pack.json
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.upToDateCheck.txt
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.Up2Date
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/refint/Bloomie.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.pdb
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.genruntimeconfig.cache
+D:/ĐỒ ÁN/Bloomie/Bloomie/obj/Debug/net8.0/ref/Bloomie.dll
+D:/ĐỒ ÁN/Bloomie/Bloomie/bin/Debug/net8.0/Python.Runtime.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/appsettings.Development.json
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/appsettings.json
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.runtime.json
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.endpoints.json
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.exe
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.deps.json
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.runtimeconfig.json
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Bloomie.pdb
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Azure.Core.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Azure.Identity.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ClosedXML.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ClosedXML.Parser.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.Interfaces.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/EPPlus.System.Drawing.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ExcelNumberFormat.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Humanizer.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.barcodes.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.bouncy-castle-connector.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.forms.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.io.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.kernel.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.layout.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.pdfa.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.pdfua.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.sign.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.styledxmlparser.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.svg.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/itext.commons.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Facebook.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Google.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Twitter.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.Framework.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Elfie.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Features.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DiaSymReader.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.PlatformAbstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.Scaffolding.Shared.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.IO.RecyclableMemoryStream.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.NET.StringTools.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/dotnet-aspnet-codegenerator-design.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Mono.TextTemplating.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Newtonsoft.Json.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Common.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Configuration.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.DependencyResolver.Core.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Frameworks.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.LibraryModel.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Packaging.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.ProjectModel.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Protocol.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/NuGet.Versioning.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/Python.Runtime.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/RBush.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/RestSharp.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/SixLabors.Fonts.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.core.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.ClientModel.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.CodeDom.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Convention.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Hosting.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.Runtime.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Composition.TypedParts.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Drawing.Common.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Formats.Asn1.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.IO.Packaging.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.IO.Pipelines.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Memory.Data.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Runtime.Caching.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Security.Permissions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Text.Json.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/System.Windows.Extensions.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/af/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ar/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/az/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/bg/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/bn-BD/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/da/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/el/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fa/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fi-FI/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr-BE/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/he/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/hr/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/hu/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/hy/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/id/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/is/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko-KR/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ku/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/lv/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ms-MY/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/mt/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/nb/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/nb-NO/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/nl/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ro/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/sk/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/sl/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/sr/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/sr-Latn/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/sv/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/th-TH/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/uk/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/uz-Cyrl-UZ/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/uz-Latn-UZ/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/vi/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-CN/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Humanizer.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+D:/DO AN/Bloomie/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.AssemblyReference.cache
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.GeneratedMSBuildEditorConfig.editorconfig
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfoInputs.cache
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfo.cs
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.CoreCompileInputs.cache
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cs
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cache
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cache
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cs
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/bundle/Bloomie.styles.css
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/scopedcss/projectbundle/Bloomie.bundle.scp.css
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.build.json
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.development.json
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssets.props
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.build.Bloomie.props
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Bloomie.props
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Bloomie.props
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/staticwebassets.pack.json
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.csproj.Up2Date
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.dll
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/refint/Bloomie.dll
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.pdb
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/Bloomie.genruntimeconfig.cache
+D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/ref/Bloomie.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/appsettings.Development.json
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/appsettings.json
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Bloomie.staticwebassets.runtime.json
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Bloomie
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Bloomie.deps.json
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Bloomie.runtimeconfig.json
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Bloomie.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Bloomie.pdb
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Azure.Core.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Azure.Identity.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ClosedXML.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ClosedXML.Parser.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/DocumentFormat.OpenXml.Framework.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/EPPlus.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/EPPlus.Interfaces.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/EPPlus.System.Drawing.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ExcelNumberFormat.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Humanizer.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.barcodes.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.bouncy-castle-connector.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.forms.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.io.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.kernel.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.layout.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.pdfa.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.pdfua.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.sign.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.styledxmlparser.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.svg.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/itext.commons.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Facebook.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Google.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.Twitter.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.AspNetCore.Razor.Language.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Build.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Build.Framework.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Elfie.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Features.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Data.Sqlite.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.DiaSymReader.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.DotNet.Scaffolding.Shared.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.IO.RecyclableMemoryStream.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.NET.StringTools.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/dotnet-aspnet-codegenerator-design.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.Common.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.Configuration.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.DependencyResolver.Core.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.Frameworks.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.LibraryModel.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.Packaging.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.ProjectModel.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.Protocol.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/NuGet.Versioning.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/Python.Runtime.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/RBush.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/RestSharp.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/SixLabors.Fonts.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.batteries_v2.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.core.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.ClientModel.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.CodeDom.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Composition.Convention.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Composition.Hosting.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Composition.Runtime.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Composition.TypedParts.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Drawing.Common.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Formats.Asn1.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.IO.Packaging.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Memory.Data.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Runtime.Caching.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Security.Permissions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Text.Json.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/System.Windows.Extensions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/af/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ar/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/az/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/bg/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/bn-BD/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/da/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/el/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fa/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fi-FI/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr-BE/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/he/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/hr/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/hu/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/hy/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/id/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/is/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko-KR/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ku/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/lv/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ms-MY/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/mt/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/nb/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/nb-NO/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/nl/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ro/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/sk/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/sl/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/sr/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/sr-Latn/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/sv/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/th-TH/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/uk/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/uz-Cyrl-UZ/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/uz-Latn-UZ/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/vi/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-CN/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Humanizer.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/browser-wasm/nativeassets/net8.0/e_sqlite3.a
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-arm/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-armel/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-s390x/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-x64/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/linux-x86/native/libe_sqlite3.so
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-arm/native/e_sqlite3.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-arm64/native/e_sqlite3.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.csproj.AssemblyReference.cache
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.GeneratedMSBuildEditorConfig.editorconfig
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfoInputs.cache
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.AssemblyInfo.cs
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.csproj.CoreCompileInputs.cache
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cs
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.MvcApplicationPartsAssemblyInfo.cache
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cache
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.RazorAssemblyInfo.cs
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets.build.json
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets.development.json
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.Bloomie.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.build.Bloomie.props
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Bloomie.props
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Bloomie.props
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/scopedcss/bundle/Bloomie.styles.css
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/scopedcss/projectbundle/Bloomie.bundle.scp.css
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.csproj.Up2Date
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/refint/Bloomie.dll
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.pdb
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/Bloomie.genruntimeconfig.cache
+/Users/daokhoa/Documents/MAIN/Bloomie/obj/Debug/net8.0/ref/Bloomie.dll

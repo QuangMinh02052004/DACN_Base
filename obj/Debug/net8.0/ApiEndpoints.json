@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "Bloomie.Areas.Admin.Controllers.AdminNotificationController",
+    "Method": "Delete",
+    "RelativePath": "Admin/AdminNotification/Delete/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bloomie.Areas.Admin.Controllers.AdminNotificationController",
+    "Method": "DeleteMessage",
+    "RelativePath": "Admin/AdminNotification/DeleteMessage/DeleteMessage/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bloomie.Areas.Admin.Controllers.AdminNotificationController",
+    "Method": "GetMessages",
+    "RelativePath": "Admin/AdminNotification/GetMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bloomie.Areas.Admin.Controllers.AdminNotificationController",
+    "Method": "GetNotifications",
+    "RelativePath": "Admin/AdminNotification/GetNotifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bloomie.Areas.Admin.Controllers.AdminNotificationController",
+    "Method": "MarkAsRead",
+    "RelativePath": "Admin/AdminNotification/MarkAsRead/MarkAsRead/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bloomie.Areas.Admin.Controllers.AdminNotificationController",
+    "Method": "MarkMessageAsRead",
+    "RelativePath": "Admin/AdminNotification/MarkMessageAsRead/MarkMessageAsRead/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

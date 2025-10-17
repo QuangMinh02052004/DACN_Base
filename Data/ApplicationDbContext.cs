@@ -36,6 +36,8 @@ namespace Bloomie.Data
         public DbSet<Reply> Replies { get; set; }
         public DbSet<Report> Reports { get; set; }
         public DbSet<UserLike> UserLikes { get; set; }
+        public DbSet<CustomArrangement> CustomArrangements { get; set; }
+        public DbSet<CustomArrangementFlower> CustomArrangementFlowers { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -205,6 +207,34 @@ namespace Bloomie.Data
                 .HasOne(ul => ul.User)
                 .WithMany()
                 .HasForeignKey(ul => ul.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Cấu hình cho CustomArrangement và User (1-n)
+            builder.Entity<CustomArrangement>()
+                .HasOne(ca => ca.User)
+                .WithMany()
+                .HasForeignKey(ca => ca.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Cấu hình cho CustomArrangement và PresentationStyle (1-n)
+            builder.Entity<CustomArrangement>()
+                .HasOne(ca => ca.PresentationStyle)
+                .WithMany(ps => ps.CustomArrangements)
+                .HasForeignKey(ca => ca.PresentationStyleId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Cấu hình cho CustomArrangementFlower và CustomArrangement (1-n)
+            builder.Entity<CustomArrangementFlower>()
+                .HasOne(caf => caf.CustomArrangement)
+                .WithMany(ca => ca.CustomArrangementFlowers)
+                .HasForeignKey(caf => caf.CustomArrangementId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Cấu hình cho CustomArrangementFlower và FlowerType (1-n)
+            builder.Entity<CustomArrangementFlower>()
+                .HasOne(caf => caf.FlowerType)
+                .WithMany(ft => ft.CustomArrangementFlowers)
+                .HasForeignKey(caf => caf.FlowerTypeId)
                 .OnDelete(DeleteBehavior.Restrict);
 
         }

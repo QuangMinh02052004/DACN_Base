@@ -1,0 +1,271 @@
+@model Bloomie.Models.ViewModels.DesignerViewModel
+@{
+    ViewData["Title"] = "Thiết kế bó hoa của bạn";
+}
+
+<style>
+    /* Inline flower form styling */
+    .flower-form {
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+        padding: 1rem;
+    }
+
+    .flower-item {
+        transition: all 0.3s ease;
+    }
+
+    .flower-item:hover {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Quantity input styling */
+    .flower-quantity {
+        max-width: 70px;
+        font-weight: bold;
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    .flower-quantity::-webkit-outer-spin-button,
+    .flower-quantity::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .decrease-qty, .increase-qty {
+        width: 36px;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Card heights for better layout */
+    .card {
+        height: 100%;
+    }
+
+    /* Scrollable areas */
+    #presentation-styles {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    #available-flowers {
+        max-height: 500px;
+    }
+</style>
+
+<div class="container-fluid mt-4">
+    <h2 class="text-center mb-4">Thiết kế bó hoa theo ý bạn</h2>
+
+    <!-- Row 1: Bước 1 và Bước 2 -->
+    <div class="row mb-4">
+        <!-- Bước 1: Chọn kiểu trình bày -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5>Bước 1: Chọn kiểu trình bày</h5>
+                </div>
+                <div class="card-body">
+                    <div id="presentation-styles">
+                        @foreach (var style in Model.PresentationStyles)
+                        {
+                            <div class="presentation-style-item mb-3 p-3 border rounded"
+                                 data-style-id="@style.Id"
+                                 data-base-price="@style.BasePrice"
+                                 style="cursor: pointer;">
+                                @if (!string.IsNullOrEmpty(style.ImageUrl))
+                                {
+                                    <img src="@style.ImageUrl" alt="@style.Name" class="img-fluid mb-2" style="max-height: 100px;">
+                                }
+                                <h6>@style.Name</h6>
+                                <p class="text-muted mb-0">@style.Description</p>
+                                <p class="text-success"><strong>@style.BasePrice.ToString("N0") VNĐ</strong></p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bước 2: Chọn loại hoa -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h5>Bước 2: Chọn loại hoa</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <input type="text" id="flower-search" class="form-control" placeholder="Tìm kiếm hoa...">
+                    </div>
+                    <div id="available-flowers" style="max-height: 400px; overflow-y: auto;">
+                        @foreach (var flower in Model.AvailableFlowers)
+                        {
+                            <div class="flower-item mb-3 p-2 border rounded" data-flower-id="@flower.Id">
+                                <div class="row">
+                                    <div class="col-4">
+                                        @if (!string.IsNullOrEmpty(flower.ImageUrl))
+                                        {
+                                            <img src="@flower.ImageUrl" alt="@flower.Name" class="img-fluid">
+                                        }
+                                        else
+                                        {
+                                            <div class="bg-light p-3 text-center">
+                                                <i class="fas fa-flower"></i>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>@flower.Name</h6>
+                                        <p class="text-muted small mb-1">@flower.Description</p>
+                                        <p class="text-primary mb-1"><strong>@flower.UnitPrice.ToString("N0") VNĐ/bông</strong></p>
+                                        <p class="text-secondary small mb-2">Còn: @flower.Quantity</p>
+                                        <button class="btn btn-sm btn-success toggle-flower-form"
+                                                data-flower-id="@flower.Id">
+                                            <i class="fas fa-plus"></i> Thêm
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Inline Form (hidden by default) -->
+                                <div class="flower-form mt-3" id="flower-form-@flower.Id" style="display: none;"
+                                     data-flower-id="@flower.Id"
+                                     data-flower-name="@flower.Name"
+                                     data-unit-price="@flower.UnitPrice"
+                                     data-available-colors="@flower.AvailableColors">
+                                    <div class="row g-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Số lượng</label>
+                                            <div class="input-group input-group-sm">
+                                                <button class="btn btn-outline-secondary decrease-qty" type="button">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input type="number" class="form-control text-center flower-quantity" value="3" min="1">
+                                                <button class="btn btn-outline-secondary increase-qty" type="button">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Màu sắc</label>
+                                            <select class="form-select form-select-sm flower-color">
+                                                <option value="">Chọn màu...</option>
+                                                @if (!string.IsNullOrEmpty(flower.AvailableColors))
+                                                {
+                                                    foreach (var color in flower.AvailableColors.Split(','))
+                                                    {
+                                                        <option value="@color.Trim()">@color.Trim()</option>
+                                                    }
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Tạm tính</label>
+                                            <input type="text" class="form-control form-control-sm flower-subtotal" readonly value="0 đ">
+                                        </div>
+                                    </div>
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-12">
+                                            <label class="form-label small">Ghi chú (tùy chọn)</label>
+                                            <input type="text" class="form-control form-control-sm flower-notes" placeholder="VD: Cắt ngắn, bỏ gai...">
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <button class="btn btn-sm btn-success confirm-add-flower">
+                                            <i class="fas fa-check"></i> Thêm vào bó hoa
+                                        </button>
+                                        <button class="btn btn-sm btn-secondary cancel-flower-form">
+                                            <i class="fas fa-times"></i> Hủy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2: Bước 3 và Bước 4 -->
+    <div class="row">
+        <!-- Bước 3: Thiết kế của bạn -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5>Bước 3: Thiết kế của bạn</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Tên bó hoa</label>
+                        <input type="text" id="arrangement-name" class="form-control" placeholder="VD: Bó hoa sinh nhật">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Ghi chú</label>
+                        <textarea id="arrangement-description" class="form-control" rows="2" placeholder="Ghi chú đặc biệt..."></textarea>
+                    </div>
+
+                    <div id="selected-presentation" class="alert alert-info" style="display: none;">
+                        <h6>Kiểu trình bày đã chọn:</h6>
+                        <p id="selected-presentation-name" class="mb-0"></p>
+                        <p id="selected-presentation-price" class="text-success mb-0"></p>
+                    </div>
+
+                    <h6 class="mt-3">Các loại hoa đã chọn:</h6>
+                    <div id="selected-flowers" style="max-height: 300px; overflow-y: auto;">
+                        <p class="text-muted text-center">Chưa có hoa nào được chọn</p>
+                    </div>
+
+                    <div class="mt-3 p-3 bg-light rounded">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Giá cơ bản:</span>
+                            <span id="display-base-price">0 VNĐ</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Giá hoa:</span>
+                            <span id="display-flowers-cost">0 VNĐ</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <strong>Tổng cộng:</strong>
+                            <strong class="text-success" id="display-total-price">0 VNĐ</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bước 4: Xem trước & Đặt hàng -->
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <h5>Bước 4: Xem trước & Đặt hàng</h5>
+                </div>
+                <div class="card-body text-center">
+                    <div id="preview-area" class="mb-3 p-5 border rounded bg-light">
+                        <i class="fas fa-image fa-3x text-muted"></i>
+                        <p class="text-muted mt-3">Xem trước bó hoa của bạn</p>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button id="save-arrangement-btn" class="btn btn-primary" disabled>
+                            <i class="fas fa-save"></i> Lưu thiết kế
+                        </button>
+                        <button id="add-to-cart-btn" class="btn btn-success" disabled>
+                            <i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng
+                        </button>
+                        <a href="@Url.Action("SavedArrangements")" class="btn btn-outline-secondary">
+                            <i class="fas fa-list"></i> Xem thiết kế đã lưu
+                        </a>
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary">
+                            <i class="fas fa-home"></i> Về trang chủ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/js/customArrangement.js"></script>
+}

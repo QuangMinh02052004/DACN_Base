@@ -138,6 +138,7 @@ builder.Services.AddScoped<IPromotionService, PromotionService>();
 builder.Services.AddScoped<IInventoryService, InventoryService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<ICustomArrangementService, CustomArrangementService>();
 
 // Cấu hình Excel (EPPlus)
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;

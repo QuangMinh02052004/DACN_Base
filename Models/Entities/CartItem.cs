@@ -10,5 +10,9 @@
         public string ImageUrl { get; set; }
         public DateTime? DeliveryDate { get; set; } // Ngày giao hàng
         public string DeliveryTime { get; set; } // Thời gian giao hàng
+
+        // For Custom Flower Arrangement
+        public int? CustomArrangementId { get; set; } // ID của bó hoa tùy chỉnh (nullable)
+        public bool IsCustomArrangement => CustomArrangementId.HasValue;
     }
 }

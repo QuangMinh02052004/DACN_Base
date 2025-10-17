@@ -2621,6 +2621,70 @@
       "PackagePath": "staticwebassets/images/ffcd234e-9e57-4028-b525-2974c1a1bf8d.jpg"
     },
     {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/baby.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/baby.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/binh-hoa.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/binh-hoa.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/bo-hoa.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/bo-hoa.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/cam-chuong.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/cam-chuong.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/cat-tuong.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/cat-tuong.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/cuc-mau-don.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/cuc-mau-don.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/cuc.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/cuc.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/dong-tien.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/dong-tien.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/gio-hoa.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/gio-hoa.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/hong.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/hong.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/hop-hoa.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/hop-hoa.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/huong-duong.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/huong-duong.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/lan.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/lan.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/lang-hoa.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/lang-hoa.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/ly.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/ly.jpg\r"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/flowers\r/tulip.jpg\r",
+      "PackagePath": "staticwebassets/images/flowers\r/tulip.jpg\r"
+    },
+    {
       "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/hoachucmung.jpg",
       "PackagePath": "staticwebassets/images/hoachucmung.jpg"
     },
@@ -2643,6 +2707,10 @@
     {
       "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/images/logo1.png",
       "PackagePath": "staticwebassets/images/logo1.png"
+    },
+    {
+      "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/js/customArrangement.js",
+      "PackagePath": "staticwebassets/js/customArrangement.js"
     },
     {
       "Id": "/Users/lequangminh/DACN_Base/Bloomie (1)/wwwroot/js/site.js",

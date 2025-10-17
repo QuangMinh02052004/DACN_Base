@@ -11,5 +11,9 @@
         public decimal Price { get; set; } // Giá sản phẩm tại thời điểm đặt hàng
         public DateTime? DeliveryDate { get; set; } // Ngày giao hàng
         public string DeliveryTime { get; set; } // Thời gian giao hàng
+
+        // For Custom Flower Arrangement
+        public int? CustomArrangementId { get; set; }
+        public bool IsCustomArrangement => CustomArrangementId.HasValue;
     }
 }

@@ -11,6 +11,12 @@
         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="CustomArrangement" asp-action="Designer">
+            <i class="fas fa-palette"></i> Thiết kế bó hoa
+        </a>
+    </li>
+
     @foreach (var category in mainCategories)
     {
         var subCategories = category.SubCategories as IEnumerable<Bloomie.Models.Entities.Category>;

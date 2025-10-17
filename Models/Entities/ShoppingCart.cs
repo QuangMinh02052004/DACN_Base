@@ -16,8 +16,15 @@ namespace Bloomie.Models.Entities
         // Thêm 1 sản phẩm vào giỏ hàng
         public void AddItem(CartItem item)
         {
+            // Custom arrangement luôn là item riêng (không merge)
+            if (item.IsCustomArrangement)
+            {
+                Items.Add(item);
+                return;
+            }
+
             // Kiểm tra xem sản phẩm đã tồn tại
-            var existingItem = Items.FirstOrDefault(i => i.ProductId == item.ProductId);
+            var existingItem = Items.FirstOrDefault(i => i.ProductId == item.ProductId && !i.IsCustomArrangement);
             if (existingItem != null)
             {
                 existingItem.Quantity += item.Quantity;
@@ -31,7 +38,13 @@ namespace Bloomie.Models.Entities
         // Xóa sản phẩm
         public void RemoveItem(int productId)
         {
-            Items.RemoveAll(i => i.ProductId == productId);
+            Items.RemoveAll(i => i.ProductId == productId && !i.IsCustomArrangement);
+        }
+
+        // Xóa custom arrangement
+        public void RemoveCustomArrangement(int customArrangementId)
+        {
+            Items.RemoveAll(i => i.CustomArrangementId == customArrangementId);
         }
     }
 }

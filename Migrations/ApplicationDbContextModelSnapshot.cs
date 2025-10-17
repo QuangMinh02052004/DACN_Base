@@ -175,6 +175,102 @@ namespace Bloomie.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Bloomie.Models.Entities.CustomArrangement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("BasePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("FlowersCost")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsOrdered")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSaved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OrderId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PresentationStyleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PreviewImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PresentationStyleId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("CustomArrangements");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.Entities.CustomArrangementFlower", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomArrangementId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FlowerTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Notes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomArrangementId");
+
+                    b.HasIndex("FlowerTypeId");
+
+                    b.ToTable("CustomArrangementFlowers");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.FlowerType", b =>
                 {
                     b.Property<int>("Id")
@@ -182,6 +278,15 @@ namespace Bloomie.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AvailableColors")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -192,6 +297,9 @@ namespace Bloomie.Migrations
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -439,6 +547,9 @@ namespace Bloomie.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("CustomArrangementId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("DeliveryDate")
                         .HasColumnType("datetime2");
 
@@ -538,6 +649,15 @@ namespace Bloomie.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("BasePrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -1130,6 +1250,43 @@ namespace Bloomie.Migrations
                     b.Navigation("ParentCategory");
                 });
 
+            modelBuilder.Entity("Bloomie.Models.Entities.CustomArrangement", b =>
+                {
+                    b.HasOne("Bloomie.Models.Entities.PresentationStyle", "PresentationStyle")
+                        .WithMany("CustomArrangements")
+                        .HasForeignKey("PresentationStyleId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Bloomie.Data.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("PresentationStyle");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.Entities.CustomArrangementFlower", b =>
+                {
+                    b.HasOne("Bloomie.Models.Entities.CustomArrangement", "CustomArrangement")
+                        .WithMany("CustomArrangementFlowers")
+                        .HasForeignKey("CustomArrangementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Bloomie.Models.Entities.FlowerType", "FlowerType")
+                        .WithMany("CustomArrangementFlowers")
+                        .HasForeignKey("FlowerTypeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("CustomArrangement");
+
+                    b.Navigation("FlowerType");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.FlowerTypeProduct", b =>
                 {
                     b.HasOne("Bloomie.Models.Entities.FlowerType", "FlowerType")
@@ -1495,9 +1652,16 @@ namespace Bloomie.Migrations
                     b.Navigation("SubCategories");
                 });
 
+            modelBuilder.Entity("Bloomie.Models.Entities.CustomArrangement", b =>
+                {
+                    b.Navigation("CustomArrangementFlowers");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.FlowerType", b =>
                 {
                     b.Navigation("BatchFlowerTypes");
+
+                    b.Navigation("CustomArrangementFlowers");
 
                     b.Navigation("FlowerTypeProducts");
 
@@ -1517,6 +1681,8 @@ namespace Bloomie.Migrations
 
             modelBuilder.Entity("Bloomie.Models.Entities.PresentationStyle", b =>
                 {
+                    b.Navigation("CustomArrangements");
+
                     b.Navigation("Products");
                 });
 

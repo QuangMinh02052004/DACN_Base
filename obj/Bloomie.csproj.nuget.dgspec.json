@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj": {}
+    "/Users/lequangminh/DACN_Base-1/Bloomie.csproj": {}
   },
   "projects": {
-    "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj": {
+    "/Users/lequangminh/DACN_Base-1/Bloomie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj",
+        "projectUniqueName": "/Users/lequangminh/DACN_Base-1/Bloomie.csproj",
         "projectName": "Bloomie",
-        "projectPath": "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj",
+        "projectPath": "/Users/lequangminh/DACN_Base-1/Bloomie.csproj",
         "packagesPath": "/Users/lequangminh/.nuget/packages/",
-        "outputPath": "/Users/lequangminh/DACN_Base/Bloomie (1)/obj/",
+        "outputPath": "/Users/lequangminh/DACN_Base-1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lequangminh/.nuget/NuGet/NuGet.Config"

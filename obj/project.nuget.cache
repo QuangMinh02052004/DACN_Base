@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zVdXTt2DxzI=",
+  "dgSpecHash": "I4F+His2sT8=",
   "success": true,
-  "projectFilePath": "/Users/lequangminh/DACN_Base/Bloomie (1)/Bloomie.csproj",
+  "projectFilePath": "/Users/lequangminh/DACN_Base-1/Bloomie.csproj",
   "expectedPackageFiles": [
     "/Users/lequangminh/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/lequangminh/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

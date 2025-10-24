@@ -126,7 +126,7 @@ namespace Bloomie.Areas.Admin.Controllers
                 // Lấy danh sách lô chưa hết hạn từ nhà cung cấp
                 var batchesList = await _context.Batches
                     .Include(b => b.Supplier)
-                    .Where(b => b.ExpiryDate > DateTime.Now)
+                    .Where(b => b.ExpiryDate.Date > DateTime.Now.Date)
                     .Select(b => new
                     {
                         b.Id,
@@ -191,7 +191,7 @@ namespace Bloomie.Areas.Admin.Controllers
                         {
                             ModelState.AddModelError("ImportDate", "Ngày nhập không được ở tương lai.");
                         }
-                        if (model.ExpiryDate <= DateTime.Now)
+                        if (model.ExpiryDate.Date <= DateTime.Now.Date)
                         {
                             ModelState.AddModelError("ExpiryDate", "Ngày hết hạn phải sau ngày hiện tại.");
                         }
@@ -235,7 +235,7 @@ namespace Bloomie.Areas.Admin.Controllers
                         }
                         else
                         {
-                            if (existingBatch.ExpiryDate <= DateTime.Now)
+                            if (existingBatch.ExpiryDate.Date <= DateTime.Now.Date)
                             {
                                 ModelState.AddModelError("BatchId", "Lô hàng đã hết hạn. Vui lòng chọn lô khác hoặc tạo lô mới.");
                             }
@@ -317,7 +317,7 @@ namespace Bloomie.Areas.Admin.Controllers
                 : new List<dynamic>();
 
             var batchesList = await _context.Batches
-                .Where(b => b.ExpiryDate > DateTime.Now)
+                .Where(b => b.ExpiryDate.Date > DateTime.Now.Date)
                 .Include(b => b.Supplier)
                 .Select(b => new
                 {
@@ -452,7 +452,7 @@ namespace Bloomie.Areas.Admin.Controllers
                     .Include(b => b.BatchFlowerTypes)
                     .ThenInclude(bft => bft.FlowerType)
                     .Include(b => b.Supplier)
-                    .Where(b => b.ExpiryDate > DateTime.Now && b.BatchFlowerTypes.Any(bft => bft.FlowerTypeId == flowerTypeId))
+                    .Where(b => b.ExpiryDate.Date > DateTime.Now.Date && b.BatchFlowerTypes.Any(bft => bft.FlowerTypeId == flowerTypeId))
                     .ToListAsync();
 
                 if (!availableBatches.Any())
@@ -568,7 +568,7 @@ namespace Bloomie.Areas.Admin.Controllers
                     var batch = await _context.Batches
                         .Include(b => b.BatchFlowerTypes)
                         .FirstOrDefaultAsync(b => b.Id == model.BatchId);
-                    if (batch == null || batch.ExpiryDate <= DateTime.Now)
+                    if (batch == null || batch.ExpiryDate.Date <= DateTime.Now.Date)
                     {
                         ModelState.AddModelError("BatchId", "Lô hàng không tồn tại hoặc đã hết hạn.");
                     }
@@ -632,7 +632,7 @@ namespace Bloomie.Areas.Admin.Controllers
                 .Include(b => b.BatchFlowerTypes)
                 .ThenInclude(bft => bft.FlowerType)
                 .Include(b => b.Supplier)
-                .Where(b => b.ExpiryDate > DateTime.Now && b.BatchFlowerTypes.Any(bft => bft.FlowerTypeId == model.FlowerTypeId))
+                .Where(b => b.ExpiryDate.Date > DateTime.Now.Date && b.BatchFlowerTypes.Any(bft => bft.FlowerTypeId == model.FlowerTypeId))
                 .ToListAsync();
 
             if (!availableBatches.Any())

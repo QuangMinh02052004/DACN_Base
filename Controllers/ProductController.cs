@@ -11,7 +11,6 @@ using Python.Runtime;
 using System.Diagnostics;
 using System.IO;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 
 public class ProductController : Controller
@@ -40,12 +39,15 @@ public class ProductController : Controller
         }
     }
 
-    public ProductController(IProductService productService, ICategoryService categoryService, IPromotionService promotionService, ApplicationDbContext context)
+    private readonly IImageSearchService _imageSearchService;
+
+    public ProductController(IProductService productService, ICategoryService categoryService, IPromotionService promotionService, ApplicationDbContext context, IImageSearchService imageSearchService)
     {
         _productService = productService;
         _categoryService = categoryService;
         _promotionService = promotionService;
         _context = context;
+        _imageSearchService = imageSearchService;
     }
 
     [HttpGet]
@@ -1201,105 +1203,67 @@ public class ProductController : Controller
 
     // Existing ImageSearch and ImageSearchResults actions remain unchanged...
     [HttpPost]
-    [IgnoreAntiforgeryToken]
+    [ValidateAntiForgeryToken]
     [RequestSizeLimit(15 * 1024 * 1024)]
     public async Task<IActionResult> ImageSearch(IFormFile imageFile)
     {
-        if (imageFile == null || imageFile.Length == 0)
-            return Json(new { success = false, message = "No image uploaded" });
-
-        var ext = Path.GetExtension(imageFile.FileName);
-        var tempFile = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString() + ext);
-        using (var fs = new FileStream(tempFile, FileMode.Create))
-        {
-            await imageFile.CopyToAsync(fs);
-        }
-
         try
         {
-            var cwd = Directory.GetCurrentDirectory();
-            var scriptPath = Path.Combine(cwd, "flower-image-search", "predict_image.py");
-            if (!System.IO.File.Exists(scriptPath))
-                return Json(new { success = false, message = "Không tìm thấy predict_image.py trong thư mục flower-image-search." });
-
-            var pythonPath = "/Users/lequangminh/venv_bloomie/bin/python3";
-            if (!System.IO.File.Exists(pythonPath)) pythonPath = "python3";
-
-            var psi = new ProcessStartInfo(pythonPath, $"\"{scriptPath}\" \"{tempFile}\"")
+            if (imageFile == null || imageFile.Length == 0)
             {
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
-            };
+                return Json(new
+                {
+                    success = false,
+                    message = "Không có file ảnh được tải lên."
+                });
+            }
 
-            using (var proc = Process.Start(psi))
+            // Sử dụng ImageSearchService để phân tích ảnh
+            var result = await _imageSearchService.AnalyzeImageAsync(imageFile);
+
+            if (result.Success)
             {
-                if (proc == null)
-                    return Json(new { success = false, message = "Không thể khởi động tiến trình Python." });
-
-                var stdoutTask = proc.StandardOutput.ReadToEndAsync();
-                var stderrTask = proc.StandardError.ReadToEndAsync();
-
-                var finished = proc.WaitForExit(30000);
-                var stdout = await stdoutTask;
-                var stderr = await stderrTask;
-
-                // Làm sạch stdout: lấy từ first '{' hoặc '[' để loại ANSI/garbage
-                string cleaned = stdout ?? "";
-                int firstBrace = cleaned.IndexOf('{');
-                int firstBracket = cleaned.IndexOf('[');
-                int firstPos = -1;
-                if (firstBrace >= 0 && firstBracket >= 0) firstPos = Math.Min(firstBrace, firstBracket);
-                else firstPos = Math.Max(firstBrace, firstBracket);
-                if (firstPos > 0) cleaned = cleaned.Substring(firstPos);
-
-                if (string.IsNullOrWhiteSpace(cleaned) && !string.IsNullOrWhiteSpace(stderr))
+                return Json(new
                 {
-                    int fb = stderr.IndexOf('{');
-                    int fbr = stderr.IndexOf('[');
-                    int pos = -1;
-                    if (fb >= 0 && fbr >= 0) pos = Math.Min(fb, fbr);
-                    else pos = Math.Max(fb, fbr);
-                    if (pos >= 0) cleaned = stderr.Substring(pos);
-                }
-
-                if (string.IsNullOrWhiteSpace(cleaned))
+                    success = true,
+                    message = "Phân tích ảnh thành công!",
+                    colors = result.Colors,
+                    presentation = result.Presentation,
+                    flowers = result.Flowers,
+                    redirectUrl = result.RedirectUrl
+                });
+            }
+            else
+            {
+                return Json(new
                 {
-                    var msg = !string.IsNullOrWhiteSpace(stderr) ? stderr.Trim() : "Script không trả về dữ liệu JSON.";
-                    return Json(new { success = false, message = msg });
-                }
-
-                try
-                {
-                    var j = JObject.Parse(cleaned);
-                    if (!(bool)j.Value<bool>("success"))
-                        return Json(new { success = false, message = j.Value<string>("message") ?? "Prediction failed" });
-
-                    var predictedClass = j.Value<string>("predicted_class") ?? "";
-                    var redirect = Url.Action("Index", "Product", new { searchString = predictedClass });
-                    return Json(new { success = true, redirectUrl = redirect, predictedClass });
-                }
-                catch (Exception parseEx)
-                {
-                    return Json(new { success = false, message = "Không thể parse JSON từ script: " + parseEx.Message, raw = cleaned });
-                }
+                    success = false,
+                    message = result.Message
+                });
             }
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            return Json(new { success = false, message = ex.Message });
-        }
-        finally
-        {
-            try { System.IO.File.Delete(tempFile); } catch { }
+            return Json(new
+            {
+                success = false,
+                message = "Đã có lỗi xảy ra khi phân tích ảnh. Vui lòng thử lại."
+            });
         }
     }
 
     [HttpGet]
-    public async Task<IActionResult> ImageSearchResults(string colors, string presentations)
+    public async Task<IActionResult> ImageSearchResults(string flowerTypes, string colors, string recognizedFlower, float confidence = 0)
     {
-        var colorList = colors?.Split(',').Select(c => c.Trim().ToLower()).ToList() ?? new List<string>();
+        // Parse parameters
+        var flowerTypeList = flowerTypes?.Split(',').Select(f => f.Trim()).Where(f => !string.IsNullOrEmpty(f)).ToList() ?? new List<string>();
+        var colorList = colors?.Split(',').Select(c => c.Trim()).Where(c => !string.IsNullOrEmpty(c)).ToList() ?? new List<string>();
+
+        // Log tìm kiếm
+        Console.WriteLine($"=== IMAGE SEARCH RESULTS ===");
+        Console.WriteLine($"Recognized Flower: {recognizedFlower} (Confidence: {confidence:P2})");
+        Console.WriteLine($"Flower Types: {string.Join(", ", flowerTypeList)}");
+        Console.WriteLine($"Colors: {string.Join(", ", colorList)}");
 
         var products = await _productService.GetAllProductsAsync();
         products = products.Where(p => p.IsActive).ToList();
@@ -1342,7 +1306,7 @@ public class ProductController : Controller
                 Rating = averageRating,
                 Occasion = occasion,
                 Object = objectValue,
-                PresentationStyle = product.PresentationStyle?.Name?.ToLower() ?? "không xác định",
+                PresentationStyle = product.PresentationStyle?.Name ?? "Không xác định",
                 Colors = GetColorsForProduct(product.Id),
                 FlowerTypes = flowerTypesForProduct
             };
@@ -1350,15 +1314,60 @@ public class ProductController : Controller
         }
 
         Console.WriteLine($"Total Active Products: {products.Count()}");
-        Console.WriteLine($"Search Colors: {string.Join(", ", colorList)}");
 
-        productsWithRating = productsWithRating
-            .Where(p => colorList.Any() && p.Colors.Any(c => colorList.Contains(c)))
-            .Take(20)
-            .ToList();
+        // Tìm kiếm thông minh: Ưu tiên loại hoa, sau đó màu sắc
+        var filteredProducts = productsWithRating.AsEnumerable();
 
-        Console.WriteLine($"Final Filtered Products Count: {productsWithRating.Count}");
+        // 1. Tìm theo loại hoa (chính xác nhất)
+        if (flowerTypeList.Any())
+        {
+            filteredProducts = filteredProducts.Where(p =>
+                p.FlowerTypes.Any(ft => flowerTypeList.Any(searchFlower =>
+                    ft.Contains(searchFlower, StringComparison.OrdinalIgnoreCase) ||
+                    searchFlower.Contains(ft, StringComparison.OrdinalIgnoreCase)
+                ))
+            );
 
+            Console.WriteLine($"After Flower Type Filter: {filteredProducts.Count()} products");
+        }
+
+        // 2. Nếu không tìm thấy theo loại hoa, thử tìm theo màu sắc
+        if (!filteredProducts.Any() && colorList.Any())
+        {
+            Console.WriteLine("No products found by flower type. Searching by color...");
+            filteredProducts = productsWithRating.Where(p =>
+                p.Colors.Any(c => colorList.Any(searchColor =>
+                    c.Contains(searchColor, StringComparison.OrdinalIgnoreCase) ||
+                    searchColor.Contains(c, StringComparison.OrdinalIgnoreCase)
+                ))
+            );
+
+            Console.WriteLine($"After Color Filter: {filteredProducts.Count()} products");
+        }
+        // 3. Nếu có cả loại hoa và màu, có thể kết hợp (optional)
+        else if (filteredProducts.Any() && colorList.Any())
+        {
+            // Refine further by color if we have color info
+            var refinedByColor = filteredProducts.Where(p =>
+                p.Colors.Any(c => colorList.Any(searchColor =>
+                    c.Contains(searchColor, StringComparison.OrdinalIgnoreCase) ||
+                    searchColor.Contains(c, StringComparison.OrdinalIgnoreCase)
+                ))
+            ).ToList();
+
+            if (refinedByColor.Any())
+            {
+                filteredProducts = refinedByColor;
+                Console.WriteLine($"Refined by Color: {filteredProducts.Count()} products");
+            }
+        }
+
+        // Limit to 20 results
+        var finalProducts = filteredProducts.Take(20).ToList();
+
+        Console.WriteLine($"Final Results: {finalProducts.Count} products");
+
+        // Prepare ViewBag data
         var parentCategories = allCategories.Where(c => c.ParentCategoryId == null)
                                            .OrderBy(c => c.Name)
                                            .ToList();
@@ -1378,8 +1387,11 @@ public class ProductController : Controller
         ViewBag.Categories = parentCategories ?? new List<Category>();
         ViewBag.Presentations = presentationStyles.Any() ? presentationStyles : new List<string> { "Không có kiểu trình bày" };
         ViewBag.SearchColors = colorList;
+        ViewBag.SearchFlowerTypes = flowerTypeList;
+        ViewBag.RecognizedFlower = recognizedFlower;
+        ViewBag.Confidence = confidence;
         ViewBag.SearchPresentations = new List<string>();
 
-        return View(productsWithRating);
+        return View(finalProducts);
     }
 }

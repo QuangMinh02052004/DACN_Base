@@ -1,39 +1,216 @@
-﻿@model List<Bloomie.Models.ViewModels.ProductViewModel.ProductWithRating>
+@model List<Bloomie.Models.ViewModels.ProductViewModel.ProductWithRating>
 
 @{
     var searchColors = ViewBag.SearchColors as List<string> ?? new List<string>();
+    var searchFlowerTypes = ViewBag.SearchFlowerTypes as List<string> ?? new List<string>();
     var searchPresentations = ViewBag.SearchPresentations as List<string> ?? new List<string>();
+    var recognizedFlower = ViewBag.RecognizedFlower as string ?? "";
+    var confidence = ViewBag.Confidence as float? ?? 0f;
+}
+
+<style>
+    .recognition-info {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    }
+
+    .recognition-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .flower-name {
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin: 10px 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .confidence-bar {
+        background: rgba(255,255,255,0.3);
+        height: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .confidence-fill {
+        background: linear-gradient(90deg, #4ade80, #22c55e);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        transition: width 0.8s ease;
+    }
+
+    .search-criteria {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        border-left: 5px solid #667eea;
+    }
+
+    .search-tag {
+        display: inline-block;
+        background: #667eea;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+
+    .results-count {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .hover-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+    }
+</style>
+
+<!-- Thông tin nhận dạng -->
+@if (!string.IsNullOrEmpty(recognizedFlower))
+{
+    <div class="recognition-info">
+        <h2>🌸 Kết quả nhận dạng hình ảnh</h2>
+        <div class="flower-name">@recognizedFlower</div>
+        <div>
+            <small>Độ tin cậy:</small>
+            <div class="confidence-bar">
+                <div class="confidence-fill" style="width: @((confidence * 100).ToString("F0"))%">
+                    @((confidence * 100).ToString("F1"))%
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Tiêu chí tìm kiếm -->
+@if (searchFlowerTypes.Any() || searchColors.Any())
+{
+    <div class="search-criteria">
+        <h4><i class="bi bi-funnel"></i> Tìm kiếm theo:</h4>
+
+        @if (searchFlowerTypes.Any())
+        {
+            <div class="mt-2">
+                <strong>Loại hoa:</strong>
+                @foreach (var flowerType in searchFlowerTypes)
+                {
+                    <span class="search-tag">@flowerType</span>
+                }
+            </div>
+        }
+
+        @if (searchColors.Any())
+        {
+            <div class="mt-2">
+                <strong>Màu sắc:</strong>
+                @foreach (var color in searchColors)
+                {
+                    <span class="search-tag" style="background: #e74c3c;">@color</span>
+                }
+            </div>
+        }
+    </div>
 }
 
 <h2>Kết quả tìm kiếm</h2>
 
-@if (searchColors.Any() || searchPresentations.Any())
-{
-    <p>
-        Kết quả tìm kiếm theo:
-        <strong>Màu sắc:</strong> @string.Join(", ", searchColors) 
-    </p>
-}
-
 @if (Model.Any())
 {
+    <div class="results-count">
+        <i class="bi bi-check-circle-fill text-success"></i>
+        Tìm thấy <strong>@Model.Count</strong> sản phẩm phù hợp
+    </div>
+
     <div class="row">
         @foreach (var product in Model)
         {
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="@product.Product.ImageUrl" class="card-img-top" alt="@product.Product.Name" />
-                    <div class="card-body">
-                        <h5 class="card-title">@product.Product.Name</h5>
-                        <p class="card-text">@product.Product.Description</p>
-                        <p><strong>Giá:</strong> @product.Product.Price.ToString("N0") VNĐ</p>
-                        <p><strong>Đánh giá:</strong> @product.Rating.ToString("0.0") / 5</p>
-                        <p><strong>Màu sắc:</strong> @string.Join(", ", product.Colors)</p> <!-- Hiển thị nhiều màu -->
-                        <p><strong>Kiểu trình bày:</strong> @product.PresentationStyle</p>
-                        <p><strong>Chủ đề:</strong> @product.Occasion</p>
-                        <p><strong>Đối tượng:</strong> @product.Object</p>
-                        <p><strong>Loại hoa:</strong> @string.Join(", ", product.FlowerTypes)</p>
-                    </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm hover-card">
+                    <a href="@Url.Action("Display", "Product", new { id = product.Product.Id })" style="text-decoration: none; color: inherit;">
+                        @if (!string.IsNullOrEmpty(product.Product.ImageUrl))
+                        {
+                            <img src="@product.Product.ImageUrl" class="card-img-top" alt="@product.Product.Name" style="height: 250px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <div class="bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <span class="text-muted">Không có hình ảnh</span>
+                            </div>
+                        }
+
+                        <div class="card-body">
+                            <h5 class="card-title text-truncate">@product.Product.Name</h5>
+
+                            <!-- Giá -->
+                            <div class="mb-2">
+                                @if (product.Product.DiscountPercentage.HasValue && product.Product.DiscountPercentage > 0)
+                                {
+                                    <span class="text-muted text-decoration-line-through">@product.Product.Price.ToString("N0") đ</span>
+                                    <span class="text-danger fw-bold d-block">@product.Product.DiscountPrice.Value.ToString("N0") đ</span>
+                                    <span class="badge bg-danger">-@product.Product.DiscountPercentage%</span>
+                                }
+                                else
+                                {
+                                    <span class="text-danger fw-bold">@product.Product.Price.ToString("N0") đ</span>
+                                }
+                            </div>
+
+                            <!-- Đánh giá -->
+                            <div class="mb-2">
+                                @{
+                                    int fullStars = (int)product.Rating;
+                                    bool hasHalfStar = (double)product.Rating - fullStars >= 0.5;
+                                    int emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+                                }
+                                @for (int i = 0; i < fullStars; i++)
+                                {
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                }
+                                @if (hasHalfStar)
+                                {
+                                    <i class="bi bi-star-half text-warning"></i>
+                                }
+                                @for (int i = 0; i < emptyStars; i++)
+                                {
+                                    <i class="bi bi-star text-warning"></i>
+                                }
+                                <small class="text-muted">(@product.Rating.ToString("0.0"))</small>
+                            </div>
+
+                            <!-- Thông tin -->
+                            @if (product.FlowerTypes.Any())
+                            {
+                                <p class="card-text small mb-1">
+                                    <i class="bi bi-flower1"></i> <strong>Loại hoa:</strong> @string.Join(", ", product.FlowerTypes.Take(2))
+                                </p>
+                            }
+
+                            @if (product.Colors.Any())
+                            {
+                                <p class="card-text small mb-1">
+                                    <i class="bi bi-palette"></i> <strong>Màu:</strong> @string.Join(", ", product.Colors.Take(3))
+                                </p>
+                            }
+                        </div>
+                    </a>
                 </div>
             </div>
         }
@@ -41,5 +218,15 @@
 }
 else
 {
-    <p class="text-center">Không tìm thấy sản phẩm phù hợp.</p>
+    <div class="alert alert-warning text-center" role="alert">
+        <i class="bi bi-exclamation-triangle fs-1"></i>
+        <h4 class="mt-3">Không tìm thấy sản phẩm phù hợp</h4>
+        <p>Hệ thống không tìm thấy sản phẩm nào khớp với hoa <strong>@recognizedFlower</strong></p>
+        <p class="mb-3">Gợi ý:</p>
+        <ul class="list-unstyled">
+            <li>✓ Thử chụp ảnh từ góc độ khác</li>
+            <li>✓ Đảm bảo hình ảnh rõ nét và có ánh sáng tốt</li>
+            <li>✓ Hoặc <a href="@Url.Action("Index", "Product")" class="alert-link">xem tất cả sản phẩm</a></li>
+        </ul>
+    </div>
 }

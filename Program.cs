@@ -90,12 +90,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 // Cấu hình xác thực qua Google, Facebook, Twitter
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-}).AddCookie().AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+builder.Services.AddAuthentication().AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
 {
     options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
     options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
@@ -139,6 +134,10 @@ builder.Services.AddScoped<IInventoryService, InventoryService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<ICustomArrangementService, CustomArrangementService>();
+builder.Services.AddScoped<IImageSearchService, ImageSearchService>();
+
+// Cấu hình HttpClient cho ImageSearchService
+builder.Services.AddHttpClient<IImageSearchService, ImageSearchService>();
 
 // Cấu hình Excel (EPPlus)
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;

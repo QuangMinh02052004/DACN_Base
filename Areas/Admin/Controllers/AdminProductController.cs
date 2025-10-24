@@ -40,6 +40,12 @@ namespace Bloomie.Areas.Admin.Controllers
 
         private async Task<(bool Success, List<string> Colors, string Presentation, string Message)> AnalyzeImage(string imagePath)
         {
+            // Tạm thời vô hiệu hóa phân tích hình ảnh để tránh lỗi khi thêm sản phẩm
+            // Trả về kết quả mặc định thành công với danh sách màu trống
+            return await Task.FromResult((true, new List<string>(), string.Empty, "Phân tích hình ảnh đã được tạm thời vô hiệu hóa"));
+
+            // Code cũ được comment lại để tham khảo:
+            /*
             try
             {
                 var scriptPath = Path.Combine(Directory.GetCurrentDirectory(), "Scripts", "inference.py");
@@ -110,6 +116,7 @@ namespace Bloomie.Areas.Admin.Controllers
             {
                 return (false, new List<string>(), string.Empty, $"Lỗi phân tích: {ex.Message}");
             }
+            */
         }
 
         public async Task<IActionResult> Index(string searchString, int pageNumber = 1, int pageSize = 20)
@@ -199,17 +206,19 @@ namespace Bloomie.Areas.Admin.Controllers
                         var imagePath = await SaveImage(imageUrl);
                         product.ImageUrl = imagePath;
 
-                        // Phân tích hình ảnh để lấy màu sắc
+                        // Phân tích hình ảnh để lấy màu sắc (tạm thời vô hiệu hóa)
                         var fullImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath.TrimStart('/'));
                         var analysisResult = await AnalyzeImage(fullImagePath);
                         if (analysisResult.Success)
                         {
-                            product.Colors = System.Text.Json.JsonSerializer.Serialize(analysisResult.Colors);
+                            // Tạm thời set màu mặc định nếu không có phân tích
+                            product.Colors = System.Text.Json.JsonSerializer.Serialize(analysisResult.Colors.Any() ? analysisResult.Colors : new List<string> { "Đa màu" });
                         }
                         else
                         {
-                            ModelState.AddModelError("imageUrl", $"Không thể phân tích hình ảnh: {analysisResult.Message}");
-                            throw new Exception($"Phân tích hình ảnh thất bại: {analysisResult.Message}");
+                            // Không throw exception nữa, chỉ ghi log và tiếp tục
+                            Console.WriteLine($"Cảnh báo: Không thể phân tích hình ảnh: {analysisResult.Message}");
+                            product.Colors = System.Text.Json.JsonSerializer.Serialize(new List<string> { "Đa màu" });
                         }
                     }
                     else
@@ -247,8 +256,9 @@ namespace Bloomie.Areas.Admin.Controllers
                             throw new Exception($"Số lượng tồn kho của {existingFlowerType.Name} không đủ. Cần {totalFlowersNeeded} bông, nhưng chỉ có {existingFlowerType.Quantity} trong kho.");
                         }
 
+                        var currentDate = DateTime.Now.Date; // Chỉ lấy phần ngày, bỏ time
                         var batchFlowerTypes = existingFlowerType.BatchFlowerTypes?
-                            .Where(bft => bft.CurrentQuantity > 0 && bft.Batch != null && bft.Batch.ExpiryDate > DateTime.Now)
+                            .Where(bft => bft.CurrentQuantity > 0 && bft.Batch != null && bft.Batch.ExpiryDate.Date >= currentDate)
                             .OrderBy(bft => bft.Batch.ExpiryDate)
                             .ToList() ?? new List<BatchFlowerType>();
                         if (!batchFlowerTypes.Any())
@@ -259,7 +269,9 @@ namespace Bloomie.Areas.Admin.Controllers
                                     bft.FlowerTypeId,
                                     bft.CurrentQuantity,
                                     BatchExists = bft.Batch != null,
-                                    ExpiryDate = bft.Batch?.ExpiryDate
+                                    ExpiryDate = bft.Batch?.ExpiryDate,
+                                    CurrentDate = currentDate,
+                                    IsExpired = bft.Batch?.ExpiryDate.Date < currentDate
                                 })
                                 .ToList();
                             throw new Exception($"Không có lô hoa nào còn hạn sử dụng cho {existingFlowerType.Name}. Debug Info: {System.Text.Json.JsonSerializer.Serialize(debugInfo)}");
@@ -440,17 +452,19 @@ namespace Bloomie.Areas.Admin.Controllers
                         var imagePath = await SaveImage(imageUrl);
                         existingProduct.ImageUrl = imagePath;
 
-                        // Phân tích hình ảnh để lấy màu sắc
+                        // Phân tích hình ảnh để lấy màu sắc (tạm thời vô hiệu hóa)
                         var fullImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", imagePath.TrimStart('/'));
                         var analysisResult = await AnalyzeImage(fullImagePath);
                         if (analysisResult.Success)
                         {
-                            existingProduct.Colors = System.Text.Json.JsonSerializer.Serialize(analysisResult.Colors);
+                            // Tạm thời set màu mặc định nếu không có phân tích
+                            existingProduct.Colors = System.Text.Json.JsonSerializer.Serialize(analysisResult.Colors.Any() ? analysisResult.Colors : new List<string> { "Đa màu" });
                         }
                         else
                         {
-                            ModelState.AddModelError("imageUrl", $"Không thể phân tích hình ảnh: {analysisResult.Message}");
-                            throw new Exception($"Phân tích hình ảnh thất bại: {analysisResult.Message}");
+                            // Không throw exception nữa, chỉ ghi log và tiếp tục
+                            Console.WriteLine($"Cảnh báo: Không thể phân tích hình ảnh: {analysisResult.Message}");
+                            existingProduct.Colors = System.Text.Json.JsonSerializer.Serialize(new List<string> { "Đa màu" });
                         }
                     }
 
@@ -497,8 +511,9 @@ namespace Bloomie.Areas.Admin.Controllers
                                 throw new Exception($"Số lượng tồn kho của {existingFlowerType.Name} không đủ. Cần {flowerDifference} bông, nhưng chỉ có {existingFlowerType.Quantity} trong kho.");
                             }
 
+                            var currentDate = DateTime.Now.Date;
                             var batchFlowerTypes = existingFlowerType.BatchFlowerTypes
-                                .Where(bft => bft.CurrentQuantity > 0 && bft.Batch != null && bft.Batch.ExpiryDate > DateTime.Now)
+                                .Where(bft => bft.CurrentQuantity > 0 && bft.Batch != null && bft.Batch.ExpiryDate.Date >= currentDate)
                                 .OrderBy(bft => bft.Batch.ExpiryDate)
                                 .ToList();
                             int remainingFlowersNeeded = flowerDifference;
@@ -527,8 +542,9 @@ namespace Bloomie.Areas.Admin.Controllers
                         else if (flowerDifference < 0)
                         {
                             int flowersToAdd = -flowerDifference; // Số hoa cần cộng lại
+                            var currentDate = DateTime.Now.Date;
                             var batchFlowerTypes = existingFlowerType.BatchFlowerTypes
-                                .Where(bft => bft.Batch != null && bft.Batch.ExpiryDate > DateTime.Now)
+                                .Where(bft => bft.Batch != null && bft.Batch.ExpiryDate.Date >= currentDate)
                                 .OrderBy(bft => bft.Batch.ExpiryDate)
                                 .ToList();
                             int remainingFlowersToAdd = flowersToAdd;
@@ -633,8 +649,9 @@ namespace Bloomie.Areas.Admin.Controllers
                 var existingFlowerType = ftp.FlowerType;
                 if (existingFlowerType != null)
                 {
+                    var currentDate = DateTime.Now.Date;
                     var batchFlowerTypes = existingFlowerType.BatchFlowerTypes
-                        .Where(bft => bft.Batch != null && bft.Batch.ExpiryDate > DateTime.Now)
+                        .Where(bft => bft.Batch != null && bft.Batch.ExpiryDate.Date >= currentDate)
                         .OrderBy(bft => bft.Batch.ExpiryDate)
                         .ToList();
                     int remainingFlowersToAdd = totalFlowersUsed;

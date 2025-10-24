@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bloomie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6a7c83df488829242ffa5db9b4d00f256fd0d74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+582a0f6cb33408f7c6790f769d69625daf086303")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bloomie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bloomie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

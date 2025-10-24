@@ -112,7 +112,8 @@ namespace Bloomie.Services.Implementations
                 imageContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/jpeg");
                 content.Add(imageContent, "image", fileName);
 
-                var response = await _httpClient.PostAsync($"{_pythonApiUrl}/predict", content);
+                // Use enhanced API endpoint
+                var response = await _httpClient.PostAsync($"{_pythonApiUrl}/search-by-image", content);
 
                 if (!response.IsSuccessStatusCode)
                 {

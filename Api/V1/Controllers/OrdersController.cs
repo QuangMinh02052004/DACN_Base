@@ -1,0 +1,376 @@
+using Bloomie.Api.V1.DTOs.Requests;
+using Bloomie.Api.V1.DTOs.Responses;
+using Bloomie.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+
+namespace Bloomie.Api.V1.Controllers;
+
+/// <summary>
+/// API Controller cho Orders
+/// </summary>
+[ApiController]
+[Route("api/v1/[controller]")]
+[Produces("application/json")]
+[Authorize]
+public class OrdersController : ControllerBase
+{
+    private readonly IOrderService _orderService;
+    private readonly ILogger<OrdersController> _logger;
+
+    public OrdersController(
+        IOrderService orderService,
+        ILogger<OrdersController> logger)
+    {
+        _orderService = orderService;
+        _logger = logger;
+    }
+
+    /// <summary>
+    /// Lấy danh sách orders của user hiện tại
+    /// </summary>
+    [HttpGet]
+    public async Task<ActionResult<ApiResponse<List<OrderDto>>>> GetMyOrders([FromQuery] OrderSearchRequest request)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(ApiResponse<List<OrderDto>>.ErrorResponse("Unauthorized"));
+            }
+
+            var orders = await _orderService.GetOrdersByUserIdAsync(userId);
+
+            // Apply filters
+            if (!string.IsNullOrEmpty(request.OrderCode))
+            {
+                orders = orders.Where(o => o.OrderCode?.Contains(request.OrderCode, StringComparison.OrdinalIgnoreCase) == true).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(request.Status))
+            {
+                orders = orders.Where(o => o.Status == request.Status).ToList();
+            }
+
+            if (request.FromDate.HasValue)
+            {
+                orders = orders.Where(o => o.OrderDate >= request.FromDate.Value).ToList();
+            }
+
+            if (request.ToDate.HasValue)
+            {
+                orders = orders.Where(o => o.OrderDate <= request.ToDate.Value).ToList();
+            }
+
+            // Apply sorting
+            orders = request.SortDescending
+                ? orders.OrderByDescending(o => o.OrderDate).ToList()
+                : orders.OrderBy(o => o.OrderDate).ToList();
+
+            // Calculate pagination
+            var totalCount = orders.Count;
+            var totalPages = (int)Math.Ceiling(totalCount / (double)request.PageSize);
+            var pagedOrders = orders
+                .Skip((request.Page - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .ToList();
+
+            // Map to DTOs
+            var orderDtos = pagedOrders.Select(o => new OrderDto
+            {
+                OrderId = o.OrderId,
+                OrderCode = o.OrderCode ?? "",
+                OrderDate = o.OrderDate,
+                Status = o.Status,
+                TotalAmount = o.TotalAmount,
+                CustomerName = o.CustomerName,
+                CustomerPhone = o.CustomerPhone,
+                ShippingAddress = o.ShippingAddress,
+                PaymentMethod = o.PaymentMethod,
+                PaymentStatus = o.Payment?.Status,
+                DeliveryDate = o.DeliveryDate,
+                Notes = o.Notes
+            }).ToList();
+
+            var paginationMeta = new PaginationMeta
+            {
+                CurrentPage = request.Page,
+                PageSize = request.PageSize,
+                TotalPages = totalPages,
+                TotalCount = totalCount
+            };
+
+            return Ok(ApiResponse<List<OrderDto>>.SuccessResponseWithPagination(
+                orderDtos,
+                paginationMeta,
+                "Lấy danh sách đơn hàng thành công"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting user orders");
+            return StatusCode(500, ApiResponse<List<OrderDto>>.ErrorResponse("Đã xảy ra lỗi khi lấy danh sách đơn hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Lấy chi tiết order theo ID
+    /// </summary>
+    [HttpGet("{id}")]
+    public async Task<ActionResult<ApiResponse<OrderDetailDto>>> GetOrderById(int id)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userRoles = User.FindAll(ClaimTypes.Role).Select(c => c.Value).ToList();
+
+            var order = await _orderService.GetOrderByIdAsync(id);
+
+            if (order == null)
+            {
+                return NotFound(ApiResponse<OrderDetailDto>.ErrorResponse("Không tìm thấy đơn hàng"));
+            }
+
+            // Check if user owns this order or is Admin/Staff
+            if (order.UserId != userId && !userRoles.Any(r => r == "Admin" || r == "Staff" || r == "Manager"))
+            {
+                return Forbid();
+            }
+
+            var orderDto = new OrderDetailDto
+            {
+                OrderId = order.OrderId,
+                OrderCode = order.OrderCode ?? "",
+                OrderDate = order.OrderDate,
+                Status = order.Status,
+                TotalAmount = order.TotalAmount,
+                CustomerName = order.CustomerName,
+                CustomerPhone = order.CustomerPhone,
+                ShippingAddress = order.ShippingAddress,
+                PaymentMethod = order.PaymentMethod,
+                PaymentStatus = order.Payment?.Status,
+                DeliveryDate = order.DeliveryDate,
+                Notes = order.Notes,
+                OrderItems = order.OrderDetails?.Select(od => new OrderItemDto
+                {
+                    OrderDetailId = od.OrderDetailId,
+                    ProductId = od.ProductId,
+                    ProductName = od.Product?.ProductName ?? "",
+                    ProductImage = od.Product?.ProductImages?.FirstOrDefault(img => img.IsPrimary)?.ImageUrl,
+                    Quantity = od.Quantity,
+                    UnitPrice = od.UnitPrice,
+                    TotalPrice = od.TotalPrice
+                }).ToList() ?? new List<OrderItemDto>(),
+                StatusHistory = order.OrderStatusHistories?.Select(h => new OrderStatusHistoryDto
+                {
+                    HistoryId = h.HistoryId,
+                    Status = h.Status,
+                    Notes = h.Notes,
+                    ChangedAt = h.ChangedAt,
+                    ChangedBy = h.ChangedBy
+                }).OrderBy(h => h.ChangedAt).ToList() ?? new List<OrderStatusHistoryDto>(),
+                ShippingInfo = order.Shipping != null ? new ShippingInfoDto
+                {
+                    ShippingId = order.Shipping.ShippingId,
+                    ShippingMethod = order.Shipping.ShippingMethod,
+                    ShippingFee = order.Shipping.ShippingFee,
+                    TrackingNumber = order.Shipping.TrackingNumber,
+                    ShippingAddress = order.Shipping.ShippingAddress,
+                    EstimatedDelivery = order.Shipping.EstimatedDelivery,
+                    ActualDelivery = order.Shipping.ActualDelivery
+                } : null,
+                PaymentInfo = order.Payment != null ? new PaymentInfoDto
+                {
+                    PaymentId = order.Payment.PaymentId,
+                    PaymentMethod = order.Payment.PaymentMethod,
+                    Amount = order.Payment.Amount,
+                    Status = order.Payment.Status,
+                    PaidAt = order.Payment.PaidAt,
+                    TransactionId = order.Payment.TransactionId
+                } : null
+            };
+
+            return Ok(ApiResponse<OrderDetailDto>.SuccessResponse(orderDto, "Lấy thông tin đơn hàng thành công"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting order by id {OrderId}", id);
+            return StatusCode(500, ApiResponse<OrderDetailDto>.ErrorResponse("Đã xảy ra lỗi khi lấy thông tin đơn hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Tạo order mới
+    /// </summary>
+    [HttpPost]
+    public async Task<ActionResult<ApiResponse<OrderDetailDto>>> CreateOrder([FromBody] CreateOrderRequest request)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(ApiResponse<OrderDetailDto>.ErrorResponse("Unauthorized"));
+            }
+
+            // TODO: Implement create order logic using IOrderService
+            // This requires updating IOrderService to add CreateOrderAsync method
+
+            return StatusCode(501, ApiResponse<OrderDetailDto>.ErrorResponse("Chức năng đang được phát triển"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error creating order");
+            return StatusCode(500, ApiResponse<OrderDetailDto>.ErrorResponse("Đã xảy ra lỗi khi tạo đơn hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Cập nhật trạng thái order (Admin/Staff only)
+    /// </summary>
+    [HttpPatch("{id}/status")]
+    [Authorize(Roles = "Admin,Staff,Manager")]
+    public async Task<ActionResult<ApiResponse<OrderDto>>> UpdateOrderStatus(int id, [FromBody] UpdateOrderStatusRequest request)
+    {
+        try
+        {
+            var order = await _orderService.GetOrderByIdAsync(id);
+            if (order == null)
+            {
+                return NotFound(ApiResponse<OrderDto>.ErrorResponse("Không tìm thấy đơn hàng"));
+            }
+
+            // TODO: Implement update order status logic
+            // This requires updating IOrderService
+
+            return StatusCode(501, ApiResponse<OrderDto>.ErrorResponse("Chức năng đang được phát triển"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating order status {OrderId}", id);
+            return StatusCode(500, ApiResponse<OrderDto>.ErrorResponse("Đã xảy ra lỗi khi cập nhật trạng thái đơn hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Hủy order
+    /// </summary>
+    [HttpPost("{id}/cancel")]
+    public async Task<ActionResult<ApiResponse<OrderDto>>> CancelOrder(int id)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var order = await _orderService.GetOrderByIdAsync(id);
+
+            if (order == null)
+            {
+                return NotFound(ApiResponse<OrderDto>.ErrorResponse("Không tìm thấy đơn hàng"));
+            }
+
+            // Check if user owns this order
+            if (order.UserId != userId)
+            {
+                return Forbid();
+            }
+
+            // TODO: Implement cancel order logic
+            // This requires updating IOrderService
+
+            return StatusCode(501, ApiResponse<OrderDto>.ErrorResponse("Chức năng đang được phát triển"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error cancelling order {OrderId}", id);
+            return StatusCode(500, ApiResponse<OrderDto>.ErrorResponse("Đã xảy ra lỗi khi hủy đơn hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Lấy tất cả orders (Admin/Staff only)
+    /// </summary>
+    [HttpGet("all")]
+    [Authorize(Roles = "Admin,Staff,Manager")]
+    public async Task<ActionResult<ApiResponse<List<OrderDto>>>> GetAllOrders([FromQuery] OrderSearchRequest request)
+    {
+        try
+        {
+            var orders = await _orderService.GetAllOrdersAsync();
+
+            // Apply filters (same as GetMyOrders)
+            if (!string.IsNullOrEmpty(request.OrderCode))
+            {
+                orders = orders.Where(o => o.OrderCode?.Contains(request.OrderCode, StringComparison.OrdinalIgnoreCase) == true).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(request.Status))
+            {
+                orders = orders.Where(o => o.Status == request.Status).ToList();
+            }
+
+            if (request.FromDate.HasValue)
+            {
+                orders = orders.Where(o => o.OrderDate >= request.FromDate.Value).ToList();
+            }
+
+            if (request.ToDate.HasValue)
+            {
+                orders = orders.Where(o => o.OrderDate <= request.ToDate.Value).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(request.CustomerName))
+            {
+                orders = orders.Where(o => o.CustomerName?.Contains(request.CustomerName, StringComparison.OrdinalIgnoreCase) == true).ToList();
+            }
+
+            // Apply sorting
+            orders = request.SortDescending
+                ? orders.OrderByDescending(o => o.OrderDate).ToList()
+                : orders.OrderBy(o => o.OrderDate).ToList();
+
+            // Calculate pagination
+            var totalCount = orders.Count;
+            var totalPages = (int)Math.Ceiling(totalCount / (double)request.PageSize);
+            var pagedOrders = orders
+                .Skip((request.Page - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .ToList();
+
+            // Map to DTOs
+            var orderDtos = pagedOrders.Select(o => new OrderDto
+            {
+                OrderId = o.OrderId,
+                OrderCode = o.OrderCode ?? "",
+                OrderDate = o.OrderDate,
+                Status = o.Status,
+                TotalAmount = o.TotalAmount,
+                CustomerName = o.CustomerName,
+                CustomerPhone = o.CustomerPhone,
+                ShippingAddress = o.ShippingAddress,
+                PaymentMethod = o.PaymentMethod,
+                PaymentStatus = o.Payment?.Status,
+                DeliveryDate = o.DeliveryDate,
+                Notes = o.Notes
+            }).ToList();
+
+            var paginationMeta = new PaginationMeta
+            {
+                CurrentPage = request.Page,
+                PageSize = request.PageSize,
+                TotalPages = totalPages,
+                TotalCount = totalCount
+            };
+
+            return Ok(ApiResponse<List<OrderDto>>.SuccessResponseWithPagination(
+                orderDtos,
+                paginationMeta,
+                "Lấy danh sách đơn hàng thành công"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting all orders");
+            return StatusCode(500, ApiResponse<List<OrderDto>>.ErrorResponse("Đã xảy ra lỗi khi lấy danh sách đơn hàng"));
+        }
+    }
+}

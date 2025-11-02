@@ -1,0 +1,299 @@
+using Bloomie.Api.V1.DTOs.Requests;
+using Bloomie.Api.V1.DTOs.Responses;
+using Bloomie.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+
+namespace Bloomie.Api.V1.Controllers;
+
+/// <summary>
+/// API Controller cho Shopping Cart
+/// </summary>
+[ApiController]
+[Route("api/v1/[controller]")]
+[Produces("application/json")]
+[Authorize]
+public class CartController : ControllerBase
+{
+    private readonly ApplicationDbContext _context;
+    private readonly ILogger<CartController> _logger;
+
+    public CartController(
+        ApplicationDbContext context,
+        ILogger<CartController> logger)
+    {
+        _context = context;
+        _logger = logger;
+    }
+
+    /// <summary>
+    /// Lấy giỏ hàng của user hiện tại
+    /// </summary>
+    [HttpGet]
+    public async Task<ActionResult<ApiResponse<CartDto>>> GetCart()
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(ApiResponse<CartDto>.ErrorResponse("Unauthorized"));
+            }
+
+            var cart = await _context.ShoppingCarts
+                .Include(c => c.CartItems)
+                    .ThenInclude(ci => ci.Product)
+                        .ThenInclude(p => p.ProductImages)
+                .FirstOrDefaultAsync(c => c.UserId == userId);
+
+            if (cart == null)
+            {
+                // Tạo cart mới nếu chưa có
+                cart = new Models.Entities.ShoppingCart
+                {
+                    UserId = userId,
+                    CreatedAt = DateTime.Now
+                };
+                _context.ShoppingCarts.Add(cart);
+                await _context.SaveChangesAsync();
+            }
+
+            var cartDto = new CartDto
+            {
+                CartId = cart.CartId,
+                UserId = cart.UserId,
+                Items = cart.CartItems?.Select(ci => new CartItemDto
+                {
+                    CartItemId = ci.CartItemId,
+                    ProductId = ci.ProductId,
+                    ProductName = ci.Product?.ProductName ?? "",
+                    ProductImage = ci.Product?.ProductImages?.FirstOrDefault(img => img.IsPrimary)?.ImageUrl,
+                    Price = ci.Product?.Price ?? 0,
+                    Quantity = ci.Quantity,
+                    TotalPrice = (ci.Product?.Price ?? 0) * ci.Quantity,
+                    StockQuantity = ci.Product?.StockQuantity ?? 0,
+                    IsAvailable = ci.Product?.IsAvailable ?? false
+                }).ToList() ?? new List<CartItemDto>(),
+                UpdatedAt = cart.UpdatedAt
+            };
+
+            cartDto.TotalItems = cartDto.Items.Sum(i => i.Quantity);
+            cartDto.SubTotal = cartDto.Items.Sum(i => i.TotalPrice);
+            cartDto.TotalAmount = cartDto.SubTotal - (cartDto.DiscountAmount ?? 0);
+
+            return Ok(ApiResponse<CartDto>.SuccessResponse(cartDto, "Lấy giỏ hàng thành công"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting cart");
+            return StatusCode(500, ApiResponse<CartDto>.ErrorResponse("Đã xảy ra lỗi khi lấy giỏ hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Thêm sản phẩm vào giỏ hàng
+    /// </summary>
+    [HttpPost("items")]
+    public async Task<ActionResult<ApiResponse<CartDto>>> AddToCart([FromBody] AddToCartRequest request)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(ApiResponse<CartDto>.ErrorResponse("Unauthorized"));
+            }
+
+            // Kiểm tra product tồn tại và còn hàng
+            var product = await _context.Products.FindAsync(request.ProductId);
+            if (product == null)
+            {
+                return NotFound(ApiResponse<CartDto>.ErrorResponse("Không tìm thấy sản phẩm"));
+            }
+
+            if (!product.IsAvailable || product.StockQuantity < request.Quantity)
+            {
+                return BadRequest(ApiResponse<CartDto>.ErrorResponse("Sản phẩm không có sẵn hoặc không đủ số lượng"));
+            }
+
+            // Lấy hoặc tạo cart
+            var cart = await _context.ShoppingCarts
+                .Include(c => c.CartItems)
+                .FirstOrDefaultAsync(c => c.UserId == userId);
+
+            if (cart == null)
+            {
+                cart = new Models.Entities.ShoppingCart
+                {
+                    UserId = userId,
+                    CreatedAt = DateTime.Now
+                };
+                _context.ShoppingCarts.Add(cart);
+                await _context.SaveChangesAsync();
+            }
+
+            // Kiểm tra xem product đã có trong cart chưa
+            var existingItem = cart.CartItems?.FirstOrDefault(ci => ci.ProductId == request.ProductId);
+
+            if (existingItem != null)
+            {
+                // Cập nhật quantity
+                existingItem.Quantity += request.Quantity;
+                existingItem.UpdatedAt = DateTime.Now;
+            }
+            else
+            {
+                // Thêm item mới
+                var newItem = new Models.Entities.CartItem
+                {
+                    CartId = cart.CartId,
+                    ProductId = request.ProductId,
+                    Quantity = request.Quantity,
+                    AddedAt = DateTime.Now
+                };
+                _context.CartItems.Add(newItem);
+            }
+
+            cart.UpdatedAt = DateTime.Now;
+            await _context.SaveChangesAsync();
+
+            // Trả về cart mới
+            return await GetCart();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error adding to cart");
+            return StatusCode(500, ApiResponse<CartDto>.ErrorResponse("Đã xảy ra lỗi khi thêm vào giỏ hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Cập nhật số lượng item trong giỏ hàng
+    /// </summary>
+    [HttpPut("items/{itemId}")]
+    public async Task<ActionResult<ApiResponse<CartDto>>> UpdateCartItem(int itemId, [FromBody] UpdateCartItemRequest request)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (itemId != request.CartItemId)
+            {
+                return BadRequest(ApiResponse<CartDto>.ErrorResponse("Cart Item ID không khớp"));
+            }
+
+            var cartItem = await _context.CartItems
+                .Include(ci => ci.Cart)
+                .Include(ci => ci.Product)
+                .FirstOrDefaultAsync(ci => ci.CartItemId == itemId);
+
+            if (cartItem == null)
+            {
+                return NotFound(ApiResponse<CartDto>.ErrorResponse("Không tìm thấy item trong giỏ hàng"));
+            }
+
+            // Kiểm tra quyền sở hữu
+            if (cartItem.Cart?.UserId != userId)
+            {
+                return Forbid();
+            }
+
+            // Kiểm tra số lượng tồn kho
+            if (cartItem.Product == null || cartItem.Product.StockQuantity < request.Quantity)
+            {
+                return BadRequest(ApiResponse<CartDto>.ErrorResponse("Không đủ số lượng trong kho"));
+            }
+
+            cartItem.Quantity = request.Quantity;
+            cartItem.UpdatedAt = DateTime.Now;
+            cartItem.Cart.UpdatedAt = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            return await GetCart();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating cart item {CartItemId}", itemId);
+            return StatusCode(500, ApiResponse<CartDto>.ErrorResponse("Đã xảy ra lỗi khi cập nhật giỏ hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Xóa item khỏi giỏ hàng
+    /// </summary>
+    [HttpDelete("items/{itemId}")]
+    public async Task<ActionResult<ApiResponse<CartDto>>> RemoveFromCart(int itemId)
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var cartItem = await _context.CartItems
+                .Include(ci => ci.Cart)
+                .FirstOrDefaultAsync(ci => ci.CartItemId == itemId);
+
+            if (cartItem == null)
+            {
+                return NotFound(ApiResponse<CartDto>.ErrorResponse("Không tìm thấy item trong giỏ hàng"));
+            }
+
+            // Kiểm tra quyền sở hữu
+            if (cartItem.Cart?.UserId != userId)
+            {
+                return Forbid();
+            }
+
+            _context.CartItems.Remove(cartItem);
+            if (cartItem.Cart != null)
+            {
+                cartItem.Cart.UpdatedAt = DateTime.Now;
+            }
+
+            await _context.SaveChangesAsync();
+
+            return await GetCart();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error removing cart item {CartItemId}", itemId);
+            return StatusCode(500, ApiResponse<CartDto>.ErrorResponse("Đã xảy ra lỗi khi xóa item khỏi giỏ hàng"));
+        }
+    }
+
+    /// <summary>
+    /// Xóa toàn bộ giỏ hàng
+    /// </summary>
+    [HttpDelete]
+    public async Task<ActionResult<ApiResponse<object>>> ClearCart()
+    {
+        try
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(ApiResponse<object>.ErrorResponse("Unauthorized"));
+            }
+
+            var cart = await _context.ShoppingCarts
+                .Include(c => c.CartItems)
+                .FirstOrDefaultAsync(c => c.UserId == userId);
+
+            if (cart != null && cart.CartItems != null)
+            {
+                _context.CartItems.RemoveRange(cart.CartItems);
+                cart.UpdatedAt = DateTime.Now;
+                await _context.SaveChangesAsync();
+            }
+
+            return Ok(ApiResponse<object>.SuccessResponse(null, "Đã xóa toàn bộ giỏ hàng"));
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error clearing cart");
+            return StatusCode(500, ApiResponse<object>.ErrorResponse("Đã xảy ra lỗi khi xóa giỏ hàng"));
+        }
+    }
+}

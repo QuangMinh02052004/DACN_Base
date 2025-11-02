@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
 using Bloomie.Data;
 using Bloomie.Services.Implementations;
 using Bloomie.Services.Interfaces;
@@ -11,6 +15,8 @@ using Bloomie.Models.Entities;
 using Bloomie.Areas.Admin.Models;
 using Bloomie.Middleware;
 using Bloomie.Models.Momo;
+using Bloomie.Api.V1.Helpers;
+using Bloomie.Api.V1.Filters;
 using OfficeOpenXml;
 using Python.Runtime;
 using Bloomie.Hubs;
@@ -46,6 +52,93 @@ builder.Services.AddSession(options =>
 
 // Cấu hình Controllers và Views
 builder.Services.AddControllersWithViews();
+
+// Cấu hình API Controllers
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ApiExceptionFilter>();
+})
+.AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+});
+
+// Cấu hình Swagger/OpenAPI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Bloomie API",
+        Version = "v1",
+        Description = "API cho hệ thống bán hoa Bloomie",
+        Contact = new OpenApiContact
+        {
+            Name = "Bloomie Team",
+            Email = "support@bloomie.com"
+        }
+    });
+
+    // Cấu hình JWT Authentication cho Swagger
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header sử dụng Bearer scheme. \r\n\r\n Nhập 'Bearer' [space] và sau đó nhập token.\r\n\r\nVí dụ: \"Bearer 12345abcdef\"",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name = "Bearer",
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+        }
+    });
+
+    // Thêm XML comments nếu có
+    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+    {
+        c.IncludeXmlComments(xmlPath);
+    }
+});
+
+// Cấu hình CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+
+    options.AddPolicy("AllowSpecificOrigins", policy =>
+    {
+        policy.WithOrigins(
+            "http://localhost:3000",
+            "http://localhost:5173",
+            "http://localhost:4200"
+        )
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials();
+    });
+});
 
 //builder.Services.AddControllers()
 //    .AddApplicationPart(typeof(Bloomie.Areas.Admin.Controllers.NotificationsController).Assembly);
@@ -89,8 +182,53 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
-// Cấu hình xác thực qua Google, Facebook, Twitter
-builder.Services.AddAuthentication().AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
+// Cấu hình JWT Authentication cho API
+var jwtSecretKey = builder.Configuration["Jwt:SecretKey"] ?? "YourSuperSecretKeyThatIsAtLeast32CharactersLong!!!";
+var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "BloomieAPI";
+var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "BloomieClient";
+
+builder.Services.AddScoped<JwtHelper>();
+
+// Cấu hình xác thực qua Google, Facebook, Twitter và JWT
+builder.Services.AddAuthentication(options =>
+{
+    // Giữ Cookie làm default scheme cho MVC
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
+.AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+{
+    options.SaveToken = true;
+    options.RequireHttpsMetadata = false; // Set true trong production
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtIssuer,
+        ValidAudience = jwtAudience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecretKey)),
+        ClockSkew = TimeSpan.Zero
+    };
+
+    // Cho phép JWT token từ query string (cho SignalR)
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            var accessToken = context.Request.Query["access_token"];
+            var path = context.HttpContext.Request.Path;
+            if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/notificationHub"))
+            {
+                context.Token = accessToken;
+            }
+            return Task.CompletedTask;
+        }
+    };
+})
+.AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
 {
     options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
     options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
@@ -189,10 +327,23 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bloomie API V1");
+        c.RoutePrefix = "api/docs"; // Swagger UI sẽ có tại /api/docs
+        c.DocumentTitle = "Bloomie API Documentation";
+    });
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+// Enable CORS
+app.UseCors("AllowSpecificOrigins"); // Hoặc "AllowAll" nếu muốn cho phép tất cả
 
 app.UseStaticFiles();
 app.UseRouting();
@@ -207,13 +358,17 @@ app.UseUserAccessLogging();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHub<NotificationHub>("/notificationHub");
+
+    // API routes (sử dụng attribute routing)
+    endpoints.MapControllers();
+
+    // MVC routes
     endpoints.MapControllerRoute(
         name: "areas",
         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-    //endpoints.MapControllers();
 });
 
 //app.MapAreaControllerRoute(

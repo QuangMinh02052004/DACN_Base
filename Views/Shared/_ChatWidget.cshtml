@@ -1,0 +1,117 @@
+@* AI Chatbot Widget *@
+<div id="bloomie-chat-widget" class="bloomie-chat-widget">
+    <!-- Chat Toggle Button -->
+    <button id="chat-toggle-btn" class="chat-toggle-btn" title="Chat với Bloomie AI">
+        <svg class="chat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="display: none;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+        <span class="notification-badge" id="chat-notification-badge" style="display: none;">1</span>
+    </button>
+
+    <!-- Chat Window -->
+    <div id="chat-window" class="chat-window" style="display: none;">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-header-content">
+                <div class="chat-avatar">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#E91E63"/>
+                        <text x="16" y="21" text-anchor="middle" fill="white" font-size="16" font-weight="bold">B</text>
+                    </svg>
+                </div>
+                <div class="chat-title">
+                    <h4>Bloomie AI</h4>
+                    <p class="chat-status">
+                        <span class="status-indicator"></span>
+                        <span id="chat-status-text">Đang hoạt động</span>
+                    </p>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <button id="chat-minimize-btn" class="chat-action-btn" title="Thu nhỏ">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l10-10"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Conversations Sidebar -->
+        <div id="conversations-sidebar" class="conversations-sidebar">
+            <div class="conversations-header">
+                <h5>Cuộc trò chuyện</h5>
+                <button id="new-conversation-btn" class="new-conversation-btn" title="Cuộc trò chuyện mới">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="conversations-list" class="conversations-list">
+                <!-- Conversations will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="chat-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="welcome-message">
+                    <div class="welcome-icon">🌸</div>
+                    <h3>Chào mừng đến với Bloomie!</h3>
+                    <p>Tôi là trợ lý ảo của Bloomie. Tôi có thể giúp bạn:</p>
+                    <ul>
+                        <li>Tư vấn chọn hoa phù hợp</li>
+                        <li>Tìm sản phẩm theo nhu cầu</li>
+                        <li>Hỗ trợ đặt hàng và thanh toán</li>
+                        <li>Trả lời các câu hỏi về sản phẩm</li>
+                    </ul>
+                    <p><strong>Bạn muốn tôi giúp gì?</strong> 😊</p>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator" style="display: none;">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-container">
+                <form id="chat-form" class="chat-form">
+                    <input
+                        type="text"
+                        id="chat-input"
+                        class="chat-input"
+                        placeholder="Nhập tin nhắn của bạn..."
+                        autocomplete="off"
+                        maxlength="2000"
+                    />
+                    <button type="submit" id="chat-send-btn" class="chat-send-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        </svg>
+                    </button>
+                </form>
+                <div class="chat-hints">
+                    <button class="hint-btn" data-message="Gợi ý hoa tặng sinh nhật">🎂 Hoa sinh nhật</button>
+                    <button class="hint-btn" data-message="Hoa phù hợp cho Valentine">💕 Valentine</button>
+                    <button class="hint-btn" data-message="Các sản phẩm giảm giá">🏷️ Khuyến mãi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include SignalR -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
+
+<!-- Include Chat JavaScript -->
+<script src="~/js/chat-widget.js"></script>
+
+<!-- Include Chat CSS -->
+<link rel="stylesheet" href="~/css/chat-widget.css" />

@@ -2447,3 +2447,9 @@ D:/DO AN/Bloomie/Bloomie/obj/Debug/net8.0/ref/Bloomie.dll
 /Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/project_flowers/class_names.json
 /Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/venv/lib/python3.13/site-packages/setuptools/config/distutils.schema.json
 /Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/venv/lib/python3.13/site-packages/setuptools/config/setuptools.schema.json
+/Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/appsettings.Production.json
+/Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/lequangminh/Documents/DACN_Base-3/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -248,7 +248,49 @@ class EnhancedFlowerRecognitionAPI:
 
         return confidence
 
-    def apply_enhancement_rules(self, flower_name, confidence, color_features):
+    def analyze_flower_shape(self, image):
+        """Phân tích hình dạng hoa để phân biệt rose vs tulip"""
+        from PIL import ImageFilter
+
+        # Convert to grayscale
+        gray_image = image.convert("L")
+
+        # Find edges using PIL
+        edges = gray_image.filter(ImageFilter.FIND_EDGES)
+        edge_array = np.array(edges)
+
+        # Calculate edge density (nhiều edges = nhiều lớp cánh = rose)
+        edge_density = np.sum(edge_array > 30) / edge_array.size
+
+        # Analyze center complexity (rose có tâm phức tạp hơn tulip)
+        center_y, center_x = edge_array.shape[0] // 2, edge_array.shape[1] // 2
+        center_region = edge_array[
+            max(0, center_y - 30) : min(edge_array.shape[0], center_y + 30),
+            max(0, center_x - 30) : min(edge_array.shape[1], center_x + 30),
+        ]
+        center_complexity = (
+            np.sum(center_region > 30) / center_region.size
+            if center_region.size > 0
+            else 0
+        )
+
+        # Calculate variance (rose có texture phức tạp hơn)
+        gray_array = np.array(gray_image)
+        variance = np.var(gray_array)
+
+        return {
+            "edge_density": edge_density,
+            "center_complexity": center_complexity,
+            "variance": variance,
+            "is_layered": edge_density > 0.08
+            and center_complexity > 0.12,  # Rose indicator
+            "is_simple": edge_density < 0.05
+            and center_complexity < 0.08,  # Tulip indicator
+        }
+
+    def apply_enhancement_rules(
+        self, flower_name, confidence, color_features, shape_features=None
+    ):
         """Áp dụng enhancement rules mạnh mẽ hơn để cải thiện accuracy"""
         enhanced_name = flower_name
         enhanced_confidence = confidence
@@ -258,7 +300,13 @@ class EnhancedFlowerRecognitionAPI:
         dominant_color = color_features["dominant_color"]
         color_confidence = color_features.get("color_confidence", 0.5)
 
-        # AGGRESSIVE RULE 1: Rose Detection
+        # Get shape info
+        is_layered = (
+            shape_features.get("is_layered", False) if shape_features else False
+        )
+        is_simple = shape_features.get("is_simple", False) if shape_features else False
+
+        # AGGRESSIVE RULE 1: Rose Detection (with shape analysis)
         if (
             dominant_color in ["red", "deep_red", "pink"] and color_confidence > 0.4
         ) or (dominant_color == "mixed" and color_features.get("red_ratio", 0) > 0.35):
@@ -275,15 +323,50 @@ class EnhancedFlowerRecognitionAPI:
                 "carnation",
                 "sweet william",
                 "geranium",
-                "passion flower",  # Added from test
+                "passion flower",
+                "lily",  # FIXED: Lily often misclassified for roses
+                "tiger lily",
+                "moon orchid",
+                "hard-leaved pocket orchid",
+                "pink primrose",
+                "desert-rose",
+                "tulip",  # NEW: Tulip also confused with roses
             ]
 
             if any(indicator in flower_name.lower() for indicator in rose_indicators):
-                enhanced_name = "Hoa Hồng"
-                enhanced_confidence = min(0.85, max(0.7, color_confidence * 1.8))
-                enhancement_reason = "aggressive_rose_rule"
+                # Use shape to distinguish rose from tulip
+                if "tulip" in flower_name.lower():
+                    # If layered petals → Rose, if simple → Tulip
+                    if is_layered:
+                        enhanced_name = "Hoa Hồng"
+                        enhanced_confidence = min(
+                            0.88, max(0.75, color_confidence * 1.9)
+                        )
+                        enhancement_reason = "shape_based_rose_detection"
+                        logger.info(
+                            f"SHAPE-BASED ROSE: {flower_name} -> Hoa Hồng (layered petals detected)"
+                        )
+                    elif is_simple:
+                        enhanced_name = "tulip"
+                        enhanced_confidence = min(0.85, color_confidence * 1.7)
+                        enhancement_reason = "shape_based_tulip_detection"
+                        logger.info(
+                            f"SHAPE-BASED TULIP: {flower_name} -> tulip (simple petals detected)"
+                        )
+                    else:
+                        # Fallback to rose for red/pink flowers
+                        enhanced_name = "Hoa Hồng"
+                        enhanced_confidence = min(
+                            0.82, max(0.7, color_confidence * 1.8)
+                        )
+                        enhancement_reason = "aggressive_rose_rule"
+                else:
+                    enhanced_name = "Hoa Hồng"
+                    enhanced_confidence = min(0.85, max(0.7, color_confidence * 1.8))
+                    enhancement_reason = "aggressive_rose_rule"
+
                 logger.info(
-                    f"AGGRESSIVE ROSE: {flower_name} -> Hoa Hồng (color: {dominant_color}, conf: {color_confidence:.3f})"
+                    f"AGGRESSIVE ROSE: {flower_name} -> {enhanced_name} (color: {dominant_color}, conf: {color_confidence:.3f})"
                 )
 
         # AGGRESSIVE RULE 2: Sunflower/Yellow Daisy Detection
@@ -314,23 +397,35 @@ class EnhancedFlowerRecognitionAPI:
                     enhancement_reason = "aggressive_daisy_rule"
                 logger.info(f"AGGRESSIVE YELLOW: {flower_name} -> {enhanced_name}")
 
-        # AGGRESSIVE RULE 3: Tulip Detection (Enhanced)
-        elif dominant_color in ["red", "pink", "deep_red"] and color_confidence > 0.4:
-            tulip_indicators = [
-                "cyclamen",
-                "cape flower",
-                "hippeastrum",
-                "lenten rose",
-                "desert-rose",
-                "ball moss",
-                "trumpet creeper",
-            ]
+        # AGGRESSIVE RULE 3: Tulip Detection (Enhanced with shape)
+        elif (
+            dominant_color in ["red", "pink", "deep_red", "yellow", "orange"]
+            and color_confidence > 0.35
+        ):
+            # Check if it's truly a tulip (simple shape, not layered)
+            if is_simple:
+                tulip_indicators = [
+                    "cyclamen",
+                    "cape flower",
+                    "hippeastrum",
+                    "lenten rose",
+                    "desert-rose",
+                    "ball moss",
+                    "trumpet creeper",
+                    "rose",  # Sometimes roses misclassified as tulips
+                    "carnation",
+                    "sweet william",
+                ]
 
-            if any(indicator in flower_name.lower() for indicator in tulip_indicators):
-                enhanced_name = "tulip"
-                enhanced_confidence = min(0.88, color_confidence * 2.0)
-                enhancement_reason = "aggressive_tulip_rule"
-                logger.info(f"AGGRESSIVE TULIP: {flower_name} -> tulip")
+                if any(
+                    indicator in flower_name.lower() for indicator in tulip_indicators
+                ):
+                    enhanced_name = "tulip"
+                    enhanced_confidence = min(0.88, color_confidence * 1.9)
+                    enhancement_reason = "shape_based_tulip_detection"
+                    logger.info(
+                        f"SHAPE-BASED TULIP: {flower_name} -> tulip (simple petals)"
+                    )
 
         # AGGRESSIVE RULE 4: White Flower Detection
         elif dominant_color == "white" and color_confidence > 0.6:
@@ -345,9 +440,18 @@ class EnhancedFlowerRecognitionAPI:
         elif confidence < 0.15:
             # When Oxford is very uncertain, use pure color-based prediction
             if dominant_color in ["red", "deep_red"]:
-                enhanced_name = "rose"
-                enhanced_confidence = min(0.70, color_confidence * 1.2)
-                enhancement_reason = "low_confidence_color_override"
+                # Emergency rose detection for very low confidence
+                if "lily" in flower_name.lower() or "orchid" in flower_name.lower():
+                    enhanced_name = "rose"
+                    enhanced_confidence = min(0.80, color_confidence * 1.5)
+                    enhancement_reason = "emergency_rose_rescue"
+                    logger.info(
+                        f"EMERGENCY ROSE RESCUE: {flower_name} (conf: {confidence:.3f}) -> rose"
+                    )
+                else:
+                    enhanced_name = "rose"
+                    enhanced_confidence = min(0.70, color_confidence * 1.2)
+                    enhancement_reason = "low_confidence_color_override"
             elif dominant_color in ["yellow", "bright_yellow"]:
                 enhanced_name = "sunflower"
                 enhanced_confidence = min(0.75, color_confidence * 1.3)
@@ -391,6 +495,9 @@ class EnhancedFlowerRecognitionAPI:
         # Get color features
         color_features = self.analyze_color_features(image_resized)
 
+        # Get shape features (for rose vs tulip distinction)
+        shape_features = self.analyze_flower_shape(image_resized)
+
         # Oxford prediction
         oxford_predictions = self.oxford_model.predict(image_array, verbose=0)
         top_5_indices = np.argsort(oxford_predictions[0])[-5:][::-1]
@@ -398,14 +505,14 @@ class EnhancedFlowerRecognitionAPI:
         results = []
 
         if mode == "enhanced":
-            # Apply enhancement rules
+            # Apply enhancement rules with shape analysis
             for idx in top_5_indices:
                 flower_name = self.class_names[idx]
                 confidence = oxford_predictions[0][idx]
 
                 enhanced_confidence, enhanced_name, reason = (
                     self.apply_enhancement_rules(
-                        flower_name, confidence, color_features
+                        flower_name, confidence, color_features, shape_features
                     )
                 )
 

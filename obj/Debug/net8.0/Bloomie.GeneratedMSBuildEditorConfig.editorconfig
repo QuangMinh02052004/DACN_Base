@@ -338,6 +338,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DYXRlZ29yeU1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/lequangminh/Documents/DACN_Base-3/Views/Shared/_ChatWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DaGF0V2lkZ2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lequangminh/Documents/DACN_Base-3/Views/Shared/_IdentityLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19JZGVudGl0eUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

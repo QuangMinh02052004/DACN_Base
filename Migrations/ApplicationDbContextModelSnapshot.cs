@@ -123,6 +123,72 @@ namespace Bloomie.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Bloomie.Models.ChatConversation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ChatConversations");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.ChatMessage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ConversationId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Metadata")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ConversationId");
+
+                    b.ToTable("ChatMessages");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.Batch", b =>
                 {
                     b.Property<int>("Id")
@@ -148,6 +214,59 @@ namespace Bloomie.Migrations
                     b.HasIndex("SupplierId");
 
                     b.ToTable("Batches");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.Entities.CartItem", b =>
+                {
+                    b.Property<int>("CartItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartItemId"));
+
+                    b.Property<DateTime>("AddedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CustomArrangementId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeliveryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeliveryTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("DiscountedPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartItemId");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("Bloomie.Models.Entities.Category", b =>
@@ -973,6 +1092,29 @@ namespace Bloomie.Migrations
                     b.ToTable("Shippings");
                 });
 
+            modelBuilder.Entity("Bloomie.Models.Entities.ShoppingCart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CartId");
+
+                    b.ToTable("ShoppingCarts");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.Supplier", b =>
                 {
                     b.Property<int>("Id")
@@ -1230,6 +1372,28 @@ namespace Bloomie.Migrations
                     b.Navigation("FlowerType");
                 });
 
+            modelBuilder.Entity("Bloomie.Models.ChatConversation", b =>
+                {
+                    b.HasOne("Bloomie.Data.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.ChatMessage", b =>
+                {
+                    b.HasOne("Bloomie.Models.ChatConversation", "Conversation")
+                        .WithMany("Messages")
+                        .HasForeignKey("ConversationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Conversation");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.Batch", b =>
                 {
                     b.HasOne("Bloomie.Models.Entities.Supplier", "Supplier")
@@ -1239,6 +1403,25 @@ namespace Bloomie.Migrations
                         .IsRequired();
 
                     b.Navigation("Supplier");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.Entities.CartItem", b =>
+                {
+                    b.HasOne("Bloomie.Models.Entities.ShoppingCart", "Cart")
+                        .WithMany("Items")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Bloomie.Models.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Bloomie.Models.Entities.Category", b =>
@@ -1638,6 +1821,11 @@ namespace Bloomie.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Bloomie.Models.ChatConversation", b =>
+                {
+                    b.Navigation("Messages");
+                });
+
             modelBuilder.Entity("Bloomie.Models.Entities.Batch", b =>
                 {
                     b.Navigation("BatchFlowerTypes");
@@ -1716,6 +1904,11 @@ namespace Bloomie.Migrations
             modelBuilder.Entity("Bloomie.Models.Entities.Reply", b =>
                 {
                     b.Navigation("UserLikes");
+                });
+
+            modelBuilder.Entity("Bloomie.Models.Entities.ShoppingCart", b =>
+                {
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("Bloomie.Models.Entities.Supplier", b =>

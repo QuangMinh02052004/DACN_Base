@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  flower-api:
+    build:
+      context: ./project_flowers
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - FLASK_ENV=production
+      - API_PORT=8001
+      - ALLOWED_ORIGINS=http://localhost:5187
+    volumes:
+      - ./project_flowers/logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  bloomie-web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "5187:5187"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ImageSearch__PythonApiUrl=http://flower-api:8001
+    depends_on:
+      - flower-api
+    restart: unless-stopped
+
+networks:
+  default:
+    name: bloomie-network

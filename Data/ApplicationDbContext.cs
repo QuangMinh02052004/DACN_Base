@@ -38,6 +38,10 @@ namespace Bloomie.Data
         public DbSet<UserLike> UserLikes { get; set; }
         public DbSet<CustomArrangement> CustomArrangements { get; set; }
         public DbSet<CustomArrangementFlower> CustomArrangementFlowers { get; set; }
+        public DbSet<ChatConversation> ChatConversations { get; set; }
+        public DbSet<ChatMessage> ChatMessages { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -235,6 +239,50 @@ namespace Bloomie.Data
                 .HasOne(caf => caf.FlowerType)
                 .WithMany(ft => ft.CustomArrangementFlowers)
                 .HasForeignKey(caf => caf.FlowerTypeId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Cấu hình cho ChatConversation và User (1-n)
+            builder.Entity<ChatConversation>()
+                .HasOne(cc => cc.User)
+                .WithMany()
+                .HasForeignKey(cc => cc.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Cấu hình cho ChatMessage và ChatConversation (1-n)
+            builder.Entity<ChatMessage>()
+                .HasOne(cm => cm.Conversation)
+                .WithMany(cc => cc.Messages)
+                .HasForeignKey(cm => cm.ConversationId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Cấu hình cho ShoppingCart
+            builder.Entity<ShoppingCart>()
+                .HasKey(sc => sc.CartId);
+
+            builder.Entity<ShoppingCart>()
+                .Property(sc => sc.CartId)
+                .ValueGeneratedOnAdd();
+
+            // Cấu hình cho CartItem
+            builder.Entity<CartItem>()
+                .HasKey(ci => ci.CartItemId);
+
+            builder.Entity<CartItem>()
+                .Property(ci => ci.CartItemId)
+                .ValueGeneratedOnAdd();
+
+            // Cấu hình quan hệ ShoppingCart và CartItem (1-n)
+            builder.Entity<CartItem>()
+                .HasOne(ci => ci.Cart)
+                .WithMany(sc => sc.Items)
+                .HasForeignKey(ci => ci.CartId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Cấu hình quan hệ CartItem và Product (n-1)
+            builder.Entity<CartItem>()
+                .HasOne(ci => ci.Product)
+                .WithMany()
+                .HasForeignKey(ci => ci.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
 
         }

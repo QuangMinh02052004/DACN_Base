@@ -35,12 +35,12 @@ public class ProductsController : ControllerBase
     {
         try
         {
-            var products = await _productService.GetAllProductsAsync();
+            var products = (await _productService.GetAllProductsAsync()).ToList();
 
             // Apply filters
             if (!string.IsNullOrEmpty(request.Keyword))
             {
-                products = products.Where(p => p.ProductName.Contains(request.Keyword, StringComparison.OrdinalIgnoreCase)).ToList();
+                products = products.Where(p => p.Name.Contains(request.Keyword, StringComparison.OrdinalIgnoreCase)).ToList();
             }
 
             if (request.CategoryId.HasValue)
@@ -60,7 +60,7 @@ public class ProductsController : ControllerBase
 
             if (request.IsAvailable.HasValue)
             {
-                products = products.Where(p => p.IsAvailable == request.IsAvailable.Value).ToList();
+                products = products.Where(p => p.IsActive == request.IsAvailable.Value).ToList();
             }
 
             // Apply sorting
@@ -70,9 +70,9 @@ public class ProductsController : ControllerBase
                     ? products.OrderByDescending(p => p.Price).ToList()
                     : products.OrderBy(p => p.Price).ToList(),
                 "name" => request.SortDescending
-                    ? products.OrderByDescending(p => p.ProductName).ToList()
-                    : products.OrderBy(p => p.ProductName).ToList(),
-                _ => products.OrderByDescending(p => p.ProductId).ToList()
+                    ? products.OrderByDescending(p => p.Name).ToList()
+                    : products.OrderBy(p => p.Name).ToList(),
+                _ => products.OrderByDescending(p => p.Id).ToList()
             };
 
             // Calculate pagination
@@ -86,15 +86,15 @@ public class ProductsController : ControllerBase
             // Map to DTOs
             var productDtos = pagedProducts.Select(p => new ProductListDto
             {
-                ProductId = p.ProductId,
-                ProductName = p.ProductName,
+                ProductId = p.Id,
+                ProductName = p.Name,
                 Price = p.Price,
-                DiscountedPrice = p.DiscountedPrice,
-                StockQuantity = p.StockQuantity,
-                IsAvailable = p.IsAvailable,
-                CategoryName = p.Category?.CategoryName,
-                PrimaryImage = p.ProductImages?.FirstOrDefault(img => img.IsPrimary)?.ImageUrl,
-                AverageRating = p.Ratings?.Any() == true ? (decimal?)p.Ratings.Average(r => r.RatingValue) : null,
+                DiscountedPrice = p.DiscountPrice,
+                StockQuantity = p.Quantity,
+                IsAvailable = p.IsActive,
+                CategoryName = p.Category?.Name,
+                PrimaryImage = p.Images?.FirstOrDefault()?.Url ?? p.ImageUrl,
+                AverageRating = p.Ratings?.Any() == true ? (decimal?)p.Ratings.Average(r => r.Star) : null,
                 TotalRatings = p.Ratings?.Count ?? 0
             }).ToList();
 
@@ -136,50 +136,50 @@ public class ProductsController : ControllerBase
 
             var productDto = new ProductDetailDto
             {
-                ProductId = product.ProductId,
-                ProductName = product.ProductName,
+                ProductId = product.Id,
+                ProductName = product.Name,
                 Description = product.Description,
                 Price = product.Price,
-                DiscountedPrice = product.DiscountedPrice,
-                StockQuantity = product.StockQuantity,
-                IsAvailable = product.IsAvailable,
+                DiscountedPrice = product.DiscountPrice,
+                StockQuantity = product.Quantity,
+                IsAvailable = product.IsActive,
                 CategoryId = product.CategoryId,
-                CategoryName = product.Category?.CategoryName,
-                SupplierId = product.SupplierId,
-                SupplierName = product.Supplier?.SupplierName,
-                Images = product.ProductImages?.Select(img => new ProductImageDto
+                CategoryName = product.Category?.Name,
+                SupplierId = product.PresentationStyleId,
+                SupplierName = product.PresentationStyle?.Name,
+                Images = product.Images?.Select(img => new ProductImageDto
                 {
-                    ImageId = img.ImageId,
-                    ImageUrl = img.ImageUrl,
-                    IsPrimary = img.IsPrimary,
-                    DisplayOrder = img.DisplayOrder
-                }).OrderBy(img => img.DisplayOrder).ToList() ?? new List<ProductImageDto>(),
-                FlowerTypes = product.FlowerTypeProducts?.Select(ftp => ftp.FlowerType.FlowerTypeName).ToList() ?? new List<string>(),
-                AverageRating = product.Ratings?.Any() == true ? (decimal?)product.Ratings.Average(r => r.RatingValue) : null,
+                    ImageId = img.Id,
+                    ImageUrl = img.Url,
+                    IsPrimary = false, // ProductImage doesn't have IsPrimary
+                    DisplayOrder = 0 // ProductImage doesn't have DisplayOrder
+                }).ToList() ?? new List<ProductImageDto>(),
+                FlowerTypes = product.FlowerTypeProducts?.Select(ftp => ftp.FlowerType.Name).ToList() ?? new List<string>(),
+                AverageRating = product.Ratings?.Any() == true ? (decimal?)product.Ratings.Average(r => r.Star) : null,
                 TotalRatings = product.Ratings?.Count ?? 0,
-                CreatedAt = product.CreatedAt,
-                UpdatedAt = product.UpdatedAt,
+                CreatedAt = product.CreatedDate,
+                UpdatedAt = product.CreatedDate, // UpdatedAt doesn't exist, using CreatedDate
                 ActivePromotions = product.PromotionProducts?
                     .Where(pp => pp.Promotion.StartDate <= DateTime.Now && pp.Promotion.EndDate >= DateTime.Now)
                     .Select(pp => new PromotionDto
                     {
-                        PromotionId = pp.Promotion.PromotionId,
-                        PromotionName = pp.Promotion.PromotionName,
+                        PromotionId = pp.Promotion.Id,
+                        PromotionName = pp.Promotion.Code,
                         Description = pp.Promotion.Description,
                         DiscountPercentage = pp.Promotion.DiscountPercentage,
                         StartDate = pp.Promotion.StartDate,
                         EndDate = pp.Promotion.EndDate
                     }).ToList(),
                 RecentRatings = product.Ratings?
-                    .OrderByDescending(r => r.CreatedAt)
+                    .OrderByDescending(r => r.ReviewDate)
                     .Take(5)
                     .Select(r => new RatingDto
                     {
-                        RatingId = r.RatingId,
-                        RatingValue = r.RatingValue,
+                        RatingId = r.Id,
+                        RatingValue = r.Star,
                         Comment = r.Comment,
                         UserName = r.User?.UserName ?? "Anonymous",
-                        CreatedAt = r.CreatedAt
+                        CreatedAt = r.ReviewDate
                     }).ToList()
             };
 
@@ -249,7 +249,7 @@ public class ProductsController : ControllerBase
         try
         {
             await _productService.DeleteProductAsync(id);
-            return Ok(ApiResponse<object>.SuccessResponse(null, "Xóa sản phẩm thành công"));
+            return Ok(ApiResponse<object>.SuccessResponse(new { }, "Xóa sản phẩm thành công"));
         }
         catch (Exception ex)
         {

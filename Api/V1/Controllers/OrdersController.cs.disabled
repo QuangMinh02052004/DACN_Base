@@ -46,12 +46,12 @@ public class OrdersController : ControllerBase
             // Apply filters
             if (!string.IsNullOrEmpty(request.OrderCode))
             {
-                orders = orders.Where(o => o.OrderCode?.Contains(request.OrderCode, StringComparison.OrdinalIgnoreCase) == true).ToList();
+                orders = orders.Where(o => o.Id.Contains(request.OrderCode, StringComparison.OrdinalIgnoreCase)).ToList();
             }
 
             if (!string.IsNullOrEmpty(request.Status))
             {
-                orders = orders.Where(o => o.Status == request.Status).ToList();
+                orders = orders.Where(o => o.OrderStatus.ToString() == request.Status).ToList();
             }
 
             if (request.FromDate.HasValue)
@@ -77,20 +77,20 @@ public class OrdersController : ControllerBase
                 .Take(request.PageSize)
                 .ToList();
 
-            // Map to DTOs
+            // Map to DTOs  
             var orderDtos = pagedOrders.Select(o => new OrderDto
             {
-                OrderId = o.OrderId,
-                OrderCode = o.OrderCode ?? "",
+                OrderId = o.Id.GetHashCode(), // Convert string ID to int hash
+                OrderCode = o.Id,
                 OrderDate = o.OrderDate,
-                Status = o.Status,
-                TotalAmount = o.TotalAmount,
-                CustomerName = o.CustomerName,
-                CustomerPhone = o.CustomerPhone,
+                Status = o.OrderStatus.ToString(),
+                TotalAmount = o.TotalPrice,
+                CustomerName = o.ReceiverName,
+                CustomerPhone = o.ReceiverPhoneNumber,
                 ShippingAddress = o.ShippingAddress,
-                PaymentMethod = o.PaymentMethod,
-                PaymentStatus = o.Payment?.Status,
-                DeliveryDate = o.DeliveryDate,
+                PaymentMethod = o.Payment?.PaymentMethod ?? "",
+                PaymentStatus = o.Payment?.PaymentStatus,
+                DeliveryDate = null,
                 Notes = o.Notes
             }).ToList();
 
@@ -118,7 +118,7 @@ public class OrdersController : ControllerBase
     /// Lấy chi tiết order theo ID
     /// </summary>
     [HttpGet("{id}")]
-    public async Task<ActionResult<ApiResponse<OrderDetailDto>>> GetOrderById(int id)
+    public async Task<ActionResult<ApiResponse<OrderDetailDto>>> GetOrderById(string id)
     {
         try
         {
@@ -138,56 +138,48 @@ public class OrdersController : ControllerBase
                 return Forbid();
             }
 
+            // TODO: Complete DTO mapping - many Order entity properties don't match the DTO structure
             var orderDto = new OrderDetailDto
             {
-                OrderId = order.OrderId,
-                OrderCode = order.OrderCode ?? "",
+                OrderId = order.Id.GetHashCode(), // Convert string ID to int hash
+                OrderCode = order.Id,
                 OrderDate = order.OrderDate,
-                Status = order.Status,
-                TotalAmount = order.TotalAmount,
-                CustomerName = order.CustomerName,
-                CustomerPhone = order.CustomerPhone,
+                Status = order.OrderStatus.ToString(),
+                TotalAmount = order.TotalPrice,
+                CustomerName = order.ReceiverName,
+                CustomerPhone = order.ReceiverPhoneNumber,
                 ShippingAddress = order.ShippingAddress,
-                PaymentMethod = order.PaymentMethod,
-                PaymentStatus = order.Payment?.Status,
-                DeliveryDate = order.DeliveryDate,
+                PaymentMethod = order.Payment?.PaymentMethod ?? "",
+                PaymentStatus = order.Payment?.PaymentStatus,
+                DeliveryDate = null, // DeliveryDate doesn't exist in Order entity
                 Notes = order.Notes,
                 OrderItems = order.OrderDetails?.Select(od => new OrderItemDto
                 {
-                    OrderDetailId = od.OrderDetailId,
+                    OrderDetailId = od.Id,
                     ProductId = od.ProductId,
-                    ProductName = od.Product?.ProductName ?? "",
-                    ProductImage = od.Product?.ProductImages?.FirstOrDefault(img => img.IsPrimary)?.ImageUrl,
+                    ProductName = od.Product?.Name ?? "",
+                    ProductImage = od.Product?.Images?.FirstOrDefault()?.Url ?? od.Product?.ImageUrl,
                     Quantity = od.Quantity,
-                    UnitPrice = od.UnitPrice,
-                    TotalPrice = od.TotalPrice
+                    UnitPrice = od.Price,
+                    TotalPrice = od.Price * od.Quantity
                 }).ToList() ?? new List<OrderItemDto>(),
-                StatusHistory = order.OrderStatusHistories?.Select(h => new OrderStatusHistoryDto
+                StatusHistory = order.StatusHistory?.Select(h => new OrderStatusHistoryDto
                 {
-                    HistoryId = h.HistoryId,
-                    Status = h.Status,
-                    Notes = h.Notes,
-                    ChangedAt = h.ChangedAt,
+                    HistoryId = h.Id,
+                    Status = h.Status.ToString(),
+                    Notes = "",
+                    ChangedAt = h.ChangeDate,
                     ChangedBy = h.ChangedBy
                 }).OrderBy(h => h.ChangedAt).ToList() ?? new List<OrderStatusHistoryDto>(),
-                ShippingInfo = order.Shipping != null ? new ShippingInfoDto
-                {
-                    ShippingId = order.Shipping.ShippingId,
-                    ShippingMethod = order.Shipping.ShippingMethod,
-                    ShippingFee = order.Shipping.ShippingFee,
-                    TrackingNumber = order.Shipping.TrackingNumber,
-                    ShippingAddress = order.Shipping.ShippingAddress,
-                    EstimatedDelivery = order.Shipping.EstimatedDelivery,
-                    ActualDelivery = order.Shipping.ActualDelivery
-                } : null,
+                ShippingInfo = null, // Shipping entity structure doesn't match, needs proper mapping
                 PaymentInfo = order.Payment != null ? new PaymentInfoDto
                 {
-                    PaymentId = order.Payment.PaymentId,
+                    PaymentId = order.Payment.Id,
                     PaymentMethod = order.Payment.PaymentMethod,
                     Amount = order.Payment.Amount,
-                    Status = order.Payment.Status,
-                    PaidAt = order.Payment.PaidAt,
-                    TransactionId = order.Payment.TransactionId
+                    Status = order.Payment.PaymentStatus,
+                    PaidAt = order.Payment.PaymentDate,
+                    TransactionId = "" // TransactionId doesn't exist in Payment entity
                 } : null
             };
 
@@ -231,7 +223,7 @@ public class OrdersController : ControllerBase
     /// </summary>
     [HttpPatch("{id}/status")]
     [Authorize(Roles = "Admin,Staff,Manager")]
-    public async Task<ActionResult<ApiResponse<OrderDto>>> UpdateOrderStatus(int id, [FromBody] UpdateOrderStatusRequest request)
+    public async Task<ActionResult<ApiResponse<OrderDto>>> UpdateOrderStatus(string id, [FromBody] UpdateOrderStatusRequest request)
     {
         try
         {
@@ -257,7 +249,7 @@ public class OrdersController : ControllerBase
     /// Hủy order
     /// </summary>
     [HttpPost("{id}/cancel")]
-    public async Task<ActionResult<ApiResponse<OrderDto>>> CancelOrder(int id)
+    public async Task<ActionResult<ApiResponse<OrderDto>>> CancelOrder(string id)
     {
         try
         {
@@ -301,12 +293,12 @@ public class OrdersController : ControllerBase
             // Apply filters (same as GetMyOrders)
             if (!string.IsNullOrEmpty(request.OrderCode))
             {
-                orders = orders.Where(o => o.OrderCode?.Contains(request.OrderCode, StringComparison.OrdinalIgnoreCase) == true).ToList();
+                orders = orders.Where(o => o.Id.Contains(request.OrderCode, StringComparison.OrdinalIgnoreCase)).ToList();
             }
 
             if (!string.IsNullOrEmpty(request.Status))
             {
-                orders = orders.Where(o => o.Status == request.Status).ToList();
+                orders = orders.Where(o => o.OrderStatus.ToString() == request.Status).ToList();
             }
 
             if (request.FromDate.HasValue)
@@ -321,7 +313,7 @@ public class OrdersController : ControllerBase
 
             if (!string.IsNullOrEmpty(request.CustomerName))
             {
-                orders = orders.Where(o => o.CustomerName?.Contains(request.CustomerName, StringComparison.OrdinalIgnoreCase) == true).ToList();
+                orders = orders.Where(o => o.ReceiverName.Contains(request.CustomerName, StringComparison.OrdinalIgnoreCase)).ToList();
             }
 
             // Apply sorting
@@ -340,17 +332,17 @@ public class OrdersController : ControllerBase
             // Map to DTOs
             var orderDtos = pagedOrders.Select(o => new OrderDto
             {
-                OrderId = o.OrderId,
-                OrderCode = o.OrderCode ?? "",
+                OrderId = o.Id.GetHashCode(), // Convert string ID to int hash
+                OrderCode = o.Id,
                 OrderDate = o.OrderDate,
-                Status = o.Status,
-                TotalAmount = o.TotalAmount,
-                CustomerName = o.CustomerName,
-                CustomerPhone = o.CustomerPhone,
+                Status = o.OrderStatus.ToString(),
+                TotalAmount = o.TotalPrice,
+                CustomerName = o.ReceiverName,
+                CustomerPhone = o.ReceiverPhoneNumber,
                 ShippingAddress = o.ShippingAddress,
-                PaymentMethod = o.PaymentMethod,
-                PaymentStatus = o.Payment?.Status,
-                DeliveryDate = o.DeliveryDate,
+                PaymentMethod = o.Payment?.PaymentMethod ?? "",
+                PaymentStatus = o.Payment?.PaymentStatus,
+                DeliveryDate = null,
                 Notes = o.Notes
             }).ToList();
 

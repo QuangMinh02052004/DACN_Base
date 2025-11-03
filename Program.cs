@@ -220,7 +220,8 @@ builder.Services.AddAuthentication(options =>
         {
             var accessToken = context.Request.Query["access_token"];
             var path = context.HttpContext.Request.Path;
-            if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/notificationHub"))
+            if (!string.IsNullOrEmpty(accessToken) &&
+                (path.StartsWithSegments("/notificationHub") || path.StartsWithSegments("/chatHub")))
             {
                 context.Token = accessToken;
             }
@@ -276,6 +277,15 @@ builder.Services.AddScoped<IImageSearchService, ImageSearchService>();
 
 // Cấu hình HttpClient cho ImageSearchService
 builder.Services.AddHttpClient<IImageSearchService, ImageSearchService>();
+
+// Cấu hình HttpClient cho GeminiService
+builder.Services.AddHttpClient("GeminiClient", client =>
+{
+    client.Timeout = TimeSpan.FromMinutes(5); // AI API có thể mất thời gian
+});
+
+// Đăng ký AI Chat Service
+builder.Services.AddScoped<IAIChatService, GeminiService>();
 
 // Cấu hình Excel (EPPlus)
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -358,6 +368,7 @@ app.UseUserAccessLogging();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHub<NotificationHub>("/notificationHub");
+    endpoints.MapHub<ChatHub>("/chatHub");
 
     // API routes (sử dụng attribute routing)
     endpoints.MapControllers();

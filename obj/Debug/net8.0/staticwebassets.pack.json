@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Bloomie.bundle.scp.css"
     },
     {
+      "Id": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/css/chat-widget.css",
+      "PackagePath": "staticwebassets/css/chat-widget.css"
+    },
+    {
       "Id": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -2763,6 +2767,10 @@
     {
       "Id": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/logo1.png",
       "PackagePath": "staticwebassets/images/logo1.png"
+    },
+    {
+      "Id": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/js/chat-widget.js",
+      "PackagePath": "staticwebassets/js/chat-widget.js"
     },
     {
       "Id": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/js/customArrangement.js",

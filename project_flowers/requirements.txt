@@ -2,5 +2,19 @@ Flask==2.2.3
 Flask-CORS==3.0.10
 Pillow==10.0.0
 numpy==1.24.3
+python-dotenv==1.0.0
+
+# For production deployment
+gunicorn==21.2.0
+waitress==2.1.2
+
+# TensorFlow - Choose based on your system
+# For macOS with Apple Silicon (M1/M2/M3):
 tensorflow-macos==2.16.2
 tensorflow-metal==0.8.0
+
+# For Linux/Windows or macOS Intel:
+# tensorflow==2.16.2
+
+# Optional: For monitoring and logging
+# sentry-sdk[flask]==1.40.0

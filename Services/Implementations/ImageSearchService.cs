@@ -10,6 +10,7 @@ namespace Bloomie.Services.Implementations
         private readonly HttpClient _httpClient;
         private readonly ILogger<ImageSearchService> _logger;
         private readonly string _pythonApiUrl;
+        private readonly IConfiguration _configuration;
 
         // Note: Mapping đã được chuyển sang FlowerPriorityMapping.cs để quản lý tập trung
 
@@ -17,10 +18,19 @@ namespace Bloomie.Services.Implementations
         {
             _httpClient = httpClient;
             _logger = logger;
-            _pythonApiUrl = configuration["ImageSearch:PythonApiUrl"] ?? "http://localhost:5000";
+            _configuration = configuration;
 
-            // Set timeout cho HTTP client
-            _httpClient.Timeout = TimeSpan.FromSeconds(30);
+            // Support switching between local and production API
+            var useProduction = configuration.GetValue<bool>("ImageSearch:UseProduction");
+            _pythonApiUrl = useProduction
+                ? configuration["ImageSearch:ProductionApiUrl"] ?? "http://localhost:8001"
+                : configuration["ImageSearch:PythonApiUrl"] ?? "http://localhost:8001";
+
+            // Set timeout from configuration or default to 30 seconds
+            var timeoutSeconds = configuration.GetValue<int>("ImageSearch:RequestTimeoutSeconds", 30);
+            _httpClient.Timeout = TimeSpan.FromSeconds(timeoutSeconds);
+
+            _logger.LogInformation($"ImageSearchService initialized with API URL: {_pythonApiUrl}");
         }
 
         public async Task<ImageSearchResult> AnalyzeImageAsync(IFormFile imageFile)

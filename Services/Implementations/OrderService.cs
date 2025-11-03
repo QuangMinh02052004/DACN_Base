@@ -53,6 +53,38 @@ namespace Bloomie.Services.Implementations
             await _context.SaveChangesAsync();
         }
 
+        public async Task<List<Order>> GetOrdersByUserIdAsync(string userId)
+        {
+            return await _context.Orders
+                .Include(o => o.OrderDetails)
+                    .ThenInclude(od => od.Product)
+                .Include(o => o.Payment)
+                .Where(o => o.UserId == userId)
+                .OrderByDescending(o => o.OrderDate)
+                .ToListAsync();
+        }
+
+        public async Task<Order> GetOrderByIdAsync(string orderId)
+        {
+            return await _context.Orders
+                .Include(o => o.OrderDetails)
+                    .ThenInclude(od => od.Product)
+                .Include(o => o.Payment)
+                .Include(o => o.User)
+                .FirstOrDefaultAsync(o => o.Id == orderId);
+        }
+
+        public async Task<List<Order>> GetAllOrdersAsync()
+        {
+            return await _context.Orders
+                .Include(o => o.OrderDetails)
+                    .ThenInclude(od => od.Product)
+                .Include(o => o.Payment)
+                .Include(o => o.User)
+                .OrderByDescending(o => o.OrderDate)
+                .ToListAsync();
+        }
+
         // Các phương thức khác của OrderService...
     }
 }

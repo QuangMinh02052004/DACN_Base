@@ -43,9 +43,9 @@ public class CartController : ControllerBase
             }
 
             var cart = await _context.ShoppingCarts
-                .Include(c => c.CartItems)
+                .Include(c => c.Items)
                     .ThenInclude(ci => ci.Product)
-                        .ThenInclude(p => p.ProductImages)
+                        .ThenInclude(p => p.Images)
                 .FirstOrDefaultAsync(c => c.UserId == userId);
 
             if (cart == null)
@@ -64,17 +64,17 @@ public class CartController : ControllerBase
             {
                 CartId = cart.CartId,
                 UserId = cart.UserId,
-                Items = cart.CartItems?.Select(ci => new CartItemDto
+                Items = cart.Items?.Select(ci => new CartItemDto
                 {
                     CartItemId = ci.CartItemId,
                     ProductId = ci.ProductId,
-                    ProductName = ci.Product?.ProductName ?? "",
-                    ProductImage = ci.Product?.ProductImages?.FirstOrDefault(img => img.IsPrimary)?.ImageUrl,
+                    ProductName = ci.Product?.Name ?? "",
+                    ProductImage = ci.Product?.Images?.FirstOrDefault()?.Url ?? ci.Product?.ImageUrl,
                     Price = ci.Product?.Price ?? 0,
                     Quantity = ci.Quantity,
                     TotalPrice = (ci.Product?.Price ?? 0) * ci.Quantity,
-                    StockQuantity = ci.Product?.StockQuantity ?? 0,
-                    IsAvailable = ci.Product?.IsAvailable ?? false
+                    StockQuantity = ci.Product?.Quantity ?? 0,
+                    IsAvailable = ci.Product?.IsActive ?? false
                 }).ToList() ?? new List<CartItemDto>(),
                 UpdatedAt = cart.UpdatedAt
             };
@@ -113,14 +113,14 @@ public class CartController : ControllerBase
                 return NotFound(ApiResponse<CartDto>.ErrorResponse("Không tìm thấy sản phẩm"));
             }
 
-            if (!product.IsAvailable || product.StockQuantity < request.Quantity)
+            if (!product.IsActive || product.Quantity < request.Quantity)
             {
                 return BadRequest(ApiResponse<CartDto>.ErrorResponse("Sản phẩm không có sẵn hoặc không đủ số lượng"));
             }
 
             // Lấy hoặc tạo cart
             var cart = await _context.ShoppingCarts
-                .Include(c => c.CartItems)
+                .Include(c => c.Items)
                 .FirstOrDefaultAsync(c => c.UserId == userId);
 
             if (cart == null)
@@ -135,13 +135,12 @@ public class CartController : ControllerBase
             }
 
             // Kiểm tra xem product đã có trong cart chưa
-            var existingItem = cart.CartItems?.FirstOrDefault(ci => ci.ProductId == request.ProductId);
+            var existingItem = cart.Items?.FirstOrDefault(ci => ci.ProductId == request.ProductId);
 
             if (existingItem != null)
             {
                 // Cập nhật quantity
                 existingItem.Quantity += request.Quantity;
-                existingItem.UpdatedAt = DateTime.Now;
             }
             else
             {
@@ -201,14 +200,16 @@ public class CartController : ControllerBase
             }
 
             // Kiểm tra số lượng tồn kho
-            if (cartItem.Product == null || cartItem.Product.StockQuantity < request.Quantity)
+            if (cartItem.Product == null || cartItem.Product.Quantity < request.Quantity)
             {
                 return BadRequest(ApiResponse<CartDto>.ErrorResponse("Không đủ số lượng trong kho"));
             }
 
             cartItem.Quantity = request.Quantity;
-            cartItem.UpdatedAt = DateTime.Now;
-            cartItem.Cart.UpdatedAt = DateTime.Now;
+            if (cartItem.Cart != null)
+            {
+                cartItem.Cart.UpdatedAt = DateTime.Now;
+            }
 
             await _context.SaveChangesAsync();
 
@@ -278,17 +279,17 @@ public class CartController : ControllerBase
             }
 
             var cart = await _context.ShoppingCarts
-                .Include(c => c.CartItems)
+                .Include(c => c.Items)
                 .FirstOrDefaultAsync(c => c.UserId == userId);
 
-            if (cart != null && cart.CartItems != null)
+            if (cart != null && cart.Items != null)
             {
-                _context.CartItems.RemoveRange(cart.CartItems);
+                _context.CartItems.RemoveRange(cart.Items);
                 cart.UpdatedAt = DateTime.Now;
                 await _context.SaveChangesAsync();
             }
 
-            return Ok(ApiResponse<object>.SuccessResponse(null, "Đã xóa toàn bộ giỏ hàng"));
+            return Ok(ApiResponse<object>.SuccessResponse(new { }, "Đã xóa toàn bộ giỏ hàng"));
         }
         catch (Exception ex)
         {

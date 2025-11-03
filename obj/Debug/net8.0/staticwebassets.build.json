@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d7VrQkDWKsMLyBop23hzwVKip6Vv6m9kNOFv7lPoRHk=",
+  "Hash": "ZAmA5vh7WDZx0AyMXCSkcopWh/WBOoa09i76xtNc4N0=",
   "Source": "Bloomie",
   "BasePath": "_content/Bloomie",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lequangminh/Documents/DACN_Base-3/obj/Debug/net8.0/scopedcss/projectbundle/Bloomie.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/css/chat-widget.css",
+      "SourceId": "Bloomie",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/",
+      "BasePath": "_content/Bloomie",
+      "RelativePath": "css/chat-widget.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/chat-widget.css"
     },
     {
       "Identity": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/css/site.css",
@@ -14303,6 +14322,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/logo1.png"
+    },
+    {
+      "Identity": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/js/chat-widget.js",
+      "SourceId": "Bloomie",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/",
+      "BasePath": "_content/Bloomie",
+      "RelativePath": "js/chat-widget.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/chat-widget.js"
     },
     {
       "Identity": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/js/customArrangement.js",

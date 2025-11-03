@@ -4,8 +4,15 @@ namespace Bloomie.Models.Entities
 {
     public class ShoppingCart
     {
+        // Database properties for API use
+        public int CartId { get; set; }
         public string UserId { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+        // Navigation properties
         public List<CartItem> Items { get; set; } = new List<CartItem>();
+
         public decimal TotalPrice => Items.Sum(item => item.DiscountedPrice * item.Quantity);
 
         public int TotalItems

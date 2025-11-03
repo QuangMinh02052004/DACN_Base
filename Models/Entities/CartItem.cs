@@ -2,6 +2,12 @@
 {
     public class CartItem
     {
+        // Database properties for API use
+        public int CartItemId { get; set; }
+        public int CartId { get; set; }
+        public DateTime AddedAt { get; set; } = DateTime.Now;
+        
+        // Product properties
         public int ProductId { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
@@ -14,5 +20,9 @@
         // For Custom Flower Arrangement
         public int? CustomArrangementId { get; set; } // ID của bó hoa tùy chỉnh (nullable)
         public bool IsCustomArrangement => CustomArrangementId.HasValue;
+        
+        // Navigation properties
+        public ShoppingCart Cart { get; set; }
+        public Product Product { get; set; }
     }
 }

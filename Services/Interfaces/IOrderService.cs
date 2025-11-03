@@ -6,6 +6,8 @@ namespace Bloomie.Services.Interfaces
     public interface IOrderService
     {
         Task UpdateOrderStatusAsync(string orderId, OrderStatus newStatus, string changedBy, string note);
-        // Các phương thức khác...
+        Task<List<Order>> GetOrdersByUserIdAsync(string userId);
+        Task<Order> GetOrderByIdAsync(string orderId);
+        Task<List<Order>> GetAllOrdersAsync();
     }
 }

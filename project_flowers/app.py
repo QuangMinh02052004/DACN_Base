@@ -9,8 +9,7 @@ import logging
 
 # Configure logging
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 
@@ -161,9 +160,11 @@ def predict():
         image = Image.open(io.BytesIO(image_bytes))
 
         # Validate image
-        if image.mode not in ['RGB', 'RGBA', 'L']:
+        if image.mode not in ["RGB", "RGBA", "L"]:
             logger.warning(f"Unsupported image mode: {image.mode}")
-            return jsonify({"success": False, "message": "Unsupported image format"}), 400
+            return jsonify(
+                {"success": False, "message": "Unsupported image format"}
+            ), 400
 
         # Resize về kích thước model yêu cầu (224x224)
         image = image.convert("RGB")
@@ -186,13 +187,17 @@ def predict():
             vietnamese_name = map_flower_to_vietnamese(flower_name)
             confidence = float(predictions[0][idx])
 
-            result_predictions.append({
-                "className": vietnamese_name,
-                "confidence": confidence,
-                "englishName": flower_name
-            })
+            result_predictions.append(
+                {
+                    "className": vietnamese_name,
+                    "confidence": confidence,
+                    "englishName": flower_name,
+                }
+            )
 
-        logger.info(f"Prediction successful. Top result: {result_predictions[0]['className']} ({result_predictions[0]['confidence']:.2%})")
+        logger.info(
+            f"Prediction successful. Top result: {result_predictions[0]['className']} ({result_predictions[0]['confidence']:.2%})"
+        )
 
         # Trả về kết quả theo format mà C# service mong đợi
         return jsonify(
@@ -206,7 +211,10 @@ def predict():
     except Image.UnidentifiedImageError:
         logger.error("Invalid image file - cannot be identified")
         return jsonify(
-            {"success": False, "message": "Invalid image file. Please upload a valid image."}
+            {
+                "success": False,
+                "message": "Invalid image file. Please upload a valid image.",
+            }
         ), 400
     except Exception as e:
         logger.error(f"Error in prediction: {str(e)}", exc_info=True)
@@ -237,7 +245,7 @@ def search_by_image():
         image = Image.open(io.BytesIO(image_bytes))
 
         # Validate image
-        if image.mode not in ['RGB', 'RGBA', 'L']:
+        if image.mode not in ["RGB", "RGBA", "L"]:
             logger.warning(f"Unsupported image mode: {image.mode}")
             return jsonify({"error": "Unsupported image format"}), 400
 
@@ -249,23 +257,59 @@ def search_by_image():
         # Predict
         logger.info("Running model prediction for search...")
         predictions = model.predict(image_array, verbose=0)
-        predicted_class = np.argmax(predictions[0])
-        confidence = float(predictions[0][predicted_class])
 
-        # Map tên hoa sang tiếng Việt
-        flower_name = class_names[predicted_class]
-        vietnamese_name = map_flower_to_vietnamese(flower_name)
+        # Get top 3 predictions
+        top_3_indices = np.argsort(predictions[0])[-3:][
+            ::-1
+        ]  # Top 3 highest probabilities
 
-        logger.info(f"Search result: {vietnamese_name} ({confidence:.2%})")
+        results = []
+        for idx in top_3_indices:
+            flower_name = class_names[idx]
+            vietnamese_name = map_flower_to_vietnamese(flower_name)
+            confidence = float(predictions[0][idx])
 
-        return jsonify(
-            {
-                "class_id": int(predicted_class),
-                "class_name": flower_name,
-                "vietnamese_name": vietnamese_name,
-                "probability": confidence,
-            }
+            results.append(
+                {
+                    "class_id": int(idx),
+                    "class_name": flower_name,
+                    "vietnamese_name": vietnamese_name,
+                    "probability": confidence,
+                }
+            )
+
+        # Add warning if all predictions have low confidence
+        max_confidence = float(predictions[0][top_3_indices[0]])
+        low_confidence_warning = None
+        if max_confidence < 0.15:  # Less than 15%
+            low_confidence_warning = (
+                "Độ tin cậy thấp. Vui lòng chụp ảnh rõ hơn hoặc thử góc khác."
+            )
+        elif max_confidence < 0.30:  # Less than 30%
+            low_confidence_warning = (
+                "Kết quả có thể chưa chính xác. Hãy kiểm tra các gợi ý khác bên dưới."
+            )
+
+        logger.info(
+            f"Prediction: {results[0]['vietnamese_name']} ({max_confidence:.2%})"
         )
+        if low_confidence_warning:
+            logger.warning(f"Low confidence detected: {low_confidence_warning}")
+
+        # Return top prediction as main result + all 3 as array
+        response_data = {
+            "class_id": results[0]["class_id"],
+            "class_name": results[0]["class_name"],
+            "vietnamese_name": results[0]["vietnamese_name"],
+            "probability": results[0]["probability"],
+            "top_predictions": results,  # Array of top 3
+        }
+
+        # Add warning if confidence is low
+        if low_confidence_warning:
+            response_data["warning"] = low_confidence_warning
+
+        return jsonify(response_data)
 
     except Image.UnidentifiedImageError:
         logger.error("Invalid image file in search-by-image")
@@ -292,13 +336,11 @@ def map_flower_to_vietnamese(english_name):
         "marigold": "Hoa Vạn Thọ",
         "poppy": "Hoa Anh Túc",
         "lotus": "Hoa Sen",
-
         # Daisy family
         "daisy": "Hoa Cúc",
         "oxeye daisy": "Hoa Cúc Trắng",
         "barbeton daisy": "Hoa Đồng Tiền",
         "black-eyed susan": "Hoa Cúc Mắt Đen",
-
         # Specific flowers
         "primrose": "Hoa Anh Thảo",
         "pink primrose": "Hoa Anh Thảo Hồng",

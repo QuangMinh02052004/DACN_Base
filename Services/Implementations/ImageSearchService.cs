@@ -2,6 +2,7 @@ using Bloomie.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Bloomie.Services.Implementations
 {
@@ -120,7 +121,7 @@ namespace Bloomie.Services.Implementations
                 using var content = new MultipartFormDataContent();
                 using var imageContent = new ByteArrayContent(imageBytes);
                 imageContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/jpeg");
-                content.Add(imageContent, "image", fileName);
+                content.Add(imageContent, "imageFile", fileName);
 
                 // Use enhanced API endpoint
                 var response = await _httpClient.PostAsync($"{_pythonApiUrl}/search-by-image", content);
@@ -132,12 +133,29 @@ namespace Bloomie.Services.Implementations
                 }
 
                 var responseContent = await response.Content.ReadAsStringAsync();
+
+                // Log raw response for debugging
+                _logger.LogInformation("Raw Python API response: {Response}", responseContent);
+
                 var options = new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
                 };
 
-                return JsonSerializer.Deserialize<PythonApiResponse>(responseContent, options);
+                var result = JsonSerializer.Deserialize<PythonApiResponse>(responseContent, options);
+
+                // Log parsed result
+                if (result != null)
+                {
+                    _logger.LogInformation("Parsed response - ClassId: {ClassId}, ClassName: {ClassName}, VietnameseName: {VietnameseName}, Probability: {Probability}",
+                        result.ClassId, result.ClassName, result.VietnameseName, result.Probability);
+                }
+                else
+                {
+                    _logger.LogWarning("Failed to deserialize Python API response");
+                }
+
+                return result;
             }
             catch (HttpRequestException ex)
             {
@@ -162,96 +180,109 @@ namespace Bloomie.Services.Implementations
             {
                 var result = new ImageSearchResult { Success = true };
 
-                if (response.Predictions != null && response.Predictions.Any())
+                // Check for error in response
+                if (!string.IsNullOrEmpty(response.Error))
                 {
-                    // Lọc chỉ lấy các loại hoa ưu tiên
-                    var priorityPredictions = response.Predictions
-                        .Where(p => FlowerPriorityMapping.IsPriorityFlower(p.ClassName))
-                        .OrderByDescending(p => p.Confidence)
-                        .ToList();
-
-                    // Nếu không có loại hoa nào ưu tiên, thử lấy top prediction
-                    if (priorityPredictions.Count == 0)
+                    _logger.LogWarning("Python API returned error: {Error}", response.Error);
+                    return new ImageSearchResult
                     {
-                        var topPreds = string.Join(", ", response.Predictions.Take(3).Select(p => p.ClassName ?? "N/A"));
-                        _logger.LogWarning("Không tìm thấy loại hoa ưu tiên. Top predictions: {TopPredictions}", topPreds);
+                        Success = false,
+                        Message = $"Lỗi phân tích: {response.Error}"
+                    };
+                }
 
-                        // Lấy top prediction và map về loại gần nhất
-                        var topPrediction = response.Predictions.First();
-                        var className = topPrediction.ClassName ?? "Không xác định";
-                        var normalizedName = FlowerPriorityMapping.GetNormalizedFlowerName(className);
+                // Check if we have a valid prediction
+                if (response.ClassId.HasValue && response.Probability > 0)
+                {
+                    var className = response.ClassName ?? "Không xác định";
+                    var vietnameseName = response.VietnameseName ?? className;
 
-                        result.RecognizedFlower = className;
-                        result.Confidence = topPrediction.Confidence;
-                        result.FlowerTypes.Add(normalizedName);
-                        result.Colors = FlowerPriorityMapping.GetDefaultColors(normalizedName);
+                    _logger.LogInformation("API returned: {VietnameseName} ({Confidence:P2})", vietnameseName, response.Probability);
+
+                    // Use Vietnamese name as recognized flower
+                    result.RecognizedFlower = vietnameseName;
+                    result.Confidence = response.Probability;
+
+                    // Check if this is a priority flower (check English name)
+                    if (FlowerPriorityMapping.IsPriorityFlower(className))
+                    {
+                        result.FlowerTypes.Add(vietnameseName);
+                        result.Colors = FlowerPriorityMapping.GetDefaultColors(vietnameseName);
                         result.Presentation = "Bó hoa";
 
-                        _logger.LogInformation("Loại hoa không phổ biến: {OriginalName} -> Mapped to: {NormalizedName}", result.RecognizedFlower, normalizedName);
+                        _logger.LogInformation("Priority flower detected: {FlowerName}", vietnameseName);
                     }
                     else
                     {
-                        // Có loại hoa ưu tiên
-                        var topPrediction = priorityPredictions.First();
-                        var className = topPrediction.ClassName ?? "Không xác định";
-
-                        result.RecognizedFlower = className;
-                        result.Confidence = topPrediction.Confidence;
-
-                        // Chuẩn hóa tên hoa
+                        // Non-priority flower, try to map to closest priority flower
                         var normalizedName = FlowerPriorityMapping.GetNormalizedFlowerName(className);
+
                         result.FlowerTypes.Add(normalizedName);
                         result.Colors = FlowerPriorityMapping.GetDefaultColors(normalizedName);
                         result.Presentation = "Bó hoa";
 
-                        _logger.LogInformation("Nhận dạng hoa: {OriginalName} -> {NormalizedName} (độ tin cậy: {Confidence:P2})", result.RecognizedFlower, normalizedName, result.Confidence);
-
-                        result.Flowers.Add(new FlowerDetection
-                        {
-                            Name = normalizedName,
-                            Confidence = topPrediction.Confidence,
-                            Colors = result.Colors,
-                            Presentation = result.Presentation
-                        });
-
-                        // Thêm các predictions ưu tiên khác nếu confidence cao
-                        foreach (var pred in priorityPredictions.Skip(1).Take(2))
-                        {
-                            if (pred.Confidence > 0.15) // Chỉ thêm nếu confidence > 15%
-                            {
-                                var altClassName = pred.ClassName ?? "N/A";
-                                var altName = FlowerPriorityMapping.GetNormalizedFlowerName(altClassName);
-                                if (!result.FlowerTypes.Contains(altName))
-                                {
-                                    result.FlowerTypes.Add(altName);
-                                    _logger.LogInformation("Alternative: {OriginalName} -> {NormalizedName} ({Confidence:P2})", altClassName, altName, pred.Confidence);
-                                }
-                            }
-                        }
+                        _logger.LogInformation("Non-priority flower: {OriginalName} -> Mapped to: {NormalizedName}", vietnameseName, normalizedName);
                     }
 
-                    var flowerTypesList = string.Join(", ", result.FlowerTypes);
-                    var colorsList = string.Join(", ", result.Colors);
-                    _logger.LogInformation("Tìm kiếm theo: Loại hoa = [{FlowerTypes}], Màu sắc = [{Colors}]", flowerTypesList, colorsList);
+                    // Add to flowers list
+                    result.Flowers.Add(new FlowerDetection
+                    {
+                        Name = result.FlowerTypes.First(),
+                        Confidence = response.Probability,
+                        Colors = result.Colors,
+                        Presentation = result.Presentation
+                    });
+
+                    // Process alternative predictions (top 3)
+                    if (response.TopPredictions != null && response.TopPredictions.Count > 1)
+                    {
+                        foreach (var pred in response.TopPredictions)
+                        {
+                            var altVietnameseName = pred.VietnameseName ?? pred.ClassName ?? "Không xác định";
+                            var altClassName = pred.ClassName ?? "Không xác định";
+
+                            // Map to priority flower
+                            List<string> altFlowerTypes = new List<string>();
+                            if (FlowerPriorityMapping.IsPriorityFlower(altClassName))
+                            {
+                                altFlowerTypes.Add(altVietnameseName);
+                            }
+                            else
+                            {
+                                var normalizedAltName = FlowerPriorityMapping.GetNormalizedFlowerName(altClassName);
+                                altFlowerTypes.Add(normalizedAltName);
+                            }
+
+                            result.AlternativePredictions.Add(new AlternativePrediction
+                            {
+                                FlowerName = altVietnameseName,
+                                EnglishName = altClassName,
+                                Confidence = pred.Probability,
+                                FlowerTypes = altFlowerTypes
+                            });
+                        }
+
+                        _logger.LogInformation("Added {Count} alternative predictions", result.AlternativePredictions.Count);
+                    }
+
+                    // Create redirect URL
+                    var flowerTypesParam = string.Join(",", result.FlowerTypes);
+                    var colorParam = string.Join(",", result.Colors);
+                    result.RedirectUrl = $"/Product/ImageSearchResults?flowerTypes={Uri.EscapeDataString(flowerTypesParam)}&colors={Uri.EscapeDataString(colorParam)}&recognizedFlower={Uri.EscapeDataString(result.RecognizedFlower)}&confidence={result.Confidence:F2}";
+
+                    _logger.LogInformation("Redirect URL: {RedirectUrl}", result.RedirectUrl);
+
+                    return result;
                 }
                 else
                 {
-                    // Không nhận dạng được
-                    result.Success = false;
-                    result.Message = "Không thể nhận dạng loại hoa từ ảnh. Vui lòng thử ảnh khác rõ nét hơn.";
-                    _logger.LogWarning("Không có predictions từ Python API");
-                    return result;
+                    _logger.LogWarning("Không có predictions hợp lệ từ Python API");
+                    return new ImageSearchResult
+                    {
+                        Success = false,
+                        Message = "Không thể nhận dạng loại hoa từ ảnh. Vui lòng thử ảnh khác có độ rõ nét hơn."
+                    };
                 }
-
-                // Tạo URL redirect với loại hoa
-                var flowerTypesParam = string.Join(",", result.FlowerTypes);
-                var colorParam = string.Join(",", result.Colors);
-
-                result.RedirectUrl = $"/Product/ImageSearchResults?flowerTypes={Uri.EscapeDataString(flowerTypesParam)}&colors={Uri.EscapeDataString(colorParam)}&recognizedFlower={Uri.EscapeDataString(result.RecognizedFlower)}&confidence={result.Confidence:F2}";
-
-                _logger.LogInformation("Redirect URL: {RedirectUrl}", result.RedirectUrl);
-
-                return result;
             }
             catch (Exception ex)
             {
@@ -259,7 +290,7 @@ namespace Bloomie.Services.Implementations
                 return new ImageSearchResult
                 {
                     Success = false,
-                    Message = "Lỗi xử lý kết quả phân tích ảnh."
+                    Message = "Đã có lỗi xảy ra khi xử lý kết quả. Vui lòng thử lại."
                 };
             }
         }
@@ -267,15 +298,38 @@ namespace Bloomie.Services.Implementations
 
         private class PythonApiResponse
         {
-            public List<Prediction> Predictions { get; set; } = new List<Prediction>();
-            public bool Success { get; set; }
-            public string Message { get; set; } = string.Empty;
+            [JsonPropertyName("class_id")]
+            public int? ClassId { get; set; }
+
+            [JsonPropertyName("class_name")]
+            public string ClassName { get; set; } = string.Empty;
+
+            [JsonPropertyName("vietnamese_name")]
+            public string VietnameseName { get; set; } = string.Empty;
+
+            [JsonPropertyName("probability")]
+            public float Probability { get; set; }
+
+            [JsonPropertyName("error")]
+            public string? Error { get; set; }
+
+            [JsonPropertyName("top_predictions")]
+            public List<PredictionItem>? TopPredictions { get; set; }
         }
 
-        private class Prediction
+        private class PredictionItem
         {
+            [JsonPropertyName("class_id")]
+            public int ClassId { get; set; }
+
+            [JsonPropertyName("class_name")]
             public string ClassName { get; set; } = string.Empty;
-            public float Confidence { get; set; }
+
+            [JsonPropertyName("vietnamese_name")]
+            public string VietnameseName { get; set; } = string.Empty;
+
+            [JsonPropertyName("probability")]
+            public float Probability { get; set; }
         }
     }
 }

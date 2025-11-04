@@ -6,6 +6,7 @@
     var searchPresentations = ViewBag.SearchPresentations as List<string> ?? new List<string>();
     var recognizedFlower = ViewBag.RecognizedFlower as string ?? "";
     var confidence = ViewBag.Confidence as float? ?? 0f;
+    var alternativePredictions = ViewBag.AlternativePredictions as List<Bloomie.Services.Interfaces.AlternativePrediction> ?? new List<Bloomie.Services.Interfaces.AlternativePrediction>();
 }
 
 <style>
@@ -81,6 +82,74 @@
         transform: translateY(-10px);
         box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
     }
+    
+    .alternative-predictions {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .alternative-predictions h4 {
+        color: #667eea;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    .prediction-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .prediction-item:hover {
+        background: #e9ecef;
+        transform: translateX(5px);
+    }
+    
+    .prediction-item.top-1 {
+        border-left-color: #22c55e;
+        background: #f0fdf4;
+    }
+    
+    .prediction-item.top-2 {
+        border-left-color: #f59e0b;
+        background: #fffbeb;
+    }
+    
+    .prediction-item.top-3 {
+        border-left-color: #ef4444;
+        background: #fef2f2;
+    }
+    
+    .prediction-name {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .prediction-confidence {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .confidence-badge {
+        background: #667eea;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
 </style>
 
 <!-- Thông tin nhận dạng -->
@@ -98,6 +167,40 @@
             </div>
         </div>
     </div>
+    
+    <!-- Top 3 Predictions (Các khả năng khác) -->
+    @if (alternativePredictions != null && alternativePredictions.Count > 1)
+    {
+        <div class="alternative-predictions">
+            <h4><i class="bi bi-lightbulb"></i> Các khả năng nhận dạng khác (Top 3):</h4>
+            <p class="text-muted small mb-3">Nếu kết quả không chính xác, có thể hoa của bạn là:</p>
+            
+            @for (int i = 0; i < Math.Min(3, alternativePredictions.Count); i++)
+            {
+                var pred = alternativePredictions[i];
+                var rank = i == 0 ? "top-1" : (i == 1 ? "top-2" : "top-3");
+                var rankIcon = i == 0 ? "🥇" : (i == 1 ? "🥈" : "🥉");
+                
+                <div class="prediction-item @rank" onclick="searchByFlower('@string.Join(",", pred.FlowerTypes)')">
+                    <div>
+                        <span class="prediction-name">@rankIcon @pred.FlowerName</span>
+                        <small class="text-muted d-block">@pred.EnglishName</small>
+                    </div>
+                    <div class="prediction-confidence">
+                        <span class="confidence-badge">@((pred.Confidence * 100).ToString("F1"))%</span>
+                        <i class="bi bi-arrow-right-circle"></i>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        <script>
+            function searchByFlower(flowerTypes) {
+                var colors = '@string.Join(",", searchColors)';
+                window.location.href = '/Product/ImageSearchResults?flowerTypes=' + encodeURIComponent(flowerTypes) + '&colors=' + encodeURIComponent(colors);
+            }
+        </script>
+    }
 }
 
 <!-- Tiêu chí tìm kiếm -->

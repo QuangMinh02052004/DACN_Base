@@ -19,6 +19,7 @@ namespace Bloomie.Services.Interfaces
         public string RecognizedFlower { get; set; } = string.Empty; // Tên hoa được nhận dạng
         public float Confidence { get; set; } // Độ chính xác nhận dạng
         public string RedirectUrl { get; set; } = string.Empty;
+        public List<AlternativePrediction> AlternativePredictions { get; set; } = new List<AlternativePrediction>(); // Top 3 predictions
     }
 
     public class FlowerDetection
@@ -27,5 +28,13 @@ namespace Bloomie.Services.Interfaces
         public float Confidence { get; set; }
         public List<string> Colors { get; set; } = new List<string>();
         public string Presentation { get; set; } = string.Empty;
+    }
+
+    public class AlternativePrediction
+    {
+        public string FlowerName { get; set; } = string.Empty;
+        public string EnglishName { get; set; } = string.Empty;
+        public float Confidence { get; set; }
+        public List<string> FlowerTypes { get; set; } = new List<string>();
     }
 }

@@ -1223,6 +1223,13 @@ public class ProductController : Controller
 
             if (result.Success)
             {
+                // Store alternative predictions in TempData for use in ImageSearchResults
+                // Serialize to JSON to avoid TempData serialization issues
+                if (result.AlternativePredictions != null && result.AlternativePredictions.Any())
+                {
+                    TempData["AlternativePredictions"] = System.Text.Json.JsonSerializer.Serialize(result.AlternativePredictions);
+                }
+
                 return Json(new
                 {
                     success = true,
@@ -1264,6 +1271,28 @@ public class ProductController : Controller
         Console.WriteLine($"Recognized Flower: {recognizedFlower} (Confidence: {confidence:P2})");
         Console.WriteLine($"Flower Types: {string.Join(", ", flowerTypeList)}");
         Console.WriteLine($"Colors: {string.Join(", ", colorList)}");
+
+        // Retrieve alternative predictions from TempData if available
+        // Deserialize from JSON string
+        var alternativePredictions = new List<Bloomie.Services.Interfaces.AlternativePrediction>();
+        if (TempData["AlternativePredictions"] is string alternativePredictionsJson)
+        {
+            try
+            {
+                alternativePredictions = System.Text.Json.JsonSerializer.Deserialize<List<Bloomie.Services.Interfaces.AlternativePrediction>>(alternativePredictionsJson)
+                    ?? new List<Bloomie.Services.Interfaces.AlternativePrediction>();
+                TempData.Keep("AlternativePredictions"); // Keep for potential reloads
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Failed to deserialize alternative predictions: {ex.Message}");
+            }
+        }
+
+        if (alternativePredictions.Any())
+        {
+            Console.WriteLine($"Alternative predictions: {alternativePredictions.Count}");
+        }
 
         var products = await _productService.GetAllProductsAsync();
         products = products.Where(p => p.IsActive).ToList();
@@ -1391,6 +1420,7 @@ public class ProductController : Controller
         ViewBag.RecognizedFlower = recognizedFlower;
         ViewBag.Confidence = confidence;
         ViewBag.SearchPresentations = new List<string>();
+        ViewBag.AlternativePredictions = alternativePredictions; // Add alternative predictions
 
         return View(finalProducts);
     }

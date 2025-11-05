@@ -273,10 +273,6 @@ builder.Services.AddScoped<IInventoryService, InventoryService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<ICustomArrangementService, CustomArrangementService>();
-builder.Services.AddScoped<IImageSearchService, ImageSearchService>();
-
-// Cấu hình HttpClient cho ImageSearchService
-builder.Services.AddHttpClient<IImageSearchService, ImageSearchService>();
 
 // Cấu hình HttpClient cho GeminiService
 builder.Services.AddHttpClient("GeminiClient", client =>

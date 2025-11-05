@@ -930,9 +930,12 @@
         <div class="header-search">
             <form asp-controller="Product" asp-action="Index" method="get" class="search-bar">
                 @Html.AntiForgeryToken()
-                <input type="text" name="searchString" id="searchInput" placeholder="Tìm kiếm hoa..."
+                <input type="text" name="searchString" id="searchInput" placeholder="Tìm kiếm hoa hoặc tìm bằng hình ảnh..."
                     aria-label="Tìm kiếm sản phẩm" />
                 <button type="submit" aria-label="Tìm kiếm"><i class="bi bi-search"></i></button>
+                <button type="button" onclick="openImageSearchModal()" aria-label="Tìm kiếm bằng hình ảnh" class="image-search-btn" title="Tìm kiếm bằng hình ảnh">
+                    <i class="bi bi-camera-fill"></i>
+                </button>
             </form>
         </div>
         <div class="header-actions">
@@ -986,6 +989,46 @@
         </div>
     </header>
 
+    <!-- Image Search Modal (Shopee Style) -->
+    <div class="image-search-modal" id="imageSearchModal">
+        <div class="modal-content-custom">
+            <div class="modal-header-custom">
+                <h3><i class="bi bi-camera-fill"></i> Tìm kiếm bằng hình ảnh</h3>
+                <button onclick="closeImageSearchModal()" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body-custom">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <i class="bi bi-cloud-upload"></i>
+                    </div>
+                    <p class="upload-text">Kéo thả hình ảnh vào đây</p>
+                    <p class="upload-subtext">hoặc</p>
+                    <button type="button" class="btn-choose-file" onclick="document.getElementById('imageFileInput').click()">
+                        Chọn hình ảnh
+                    </button>
+                    <input type="file" id="imageFileInput" accept="image/*" style="display: none;" />
+                    <p class="upload-hint">Hỗ trợ: JPG, PNG, WebP (tối đa 15MB)</p>
+                </div>
+                <div class="preview-area" id="previewArea" style="display: none;">
+                    <img id="previewImage" alt="Preview" />
+                    <div class="preview-actions">
+                        <button type="button" class="btn-change-image" onclick="document.getElementById('imageFileInput').click()">
+                            <i class="bi bi-arrow-repeat"></i> Đổi ảnh khác
+                        </button>
+                        <button type="button" class="btn-search-image" onclick="performImageSearch()">
+                            <i class="bi bi-search"></i> Tìm kiếm
+                        </button>
+                    </div>
+                </div>
+                <div class="loading-area" id="loadingArea" style="display: none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3">Đang phân tích hình ảnh...</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Divider -->
     <hr class="divider" />
@@ -1265,7 +1308,366 @@
             }
         });
 
+        // Image Search Modal JavaScript
+        let selectedImageFile = null;
+
+        function openImageSearchModal() {
+            document.getElementById('imageSearchModal').style.display = 'flex';
+            resetModal();
+        }
+
+        function closeImageSearchModal() {
+            document.getElementById('imageSearchModal').style.display = 'none';
+            resetModal();
+        }
+
+        function resetModal() {
+            document.getElementById('uploadArea').style.display = 'block';
+            document.getElementById('previewArea').style.display = 'none';
+            document.getElementById('loadingArea').style.display = 'none';
+            document.getElementById('imageFileInput').value = '';
+            selectedImageFile = null;
+        }
+
+        // File input handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileInput = document.getElementById('imageFileInput');
+            const uploadArea = document.getElementById('uploadArea');
+
+            if (fileInput) {
+                fileInput.addEventListener('change', function(e) {
+                    handleImageSelect(e.target.files[0]);
+                });
+            }
+
+            // Drag and drop handlers
+            if (uploadArea) {
+                uploadArea.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    uploadArea.classList.add('dragover');
+                });
+
+                uploadArea.addEventListener('dragleave', function(e) {
+                    e.preventDefault();
+                    uploadArea.classList.remove('dragover');
+                });
+
+                uploadArea.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    uploadArea.classList.remove('dragover');
+                    const files = e.dataTransfer.files;
+                    if (files.length > 0) {
+                        handleImageSelect(files[0]);
+                    }
+                });
+            }
+        });
+
+        function handleImageSelect(file) {
+            if (!file) return;
+
+            // Validate file type
+            const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
+            if (!allowedTypes.includes(file.type)) {
+                alert('Vui lòng chọn file ảnh (JPG, PNG, WebP)');
+                return;
+            }
+
+            // Validate file size (15MB)
+            if (file.size > 15 * 1024 * 1024) {
+                alert('Kích thước ảnh quá lớn. Tối đa 15MB.');
+                return;
+            }
+
+            selectedImageFile = file;
+
+            // Show preview
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('previewImage').src = e.target.result;
+                document.getElementById('uploadArea').style.display = 'none';
+                document.getElementById('previewArea').style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+
+        async function performImageSearch() {
+            if (!selectedImageFile) {
+                alert('Vui lòng chọn hình ảnh');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('previewArea').style.display = 'none';
+            document.getElementById('loadingArea').style.display = 'block';
+
+            try {
+                // Prepare form data
+                const formData = new FormData();
+                formData.append('imageFile', selectedImageFile);
+
+                // Get CSRF token
+                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                // Call API
+                const response = await fetch('/Product/SearchByImage', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'RequestVerificationToken': token
+                    }
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Redirect to results page
+                    window.location.href = result.redirectUrl;
+                } else {
+                    alert(result.message || 'Có lỗi xảy ra khi tìm kiếm');
+                    document.getElementById('loadingArea').style.display = 'none';
+                    document.getElementById('previewArea').style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Có lỗi xảy ra khi tìm kiếm. Vui lòng thử lại.');
+                document.getElementById('loadingArea').style.display = 'none';
+                document.getElementById('previewArea').style.display = 'block';
+            }
+        }
+
+        // Close modal on outside click
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('imageSearchModal');
+            if (e.target === modal) {
+                closeImageSearchModal();
+            }
+        });
+
     </script>
+
+    <style>
+        /* Image Search Button in Header */
+        .image-search-btn {
+            background: transparent;
+            border: none;
+            color: #ee4d2d;
+            font-size: 18px;
+            padding: 0 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .image-search-btn:hover {
+            color: #d73211;
+            transform: scale(1.1);
+        }
+
+        /* Modal Styles (Shopee-inspired) */
+        .image-search-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content-custom {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow: auto;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            animation: slideUp 0.3s ease;
+        }
+
+        .modal-header-custom {
+            padding: 20px 24px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header-custom h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: #999;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .close-btn:hover {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .modal-body-custom {
+            padding: 24px;
+        }
+
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 12px;
+            padding: 60px 20px;
+            text-align: center;
+            background: #fafafa;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-area.dragover {
+            border-color: #ee4d2d;
+            background: #fff5f3;
+        }
+
+        .upload-icon i {
+            font-size: 64px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .upload-text {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .upload-subtext {
+            color: #999;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .btn-choose-file {
+            background: #ee4d2d;
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 15px 0;
+        }
+
+        .btn-choose-file:hover {
+            background: #d73211;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(238, 77, 45, 0.3);
+        }
+
+        .upload-hint {
+            font-size: 12px;
+            color: #999;
+            margin-top: 10px;
+        }
+
+        .preview-area {
+            text-align: center;
+        }
+
+        .preview-area img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .preview-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn-change-image, .btn-search-image {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-change-image {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .btn-change-image:hover {
+            background: #e0e0e0;
+        }
+
+        .btn-search-image {
+            background: #ee4d2d;
+            color: white;
+        }
+
+        .btn-search-image:hover {
+            background: #d73211;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(238, 77, 45, 0.3);
+        }
+
+        .loading-area {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .loading-area p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        @@keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @@keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
     @RenderSection("Scripts", required: false)
 
     @* Include AI Chat Widget *@

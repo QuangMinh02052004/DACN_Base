@@ -39,12 +39,15 @@ public class ProductController : Controller
         }
     }
 
-    public ProductController(IProductService productService, ICategoryService categoryService, IPromotionService promotionService, ApplicationDbContext context)
+    private readonly IImageSimilarityService _imageSimilarityService;
+
+    public ProductController(IProductService productService, ICategoryService categoryService, IPromotionService promotionService, ApplicationDbContext context, IImageSimilarityService imageSimilarityService)
     {
         _productService = productService;
         _categoryService = categoryService;
         _promotionService = promotionService;
         _context = context;
+        _imageSimilarityService = imageSimilarityService;
     }
 
     [HttpGet]
@@ -1196,6 +1199,134 @@ public class ProductController : Controller
             html += "<i class='bi bi-star star-empty'></i>";
         }
         return html;
+    }
+
+    // Image Similarity Search - Shopee Style
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> SearchByImage(IFormFile imageFile, int topK = 20)
+    {
+        try
+        {
+            if (imageFile == null || imageFile.Length == 0)
+            {
+                return Json(new { success = false, message = "Vui lòng chọn hình ảnh" });
+            }
+
+            // Call similarity service
+            var result = await _imageSimilarityService.SearchSimilarProductsAsync(imageFile, topK);
+
+            if (!result.Success)
+            {
+                return Json(new { success = false, message = result.Message });
+            }
+
+            // Return success with redirect URL
+            var productIds = string.Join(",", result.Matches.Select(m => m.ProductId));
+            var redirectUrl = $"/Product/SimilarityResults?productIds={productIds}";
+
+            return Json(new
+            {
+                success = true,
+                message = $"Tìm thấy {result.TotalMatches} sản phẩm tương tự",
+                totalMatches = result.TotalMatches,
+                redirectUrl = redirectUrl
+            });
+        }
+        catch (Exception ex)
+        {
+            return Json(new { success = false, message = $"Lỗi: {ex.Message}" });
+        }
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> SimilarityResults(string productIds)
+    {
+        if (string.IsNullOrEmpty(productIds))
+        {
+            return RedirectToAction("Index");
+        }
+
+        // Parse product IDs
+        var ids = productIds.Split(',')
+            .Select(id => int.TryParse(id, out var parsed) ? parsed : 0)
+            .Where(id => id > 0)
+            .ToList();
+
+        if (!ids.Any())
+        {
+            return RedirectToAction("Index");
+        }
+
+        // Get products
+        var allProducts = await _productService.GetAllProductsAsync();
+        var products = allProducts.Where(p => ids.Contains(p.Id) && p.IsActive).ToList();
+
+        // Apply promotions
+        var currentDate = DateTime.Now;
+        var promotions = await _promotionService.GetAllPromotionsAsync();
+        promotions = promotions.Where(p => p.IsActive).ToList();
+
+        foreach (var product in products)
+        {
+            var applicablePromotions = promotions
+                .Where(p => p.PromotionProducts.Any(pp => pp.ProductId == product.Id))
+                .ToList();
+
+            if (applicablePromotions.Any())
+            {
+                var bestPromotion = applicablePromotions.OrderByDescending(p => p.DiscountPercentage).First();
+                product.DiscountPercentage = bestPromotion.DiscountPercentage;
+            }
+        }
+
+        // Sort by original order (similarity score)
+        var sortedProducts = ids
+            .Select(id => products.FirstOrDefault(p => p.Id == id))
+            .Where(p => p != null)
+            .ToList();
+
+        // Get categories for nav
+        var allCategories = await _categoryService.GetAllCategoriesAsync();
+        var parentCategories = allCategories.Where(c => c.ParentCategoryId == null)
+            .OrderBy(c => c.Name)
+            .ToList();
+
+        foreach (var category in parentCategories)
+        {
+            category.SubCategories = allCategories.Where(c => c.ParentCategoryId == category.Id)
+                .OrderBy(c => c.Name)
+                .ToList();
+        }
+
+        ViewBag.Categories = parentCategories;
+        ViewBag.CategoryName = "Kết quả tìm kiếm tương tự";
+        ViewBag.ParentCategory = null;
+        ViewBag.SubCategory = null;
+        ViewBag.TotalResults = sortedProducts.Count;
+
+        // Create products with rating
+        var productsWithRating = new List<ProductViewModel.ProductWithRating>();
+        foreach (var product in sortedProducts)
+        {
+            var averageRating = (await _context.Ratings
+                .Where(r => r.ProductId == product.Id)
+                .Select(r => (decimal?)r.Star)
+                .ToListAsync()).Average() ?? 0;
+
+            productsWithRating.Add(new ProductViewModel.ProductWithRating
+            {
+                Product = product,
+                Rating = averageRating,
+                Occasion = "Không xác định",
+                Object = "Không xác định",
+                PresentationStyle = product.PresentationStyle?.Name ?? "Không xác định",
+                Colors = GetColorsForProduct(product.Id),
+                FlowerTypes = await GetFlowerTypesForProduct(product.Id)
+            });
+        }
+
+        return View(productsWithRating);
     }
 
 }

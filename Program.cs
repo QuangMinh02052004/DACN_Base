@@ -283,6 +283,12 @@ builder.Services.AddHttpClient("GeminiClient", client =>
 // Đăng ký AI Chat Service
 builder.Services.AddScoped<IAIChatService, GeminiService>();
 
+// Cấu hình HttpClient cho Image Similarity Service
+builder.Services.AddHttpClient<IImageSimilarityService, ImageSimilarityService>(client =>
+{
+    client.Timeout = TimeSpan.FromMinutes(2);
+});
+
 // Cấu hình Excel (EPPlus)
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 

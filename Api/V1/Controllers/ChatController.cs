@@ -6,6 +6,7 @@ using Bloomie.Api.V1.DTOs.Responses;
 using Bloomie.Api.V1.Helpers;
 using Bloomie.Data;
 using Bloomie.Models;
+using Bloomie.Models.Entities;
 using Bloomie.Services.Interfaces;
 using System.Security.Claims;
 
@@ -90,7 +91,7 @@ namespace Bloomie.Api.V1.Controllers
 
                 var conversations = await _context.ChatConversations
                     .Where(c => c.UserId == userId && c.IsActive)
-                    .Include(c => c.Messages)
+                    .Include(c => c.ChatMessages)
                     .OrderByDescending(c => c.UpdatedAt)
                     .Select(c => new ChatConversationResponse
                     {
@@ -99,8 +100,8 @@ namespace Bloomie.Api.V1.Controllers
                         CreatedAt = c.CreatedAt,
                         UpdatedAt = c.UpdatedAt,
                         IsActive = c.IsActive,
-                        MessageCount = c.Messages.Count,
-                        LastMessage = c.Messages
+                        MessageCount = c.ChatMessages.Count,
+                        LastMessage = c.ChatMessages
                             .OrderByDescending(m => m.CreatedAt)
                             .Select(m => new ChatMessageResponse
                             {
@@ -135,7 +136,7 @@ namespace Bloomie.Api.V1.Controllers
 
                 var conversation = await _context.ChatConversations
                     .Where(c => c.Id == id && c.UserId == userId)
-                    .Include(c => c.Messages)
+                    .Include(c => c.ChatMessages)
                     .Select(c => new ChatConversationDetailResponse
                     {
                         Id = c.Id,
@@ -143,7 +144,7 @@ namespace Bloomie.Api.V1.Controllers
                         CreatedAt = c.CreatedAt,
                         UpdatedAt = c.UpdatedAt,
                         IsActive = c.IsActive,
-                        Messages = c.Messages
+                        Messages = c.ChatMessages
                             .OrderBy(m => m.CreatedAt)
                             .Select(m => new ChatMessageResponse
                             {
@@ -284,7 +285,7 @@ namespace Bloomie.Api.V1.Controllers
                 if (request.ConversationId.HasValue)
                 {
                     conversation = await _context.ChatConversations
-                        .Include(c => c.Messages)
+                        .Include(c => c.ChatMessages)
                         .FirstOrDefaultAsync(c => c.Id == request.ConversationId.Value && c.UserId == userId);
 
                     if (conversation == null)
@@ -392,7 +393,7 @@ namespace Bloomie.Api.V1.Controllers
                 var userId = GetUserId();
 
                 var conversation = await _context.ChatConversations
-                    .Include(c => c.Messages)
+                    .Include(c => c.ChatMessages)
                     .FirstOrDefaultAsync(c => c.Id == id && c.UserId == userId);
 
                 if (conversation == null)
@@ -412,7 +413,7 @@ namespace Bloomie.Api.V1.Controllers
                     CreatedAt = conversation.CreatedAt,
                     UpdatedAt = conversation.UpdatedAt,
                     IsActive = conversation.IsActive,
-                    MessageCount = conversation.Messages.Count
+                    MessageCount = conversation.ChatMessages.Count
                 };
 
                 return ApiResponse<ChatConversationResponse>.SuccessResponse(response, "Conversation updated successfully");

@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Bloomie.Data;
-using Bloomie.Models;
+using Bloomie.Models.Entities;
 using Bloomie.Services.Interfaces;
 using System.Security.Claims;
 
@@ -62,7 +62,7 @@ namespace Bloomie.Hubs
                 if (conversationId.HasValue)
                 {
                     conversation = await _context.ChatConversations
-                        .Include(c => c.Messages)
+                        .Include(c => c.ChatMessages)
                         .FirstOrDefaultAsync(c => c.Id == conversationId.Value && c.UserId == userId);
 
                     if (conversation == null)
@@ -187,7 +187,7 @@ namespace Bloomie.Hubs
 
                 var conversations = await _context.ChatConversations
                     .Where(c => c.UserId == userId && c.IsActive)
-                    .Include(c => c.Messages)
+                    .Include(c => c.ChatMessages)
                     .OrderByDescending(c => c.UpdatedAt)
                     .Select(c => new
                     {
@@ -195,8 +195,8 @@ namespace Bloomie.Hubs
                         title = c.Title,
                         createdAt = c.CreatedAt,
                         updatedAt = c.UpdatedAt,
-                        messageCount = c.Messages.Count,
-                        lastMessage = c.Messages
+                        messageCount = c.ChatMessages.Count,
+                        lastMessage = c.ChatMessages
                             .OrderByDescending(m => m.CreatedAt)
                             .Select(m => new
                             {
@@ -226,7 +226,7 @@ namespace Bloomie.Hubs
                 var userId = GetUserId();
 
                 var conversation = await _context.ChatConversations
-                    .Include(c => c.Messages)
+                    .Include(c => c.ChatMessages)
                     .FirstOrDefaultAsync(c => c.Id == conversationId && c.UserId == userId);
 
                 if (conversation == null)
@@ -235,7 +235,7 @@ namespace Bloomie.Hubs
                     return;
                 }
 
-                var messages = conversation.Messages
+                var messages = conversation.ChatMessages
                     .OrderBy(m => m.CreatedAt)
                     .Select(m => new
                     {

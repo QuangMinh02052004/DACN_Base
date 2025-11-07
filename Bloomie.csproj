@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,6 +41,12 @@
     <Folder Include="wwwroot\data\train\" />
     <Folder Include="wwwroot\profile\" />
     <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataImporter\**" />
+    <EmbeddedResource Remove="DataImporter\**" />
+    <None Remove="DataImporter\**" />
   </ItemGroup>
 
 </Project>

@@ -46,6 +46,14 @@ namespace Bloomie.Data
         {
             base.OnModelCreating(builder);
 
+            // Ignore custom AspNet entities from Models.Entities (they conflict with Identity's built-in entities)
+            builder.Ignore<Models.Entities.AspNetUser>();
+            builder.Ignore<Models.Entities.AspNetRole>();
+            builder.Ignore<Models.Entities.AspNetUserLogin>();
+            builder.Ignore<Models.Entities.AspNetUserClaim>();
+            builder.Ignore<Models.Entities.AspNetUserToken>();
+            builder.Ignore<Models.Entities.AspNetRoleClaim>();
+
             // Quan hệ giữa Product và Category (1-n)
             builder.Entity<Product>()
                 .HasOne(p => p.Category)
@@ -251,7 +259,7 @@ namespace Bloomie.Data
             // Cấu hình cho ChatMessage và ChatConversation (1-n)
             builder.Entity<ChatMessage>()
                 .HasOne(cm => cm.Conversation)
-                .WithMany(cc => cc.Messages)
+                .WithMany(cc => cc.ChatMessages)
                 .HasForeignKey(cm => cm.ConversationId)
                 .OnDelete(DeleteBehavior.Cascade);
 

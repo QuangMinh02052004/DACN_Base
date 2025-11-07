@@ -1,0 +1,300 @@
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'Batch'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'DiscountedPrice' on entity type 'CartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'CartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'BasePrice' on entity type 'CustomArrangement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'FlowersCost' on entity type 'CustomArrangement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'TotalPrice' on entity type 'CustomArrangement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'TotalPrice' on entity type 'CustomArrangementFlower'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'CustomArrangementFlower'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'FlowerType'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'InventoryTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'TotalPrice' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'OrderDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'BasePrice' on entity type 'PresentationStyle'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'DiscountPercentage' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'DiscountPercentage' on entity type 'Promotion'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'MaximumDiscountValue' on entity type 'Promotion'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'MinimumOrderValue' on entity type 'Promotion'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'Shipping'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (49ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/lequangminh/Documents/DACN_Base-3
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (211ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+warn: Microsoft.EntityFrameworkCore.Query[20504]
+      Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/LoginByGoogle
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/LoginByGoogle
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product/SearchByImage
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Product/SearchByImage
+info: Bloomie.Services.Implementations.ImageSimilarityService[0]
+      Sending image to Python API for similarity search...
+info: System.Net.Http.HttpClient.IImageSimilarityService.LogicalHandler[100]
+      Start processing HTTP request POST http://localhost:8000/search/similar?top_k=20
+info: System.Net.Http.HttpClient.IImageSimilarityService.ClientHandler[100]
+      Sending HTTP request POST http://localhost:8000/search/similar?top_k=20
+info: System.Net.Http.HttpClient.IImageSimilarityService.ClientHandler[101]
+      Received HTTP response headers after 1190.735ms - 200
+info: System.Net.Http.HttpClient.IImageSimilarityService.LogicalHandler[101]
+      End processing HTTP request after 1194.3608ms - 200
+info: Bloomie.Services.Implementations.ImageSimilarityService[0]
+      Found 0 similar products
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product/SimilarityResults
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Product/SimilarityResults
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Product
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Name]
+      FROM (
+          SELECT DISTINCT [p].[Name]
+          FROM [PresentationStyles] AS [p]
+      ) AS [p0]
+      ORDER BY [p0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f0].[Name]
+      FROM (
+          SELECT DISTINCT [f].[Name]
+          FROM [FlowerTypes] AS [f]
+          WHERE [f].[Name] NOT LIKE N''
+      ) AS [f0]
+      ORDER BY [f0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...

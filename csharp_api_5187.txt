@@ -1,0 +1,1971 @@
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'Batch'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'DiscountedPrice' on entity type 'CartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'CartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'BasePrice' on entity type 'CustomArrangement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'FlowersCost' on entity type 'CustomArrangement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'TotalPrice' on entity type 'CustomArrangement'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'TotalPrice' on entity type 'CustomArrangementFlower'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'CustomArrangementFlower'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'FlowerType'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'UnitPrice' on entity type 'InventoryTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'TotalPrice' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'OrderDetail'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'BasePrice' on entity type 'PresentationStyle'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'DiscountPercentage' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'DiscountPercentage' on entity type 'Promotion'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'MaximumDiscountValue' on entity type 'Promotion'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'MinimumOrderValue' on entity type 'Promotion'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[30000]
+      No store type was specified for the decimal property 'Price' on entity type 'Shipping'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (46ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5187
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/lequangminh/Documents/DACN_Base-3
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+warn: Microsoft.EntityFrameworkCore.Query[20504]
+      Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (93ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+      FROM [AspNetUserClaims] AS [a]
+      WHERE [a].[UserId] = @__user_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @__userId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[ClaimType], [a].[ClaimValue]
+      FROM [AspNetRoleClaims] AS [a]
+      WHERE [a].[RoleId] = @__role_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[UserId], [a].[RoleId]
+      FROM [AspNetUserRoles] AS [a]
+      WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminDashboard
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminDashboard
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Suppliers] AS [s]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [AspNetUsers] AS [a]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Promotions] AS [p]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [UserAccessLogs] AS [u]
+      WHERE [u].[Url] IN (N'/', N'/Home/Index')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__today_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE CONVERT(date, [o].[OrderDate]) = @__today_0 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@__startOfWeek_0='?' (DbType = DateTime2), @__endOfWeek_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [o].[OrderDate] >= @__startOfWeek_0 AND [o].[OrderDate] < @__endOfWeek_1 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[Quantity]), 0)
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      LEFT JOIN [Payments] AS [p] ON [o0].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM(CAST([i].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]), 0.0)
+      FROM [InventoryTransactions] AS [i]
+      LEFT JOIN [Batches] AS [b] ON [i].[BatchId] = [b].[Id]
+      WHERE [i].[TransactionType] = 0 AND [b].[Id] IS NOT NULL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([i].[Quantity]), 0)
+      FROM [InventoryTransactions] AS [i]
+      WHERE [i].[TransactionType] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Id], [p0].[CategoryId], [p0].[Colors], [p0].[CreatedDate], [p0].[Description], [p0].[DiscountPercentage], [p0].[ImageUrl], [p0].[IsActive], [p0].[IsNew], [p0].[LowStockThreshold], [p0].[Name], [p0].[PresentationStyleId], [p0].[Price], [p0].[Quantity], [p0].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM (
+          SELECT TOP(@__p_0) [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+          FROM [Products] AS [p]
+          WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+          ORDER BY [p].[Quantity]
+      ) AS [p0]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      ORDER BY [p0].[Quantity]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 4
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 3
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key] AS [Period], COALESCE(SUM([s].[TotalPrice]), 0.0) AS [TotalSalesRevenue], COALESCE(SUM([s1].[value]), 0) AS [TotalItemsSold]
+      FROM (
+          SELECT [o].[Id], [o].[TotalPrice], DATEPART(month, [o].[OrderDate]) AS [Key]
+          FROM [Orders] AS [o]
+          LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+          WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      ) AS [s]
+      OUTER APPLY (
+          SELECT COALESCE(SUM([o0].[Quantity]), 0) AS [value]
+          FROM [OrderDetails] AS [o0]
+          WHERE [s].[Id] = [o0].[OrderId]
+      ) AS [s1]
+      GROUP BY [s].[Key]
+      ORDER BY [s].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [i0].[Key] AS [Period], (
+          SELECT COALESCE(SUM(CASE
+              WHEN [b].[Id] IS NOT NULL THEN CAST([i1].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]
+              ELSE 0.0
+          END), 0.0)
+          FROM (
+              SELECT [i2].[BatchId], [i2].[Quantity], DATEPART(month, [i2].[TransactionDate]) AS [Key]
+              FROM [InventoryTransactions] AS [i2]
+              WHERE [i2].[TransactionType] = 0 AND DATEPART(year, [i2].[TransactionDate]) = @__currentYear_0
+          ) AS [i1]
+          LEFT JOIN [Batches] AS [b] ON [i1].[BatchId] = [b].[Id]
+          WHERE [i0].[Key] = [i1].[Key] OR ([i0].[Key] IS NULL AND [i1].[Key] IS NULL)) AS [TotalImportRevenue], COALESCE(SUM([i0].[Quantity]), 0) AS [TotalItemsImported]
+      FROM (
+          SELECT [i].[Quantity], DATEPART(month, [i].[TransactionDate]) AS [Key]
+          FROM [InventoryTransactions] AS [i]
+          WHERE [i].[TransactionType] = 0 AND DATEPART(year, [i].[TransactionDate]) = @__currentYear_0
+      ) AS [i0]
+      GROUP BY [i0].[Key]
+      ORDER BY [i0].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o].[Id], [o].[CustomArrangementId], [o].[DeliveryDate], [o].[DeliveryTime], [o].[OrderId], [o].[Price], [o].[ProductId], [o].[Quantity], [o0].[Id], [o0].[IsAnonymousSender], [o0].[IsSenderReceiverSame], [o0].[Notes], [o0].[OrderDate], [o0].[OrderStatus], [o0].[PhoneNumber], [o0].[PromotionId], [o0].[ReceiverEmail], [o0].[ReceiverName], [o0].[ReceiverPhoneNumber], [o0].[SenderEmail], [o0].[SenderName], [o0].[SenderPhoneNumber], [o0].[ShippingAddress], [o0].[ShippingMethod], [o0].[TotalPrice], [o0].[UserId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      INNER JOIN [Products] AS [p] ON [o].[ProductId] = [p].[Id]
+      WHERE DATEPART(year, [o0].[OrderDate]) = @__currentYear_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Name] AS [CategoryName], COALESCE(SUM(CAST([o0].[Quantity] AS decimal(18,2)) * [o0].[Price]), 0.0) AS [TotalRevenue]
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      INNER JOIN [OrderDetails] AS [o0] ON [o].[Id] = [o0].[OrderId]
+      INNER JOIN [Products] AS [p0] ON [o0].[ProductId] = [p0].[Id]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      GROUP BY [c].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o0].[Key] AS [Month], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 0 THEN 1
+      END) AS [PendingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 4 THEN 1
+      END) AS [CancelledOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 3 THEN 1
+      END) AS [DeliveredOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 1 THEN 1
+      END) AS [ProcessingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 2 THEN 1
+      END) AS [ShippedOrders]
+      FROM (
+          SELECT [o].[OrderStatus], DATEPART(month, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) AS [Key]
+          FROM [Orders] AS [o]
+          WHERE DATEPART(year, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) = @__currentYear_0
+      ) AS [o0]
+      GROUP BY [o0].[Key]
+      ORDER BY [o0].[Key]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client Vab4dCc4wEnSUwQ-AjAr4A đã kết nối và được thêm vào nhóm Admins.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực: 349196dc-1e82-4b34-9e03-3ab1f18dc384 đang truy cập trang chủ
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [UserAccessLogs] ([AccessTime], [Url], [UserId])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2);
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Đã đăng nhập quyền truy cập cho người dùng: 349196dc-1e82-4b34-9e03-3ab1f18dc384 đến /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+Client Vab4dCc4wEnSUwQ-AjAr4A đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product/SearchByImage
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Product/SearchByImage
+info: Bloomie.Services.Implementations.ImageSimilarityService[0]
+      Sending image to Python API for similarity search...
+info: System.Net.Http.HttpClient.IImageSimilarityService.LogicalHandler[100]
+      Start processing HTTP request POST http://localhost:8000/search/similar?top_k=20
+info: System.Net.Http.HttpClient.IImageSimilarityService.ClientHandler[100]
+      Sending HTTP request POST http://localhost:8000/search/similar?top_k=20
+info: System.Net.Http.HttpClient.IImageSimilarityService.ClientHandler[101]
+      Received HTTP response headers after 192.6665ms - 200
+info: System.Net.Http.HttpClient.IImageSimilarityService.LogicalHandler[101]
+      End processing HTTP request after 195.9443ms - 200
+info: Bloomie.Services.Implementations.ImageSimilarityService[0]
+      Found 0 similar products
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product/SimilarityResults
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Product/SimilarityResults
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Product
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Name]
+      FROM (
+          SELECT DISTINCT [p].[Name]
+          FROM [PresentationStyles] AS [p]
+      ) AS [p0]
+      ORDER BY [p0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f0].[Name]
+      FROM (
+          SELECT DISTINCT [f].[Name]
+          FROM [FlowerTypes] AS [f]
+          WHERE [f].[Name] NOT LIKE N''
+      ) AS [f0]
+      ORDER BY [f0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /api/products
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /api/products
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id] AS [id], [p].[Name] AS [name], [p].[ImageUrl] AS [imageUrl], [p].[Price] AS [price]
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[ImageUrl] IS NOT NULL AND [p].[ImageUrl] NOT LIKE N''
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Product
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Name]
+      FROM (
+          SELECT DISTINCT [p].[Name]
+          FROM [PresentationStyles] AS [p]
+      ) AS [p0]
+      ORDER BY [p0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f0].[Name]
+      FROM (
+          SELECT DISTINCT [f].[Name]
+          FROM [FlowerTypes] AS [f]
+          WHERE [f].[Name] NOT LIKE N''
+      ) AS [f0]
+      ORDER BY [f0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Product
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Name]
+      FROM (
+          SELECT DISTINCT [p].[Name]
+          FROM [PresentationStyles] AS [p]
+      ) AS [p0]
+      ORDER BY [p0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f0].[Name]
+      FROM (
+          SELECT DISTINCT [f].[Name]
+          FROM [FlowerTypes] AS [f]
+          WHERE [f].[Name] NOT LIKE N''
+      ) AS [f0]
+      ORDER BY [f0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực: 349196dc-1e82-4b34-9e03-3ab1f18dc384 đang truy cập trang chủ
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SET IMPLICIT_TRANSACTIONS OFF;
+      SET NOCOUNT ON;
+      INSERT INTO [UserAccessLogs] ([AccessTime], [Url], [UserId])
+      OUTPUT INSERTED.[Id]
+      VALUES (@p0, @p1, @p2);
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Đã đăng nhập quyền truy cập cho người dùng: 349196dc-1e82-4b34-9e03-3ab1f18dc384 đến /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminDashboard
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminDashboard
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Suppliers] AS [s]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [AspNetUsers] AS [a]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Promotions] AS [p]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [UserAccessLogs] AS [u]
+      WHERE [u].[Url] IN (N'/', N'/Home/Index')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__today_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE CONVERT(date, [o].[OrderDate]) = @__today_0 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__startOfWeek_0='?' (DbType = DateTime2), @__endOfWeek_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [o].[OrderDate] >= @__startOfWeek_0 AND [o].[OrderDate] < @__endOfWeek_1 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[Quantity]), 0)
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      LEFT JOIN [Payments] AS [p] ON [o0].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM(CAST([i].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]), 0.0)
+      FROM [InventoryTransactions] AS [i]
+      LEFT JOIN [Batches] AS [b] ON [i].[BatchId] = [b].[Id]
+      WHERE [i].[TransactionType] = 0 AND [b].[Id] IS NOT NULL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([i].[Quantity]), 0)
+      FROM [InventoryTransactions] AS [i]
+      WHERE [i].[TransactionType] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Id], [p0].[CategoryId], [p0].[Colors], [p0].[CreatedDate], [p0].[Description], [p0].[DiscountPercentage], [p0].[ImageUrl], [p0].[IsActive], [p0].[IsNew], [p0].[LowStockThreshold], [p0].[Name], [p0].[PresentationStyleId], [p0].[Price], [p0].[Quantity], [p0].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM (
+          SELECT TOP(@__p_0) [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+          FROM [Products] AS [p]
+          WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+          ORDER BY [p].[Quantity]
+      ) AS [p0]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      ORDER BY [p0].[Quantity]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 4
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 3
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key] AS [Period], COALESCE(SUM([s].[TotalPrice]), 0.0) AS [TotalSalesRevenue], COALESCE(SUM([s1].[value]), 0) AS [TotalItemsSold]
+      FROM (
+          SELECT [o].[Id], [o].[TotalPrice], DATEPART(month, [o].[OrderDate]) AS [Key]
+          FROM [Orders] AS [o]
+          LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+          WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      ) AS [s]
+      OUTER APPLY (
+          SELECT COALESCE(SUM([o0].[Quantity]), 0) AS [value]
+          FROM [OrderDetails] AS [o0]
+          WHERE [s].[Id] = [o0].[OrderId]
+      ) AS [s1]
+      GROUP BY [s].[Key]
+      ORDER BY [s].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [i0].[Key] AS [Period], (
+          SELECT COALESCE(SUM(CASE
+              WHEN [b].[Id] IS NOT NULL THEN CAST([i1].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]
+              ELSE 0.0
+          END), 0.0)
+          FROM (
+              SELECT [i2].[BatchId], [i2].[Quantity], DATEPART(month, [i2].[TransactionDate]) AS [Key]
+              FROM [InventoryTransactions] AS [i2]
+              WHERE [i2].[TransactionType] = 0 AND DATEPART(year, [i2].[TransactionDate]) = @__currentYear_0
+          ) AS [i1]
+          LEFT JOIN [Batches] AS [b] ON [i1].[BatchId] = [b].[Id]
+          WHERE [i0].[Key] = [i1].[Key] OR ([i0].[Key] IS NULL AND [i1].[Key] IS NULL)) AS [TotalImportRevenue], COALESCE(SUM([i0].[Quantity]), 0) AS [TotalItemsImported]
+      FROM (
+          SELECT [i].[Quantity], DATEPART(month, [i].[TransactionDate]) AS [Key]
+          FROM [InventoryTransactions] AS [i]
+          WHERE [i].[TransactionType] = 0 AND DATEPART(year, [i].[TransactionDate]) = @__currentYear_0
+      ) AS [i0]
+      GROUP BY [i0].[Key]
+      ORDER BY [i0].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o].[Id], [o].[CustomArrangementId], [o].[DeliveryDate], [o].[DeliveryTime], [o].[OrderId], [o].[Price], [o].[ProductId], [o].[Quantity], [o0].[Id], [o0].[IsAnonymousSender], [o0].[IsSenderReceiverSame], [o0].[Notes], [o0].[OrderDate], [o0].[OrderStatus], [o0].[PhoneNumber], [o0].[PromotionId], [o0].[ReceiverEmail], [o0].[ReceiverName], [o0].[ReceiverPhoneNumber], [o0].[SenderEmail], [o0].[SenderName], [o0].[SenderPhoneNumber], [o0].[ShippingAddress], [o0].[ShippingMethod], [o0].[TotalPrice], [o0].[UserId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      INNER JOIN [Products] AS [p] ON [o].[ProductId] = [p].[Id]
+      WHERE DATEPART(year, [o0].[OrderDate]) = @__currentYear_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Name] AS [CategoryName], COALESCE(SUM(CAST([o0].[Quantity] AS decimal(18,2)) * [o0].[Price]), 0.0) AS [TotalRevenue]
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      INNER JOIN [OrderDetails] AS [o0] ON [o].[Id] = [o0].[OrderId]
+      INNER JOIN [Products] AS [p0] ON [o0].[ProductId] = [p0].[Id]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      GROUP BY [c].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o0].[Key] AS [Month], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 0 THEN 1
+      END) AS [PendingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 4 THEN 1
+      END) AS [CancelledOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 3 THEN 1
+      END) AS [DeliveredOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 1 THEN 1
+      END) AS [ProcessingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 2 THEN 1
+      END) AS [ShippedOrders]
+      FROM (
+          SELECT [o].[OrderStatus], DATEPART(month, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) AS [Key]
+          FROM [Orders] AS [o]
+          WHERE DATEPART(year, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) = @__currentYear_0
+      ) AS [o0]
+      GROUP BY [o0].[Key]
+      ORDER BY [o0].[Key]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client VCTj4lYM2gQL921YCpNtRA đã kết nối và được thêm vào nhóm Admins.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+Client VCTj4lYM2gQL921YCpNtRA đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client 90CEP82juCXxMUyWnSB6TQ đã kết nối và được thêm vào nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct/Add
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct/Add
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[AvailableColors], [f].[Description], [f].[ImageUrl], [f].[IsActive], [f].[Name], [f].[Quantity], [f].[UnitPrice]
+      FROM [FlowerTypes] AS [f]
+      WHERE [f].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[BasePrice], [p].[Description], [p].[ImageUrl], [p].[Name]
+      FROM [PresentationStyles] AS [p]
+Client 90CEP82juCXxMUyWnSB6TQ đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client aRih5JBjr6mE04OpHB7Djg đã kết nối và được thêm vào nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+Client aRih5JBjr6mE04OpHB7Djg đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client mUn-w474jo60-hhe1m959A đã kết nối và được thêm vào nhóm Admins.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+Client mUn-w474jo60-hhe1m959A đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (52ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+      FROM [AspNetUserClaims] AS [a]
+      WHERE [a].[UserId] = @__user_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @__userId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[ClaimType], [a].[ClaimValue]
+      FROM [AspNetRoleClaims] AS [a]
+      WHERE [a].[RoleId] = @__role_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[UserId], [a].[RoleId]
+      FROM [AspNetUserRoles] AS [a]
+      WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminDashboard
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminDashboard
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Suppliers] AS [s]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [AspNetUsers] AS [a]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Promotions] AS [p]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [UserAccessLogs] AS [u]
+      WHERE [u].[Url] IN (N'/', N'/Home/Index')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__today_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE CONVERT(date, [o].[OrderDate]) = @__today_0 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__startOfWeek_0='?' (DbType = DateTime2), @__endOfWeek_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [o].[OrderDate] >= @__startOfWeek_0 AND [o].[OrderDate] < @__endOfWeek_1 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[Quantity]), 0)
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      LEFT JOIN [Payments] AS [p] ON [o0].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM(CAST([i].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]), 0.0)
+      FROM [InventoryTransactions] AS [i]
+      LEFT JOIN [Batches] AS [b] ON [i].[BatchId] = [b].[Id]
+      WHERE [i].[TransactionType] = 0 AND [b].[Id] IS NOT NULL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([i].[Quantity]), 0)
+      FROM [InventoryTransactions] AS [i]
+      WHERE [i].[TransactionType] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Id], [p0].[CategoryId], [p0].[Colors], [p0].[CreatedDate], [p0].[Description], [p0].[DiscountPercentage], [p0].[ImageUrl], [p0].[IsActive], [p0].[IsNew], [p0].[LowStockThreshold], [p0].[Name], [p0].[PresentationStyleId], [p0].[Price], [p0].[Quantity], [p0].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM (
+          SELECT TOP(@__p_0) [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+          FROM [Products] AS [p]
+          WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+          ORDER BY [p].[Quantity]
+      ) AS [p0]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      ORDER BY [p0].[Quantity]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 4
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 3
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key] AS [Period], COALESCE(SUM([s].[TotalPrice]), 0.0) AS [TotalSalesRevenue], COALESCE(SUM([s1].[value]), 0) AS [TotalItemsSold]
+      FROM (
+          SELECT [o].[Id], [o].[TotalPrice], DATEPART(month, [o].[OrderDate]) AS [Key]
+          FROM [Orders] AS [o]
+          LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+          WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      ) AS [s]
+      OUTER APPLY (
+          SELECT COALESCE(SUM([o0].[Quantity]), 0) AS [value]
+          FROM [OrderDetails] AS [o0]
+          WHERE [s].[Id] = [o0].[OrderId]
+      ) AS [s1]
+      GROUP BY [s].[Key]
+      ORDER BY [s].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [i0].[Key] AS [Period], (
+          SELECT COALESCE(SUM(CASE
+              WHEN [b].[Id] IS NOT NULL THEN CAST([i1].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]
+              ELSE 0.0
+          END), 0.0)
+          FROM (
+              SELECT [i2].[BatchId], [i2].[Quantity], DATEPART(month, [i2].[TransactionDate]) AS [Key]
+              FROM [InventoryTransactions] AS [i2]
+              WHERE [i2].[TransactionType] = 0 AND DATEPART(year, [i2].[TransactionDate]) = @__currentYear_0
+          ) AS [i1]
+          LEFT JOIN [Batches] AS [b] ON [i1].[BatchId] = [b].[Id]
+          WHERE [i0].[Key] = [i1].[Key] OR ([i0].[Key] IS NULL AND [i1].[Key] IS NULL)) AS [TotalImportRevenue], COALESCE(SUM([i0].[Quantity]), 0) AS [TotalItemsImported]
+      FROM (
+          SELECT [i].[Quantity], DATEPART(month, [i].[TransactionDate]) AS [Key]
+          FROM [InventoryTransactions] AS [i]
+          WHERE [i].[TransactionType] = 0 AND DATEPART(year, [i].[TransactionDate]) = @__currentYear_0
+      ) AS [i0]
+      GROUP BY [i0].[Key]
+      ORDER BY [i0].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o].[Id], [o].[CustomArrangementId], [o].[DeliveryDate], [o].[DeliveryTime], [o].[OrderId], [o].[Price], [o].[ProductId], [o].[Quantity], [o0].[Id], [o0].[IsAnonymousSender], [o0].[IsSenderReceiverSame], [o0].[Notes], [o0].[OrderDate], [o0].[OrderStatus], [o0].[PhoneNumber], [o0].[PromotionId], [o0].[ReceiverEmail], [o0].[ReceiverName], [o0].[ReceiverPhoneNumber], [o0].[SenderEmail], [o0].[SenderName], [o0].[SenderPhoneNumber], [o0].[ShippingAddress], [o0].[ShippingMethod], [o0].[TotalPrice], [o0].[UserId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      INNER JOIN [Products] AS [p] ON [o].[ProductId] = [p].[Id]
+      WHERE DATEPART(year, [o0].[OrderDate]) = @__currentYear_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (19ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Name] AS [CategoryName], COALESCE(SUM(CAST([o0].[Quantity] AS decimal(18,2)) * [o0].[Price]), 0.0) AS [TotalRevenue]
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      INNER JOIN [OrderDetails] AS [o0] ON [o].[Id] = [o0].[OrderId]
+      INNER JOIN [Products] AS [p0] ON [o0].[ProductId] = [p0].[Id]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      GROUP BY [c].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o0].[Key] AS [Month], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 0 THEN 1
+      END) AS [PendingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 4 THEN 1
+      END) AS [CancelledOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 3 THEN 1
+      END) AS [DeliveredOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 1 THEN 1
+      END) AS [ProcessingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 2 THEN 1
+      END) AS [ShippedOrders]
+      FROM (
+          SELECT [o].[OrderStatus], DATEPART(month, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) AS [Key]
+          FROM [Orders] AS [o]
+          WHERE DATEPART(year, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) = @__currentYear_0
+      ) AS [o0]
+      GROUP BY [o0].[Key]
+      ORDER BY [o0].[Key]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (12ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+Client Afie8QIQY2Mc1_qW19fbnQ đã kết nối và được thêm vào nhóm Admins.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+Client Afie8QIQY2Mc1_qW19fbnQ đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client WINPWME0AvUI7qjOyVPekA đã kết nối và được thêm vào nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct/Add
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct/Add
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[AvailableColors], [f].[Description], [f].[ImageUrl], [f].[IsActive], [f].[Name], [f].[Quantity], [f].[UnitPrice]
+      FROM [FlowerTypes] AS [f]
+      WHERE [f].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[BasePrice], [p].[Description], [p].[ImageUrl], [p].[Name]
+      FROM [PresentationStyles] AS [p]
+Client WINPWME0AvUI7qjOyVPekA đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+Client QQBklfql8a86xANh0KMYQw đã kết nối và được thêm vào nhóm Admins.
+Client QQBklfql8a86xANh0KMYQw đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [r].[Id], [r].[Comment], [r].[ImageUrl], [r].[IsVisible], [r].[LastModifiedBy], [r].[LastModifiedDate], [r].[LikesCount], [r].[ProductId], [r].[ReviewDate], [r].[Star], [r].[UserId]
+      FROM [Products] AS [p]
+      LEFT JOIN [Ratings] AS [r] ON [p].[Id] = [r].[ProductId]
+      ORDER BY [p].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[StartDate] <= GETDATE() AND [p].[EndDate] >= GETDATE()
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ProductId], COALESCE(AVG(CAST([r].[Star] AS decimal(18,2))), 0.0) AS [AverageRating]
+      FROM [Ratings] AS [r]
+      GROUP BY [r].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[Id] = [c0].[ParentCategoryId]
+      WHERE [c].[ParentCategoryId] IS NULL
+      ORDER BY [c].[Name], [c].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product/SearchByImage
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Product/SearchByImage
+info: Bloomie.Services.Implementations.ImageSimilarityService[0]
+      Sending image to Python API for similarity search...
+info: System.Net.Http.HttpClient.IImageSimilarityService.LogicalHandler[100]
+      Start processing HTTP request POST http://localhost:8000/search/similar?top_k=20
+info: System.Net.Http.HttpClient.IImageSimilarityService.ClientHandler[100]
+      Sending HTTP request POST http://localhost:8000/search/similar?top_k=20
+info: System.Net.Http.HttpClient.IImageSimilarityService.ClientHandler[101]
+      Received HTTP response headers after 1969.7197ms - 200
+info: System.Net.Http.HttpClient.IImageSimilarityService.LogicalHandler[101]
+      End processing HTTP request after 1974.8213ms - 200
+info: Bloomie.Services.Implementations.ImageSimilarityService[0]
+      Found 0 similar products
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product/SimilarityResults
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Product/SimilarityResults
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Product
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Product
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Name]
+      FROM (
+          SELECT DISTINCT [p].[Name]
+          FROM [PresentationStyles] AS [p]
+      ) AS [p0]
+      ORDER BY [p0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f0].[Name]
+      FROM (
+          SELECT DISTINCT [f].[Name]
+          FROM [FlowerTypes] AS [f]
+          WHERE [f].[Name] NOT LIKE N''
+      ) AS [f0]
+      ORDER BY [f0].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[Code], [p].[Description], [p].[DiscountPercentage], [p].[EndDate], [p].[IsActive], [p].[MaximumDiscountValue], [p].[MinimumOrderValue], [p].[PromotionType], [p].[StartDate], [s].[PromotionId], [s].[ProductId], [s].[Id], [s].[CategoryId], [s].[Colors], [s].[CreatedDate], [s].[Description], [s].[DiscountPercentage], [s].[ImageUrl], [s].[IsActive], [s].[IsNew], [s].[LowStockThreshold], [s].[Name], [s].[PresentationStyleId], [s].[Price], [s].[Quantity], [s].[QuantitySold]
+      FROM [Promotions] AS [p]
+      LEFT JOIN (
+          SELECT [p0].[PromotionId], [p0].[ProductId], [p1].[Id], [p1].[CategoryId], [p1].[Colors], [p1].[CreatedDate], [p1].[Description], [p1].[DiscountPercentage], [p1].[ImageUrl], [p1].[IsActive], [p1].[IsNew], [p1].[LowStockThreshold], [p1].[Name], [p1].[PresentationStyleId], [p1].[Price], [p1].[Quantity], [p1].[QuantitySold]
+          FROM [PromotionProducts] AS [p0]
+          INNER JOIN [Products] AS [p1] ON [p0].[ProductId] = [p1].[Id]
+      ) AS [s] ON [p].[Id] = [s].[PromotionId]
+      ORDER BY [p].[Id], [s].[PromotionId], [s].[ProductId]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Bloomie.styles.css
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Account/Login
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      
+      Người dùng chưa được xác thực để yêu cầu: /Account/Login
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+      FROM [AspNetUserClaims] AS [a]
+      WHERE [a].[UserId] = @__user_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @__userId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[ClaimType], [a].[ClaimValue]
+      FROM [AspNetRoleClaims] AS [a]
+      WHERE [a].[RoleId] = @__role_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfileImageUrl], [a].[RoleId], [a].[SecurityStamp], [a].[Token], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+      FROM [AspNetRoles] AS [a]
+      WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[UserId], [a].[RoleId]
+      FROM [AspNetUserRoles] AS [a]
+      WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminDashboard
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminDashboard
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Suppliers] AS [s]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [AspNetUsers] AS [a]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Promotions] AS [p]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [UserAccessLogs] AS [u]
+      WHERE [u].[Url] IN (N'/', N'/Home/Index')
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Products] AS [p]
+      WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__today_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE CONVERT(date, [o].[OrderDate]) = @__today_0 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__startOfWeek_0='?' (DbType = DateTime2), @__endOfWeek_1='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [o].[OrderDate] >= @__startOfWeek_0 AND [o].[OrderDate] < @__endOfWeek_1 AND [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[TotalPrice]), 0.0)
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([o].[Quantity]), 0)
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      LEFT JOIN [Payments] AS [p] ON [o0].[Id] = [p].[OrderId]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán'
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM(CAST([i].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]), 0.0)
+      FROM [InventoryTransactions] AS [i]
+      LEFT JOIN [Batches] AS [b] ON [i].[BatchId] = [b].[Id]
+      WHERE [i].[TransactionType] = 0 AND [b].[Id] IS NOT NULL
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COALESCE(SUM([i].[Quantity]), 0)
+      FROM [InventoryTransactions] AS [i]
+      WHERE [i].[TransactionType] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [p0].[Id], [p0].[CategoryId], [p0].[Colors], [p0].[CreatedDate], [p0].[Description], [p0].[DiscountPercentage], [p0].[ImageUrl], [p0].[IsActive], [p0].[IsNew], [p0].[LowStockThreshold], [p0].[Name], [p0].[PresentationStyleId], [p0].[Price], [p0].[Quantity], [p0].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM (
+          SELECT TOP(@__p_0) [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+          FROM [Products] AS [p]
+          WHERE [p].[IsActive] = CAST(1 AS bit) AND [p].[Quantity] > 0 AND [p].[Quantity] <= 10
+          ORDER BY [p].[Quantity]
+      ) AS [p0]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      ORDER BY [p0].[Quantity]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId]
+      FROM [Categories] AS [c]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 4
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [Orders] AS [o]
+      WHERE [o].[OrderStatus] = 3
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [s].[Key] AS [Period], COALESCE(SUM([s].[TotalPrice]), 0.0) AS [TotalSalesRevenue], COALESCE(SUM([s1].[value]), 0) AS [TotalItemsSold]
+      FROM (
+          SELECT [o].[Id], [o].[TotalPrice], DATEPART(month, [o].[OrderDate]) AS [Key]
+          FROM [Orders] AS [o]
+          LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+          WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      ) AS [s]
+      OUTER APPLY (
+          SELECT COALESCE(SUM([o0].[Quantity]), 0) AS [value]
+          FROM [OrderDetails] AS [o0]
+          WHERE [s].[Id] = [o0].[OrderId]
+      ) AS [s1]
+      GROUP BY [s].[Key]
+      ORDER BY [s].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [i0].[Key] AS [Period], (
+          SELECT COALESCE(SUM(CASE
+              WHEN [b].[Id] IS NOT NULL THEN CAST([i1].[Quantity] AS decimal(18,2)) * [b].[UnitPrice]
+              ELSE 0.0
+          END), 0.0)
+          FROM (
+              SELECT [i2].[BatchId], [i2].[Quantity], DATEPART(month, [i2].[TransactionDate]) AS [Key]
+              FROM [InventoryTransactions] AS [i2]
+              WHERE [i2].[TransactionType] = 0 AND DATEPART(year, [i2].[TransactionDate]) = @__currentYear_0
+          ) AS [i1]
+          LEFT JOIN [Batches] AS [b] ON [i1].[BatchId] = [b].[Id]
+          WHERE [i0].[Key] = [i1].[Key] OR ([i0].[Key] IS NULL AND [i1].[Key] IS NULL)) AS [TotalImportRevenue], COALESCE(SUM([i0].[Quantity]), 0) AS [TotalItemsImported]
+      FROM (
+          SELECT [i].[Quantity], DATEPART(month, [i].[TransactionDate]) AS [Key]
+          FROM [InventoryTransactions] AS [i]
+          WHERE [i].[TransactionType] = 0 AND DATEPART(year, [i].[TransactionDate]) = @__currentYear_0
+      ) AS [i0]
+      GROUP BY [i0].[Key]
+      ORDER BY [i0].[Key]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o].[Id], [o].[CustomArrangementId], [o].[DeliveryDate], [o].[DeliveryTime], [o].[OrderId], [o].[Price], [o].[ProductId], [o].[Quantity], [o0].[Id], [o0].[IsAnonymousSender], [o0].[IsSenderReceiverSame], [o0].[Notes], [o0].[OrderDate], [o0].[OrderStatus], [o0].[PhoneNumber], [o0].[PromotionId], [o0].[ReceiverEmail], [o0].[ReceiverName], [o0].[ReceiverPhoneNumber], [o0].[SenderEmail], [o0].[SenderName], [o0].[SenderPhoneNumber], [o0].[ShippingAddress], [o0].[ShippingMethod], [o0].[TotalPrice], [o0].[UserId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [OrderDetails] AS [o]
+      INNER JOIN [Orders] AS [o0] ON [o].[OrderId] = [o0].[Id]
+      INNER JOIN [Products] AS [p] ON [o].[ProductId] = [p].[Id]
+      WHERE DATEPART(year, [o0].[OrderDate]) = @__currentYear_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Name] AS [CategoryName], COALESCE(SUM(CAST([o0].[Quantity] AS decimal(18,2)) * [o0].[Price]), 0.0) AS [TotalRevenue]
+      FROM [Orders] AS [o]
+      LEFT JOIN [Payments] AS [p] ON [o].[Id] = [p].[OrderId]
+      INNER JOIN [OrderDetails] AS [o0] ON [o].[Id] = [o0].[OrderId]
+      INNER JOIN [Products] AS [p0] ON [o0].[ProductId] = [p0].[Id]
+      INNER JOIN [Categories] AS [c] ON [p0].[CategoryId] = [c].[Id]
+      WHERE [p].[Id] IS NOT NULL AND [p].[PaymentStatus] = N'Đã thanh toán' AND DATEPART(year, [o].[OrderDate]) = @__currentYear_0
+      GROUP BY [c].[Name]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__currentYear_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [o0].[Key] AS [Month], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 0 THEN 1
+      END) AS [PendingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 4 THEN 1
+      END) AS [CancelledOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 3 THEN 1
+      END) AS [DeliveredOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 1 THEN 1
+      END) AS [ProcessingOrders], COUNT(CASE
+          WHEN [o0].[OrderStatus] = 2 THEN 1
+      END) AS [ShippedOrders]
+      FROM (
+          SELECT [o].[OrderStatus], DATEPART(month, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) AS [Key]
+          FROM [Orders] AS [o]
+          WHERE DATEPART(year, DATEADD(hour, CAST(7.0E0 AS int), [o].[OrderDate])) = @__currentYear_0
+      ) AS [o0]
+      GROUP BY [o0].[Key]
+      ORDER BY [o0].[Key]
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client pgG-ugRdZE1jqiz72f4TRA đã kết nối và được thêm vào nhóm Admins.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold], [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [p0].[Id], [p0].[BasePrice], [p0].[Description], [p0].[ImageUrl], [p0].[Name], [s].[FlowerTypeId], [s].[ProductId], [s].[Quantity], [s].[Id], [s].[AvailableColors], [s].[Description], [s].[ImageUrl], [s].[IsActive], [s].[Name], [s].[Quantity0], [s].[UnitPrice]
+      FROM [Products] AS [p]
+      INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+      INNER JOIN [PresentationStyles] AS [p0] ON [p].[PresentationStyleId] = [p0].[Id]
+      LEFT JOIN (
+          SELECT [f].[FlowerTypeId], [f].[ProductId], [f].[Quantity], [f0].[Id], [f0].[AvailableColors], [f0].[Description], [f0].[ImageUrl], [f0].[IsActive], [f0].[Name], [f0].[Quantity] AS [Quantity0], [f0].[UnitPrice]
+          FROM [FlowerTypeProducts] AS [f]
+          INNER JOIN [FlowerTypes] AS [f0] ON [f].[FlowerTypeId] = [f0].[Id]
+      ) AS [s] ON [p].[Id] = [s].[ProductId]
+      ORDER BY [p].[Id], [c].[Id], [p0].[Id], [s].[FlowerTypeId], [s].[ProductId]
+Client pgG-ugRdZE1jqiz72f4TRA đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+Client B2iB9RYWmXsbkSdSegL3TA đã kết nối và được thêm vào nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminProduct/Add
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminProduct/Add
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [c].[Id], [c].[Description], [c].[Name], [c].[ParentCategoryId], [c0].[Id], [c1].[Id], [c1].[Description], [c1].[Name], [c1].[ParentCategoryId], [c0].[Description], [c0].[Name], [c0].[ParentCategoryId], [p].[Id], [p].[CategoryId], [p].[Colors], [p].[CreatedDate], [p].[Description], [p].[DiscountPercentage], [p].[ImageUrl], [p].[IsActive], [p].[IsNew], [p].[LowStockThreshold], [p].[Name], [p].[PresentationStyleId], [p].[Price], [p].[Quantity], [p].[QuantitySold]
+      FROM [Categories] AS [c]
+      LEFT JOIN [Categories] AS [c0] ON [c].[ParentCategoryId] = [c0].[Id]
+      LEFT JOIN [Categories] AS [c1] ON [c].[Id] = [c1].[ParentCategoryId]
+      LEFT JOIN [Products] AS [p] ON [c].[Id] = [p].[CategoryId]
+      ORDER BY [c].[Id], [c0].[Id], [c1].[Id]
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [f].[Id], [f].[AvailableColors], [f].[Description], [f].[ImageUrl], [f].[IsActive], [f].[Name], [f].[Quantity], [f].[UnitPrice]
+      FROM [FlowerTypes] AS [f]
+      WHERE [f].[IsActive] = CAST(1 AS bit)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[BasePrice], [p].[Description], [p].[ImageUrl], [p].[Name]
+      FROM [PresentationStyles] AS [p]
+Client B2iB9RYWmXsbkSdSegL3TA đã ngắt kết nối và được xóa khỏi nhóm Admins.
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub/negotiate
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetNotifications
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /Admin/AdminNotification/GetMessages
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /Admin/AdminNotification/GetMessages
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [n].[Id], [n].[Message], [n].[IsRead], [n].[Link], [n].[CreatedAt]
+      FROM [Notifications] AS [n]
+      WHERE [n].[UserId] = @__userId_0
+      ORDER BY [n].[CreatedAt] DESC
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Middleware được gọi để yêu cầu: /notificationHub
+info: Bloomie.Middleware.UserAccessLoggingMiddleware[0]
+      Người dùng đã xác thực truy cập vào trang không phải trang chủ: /notificationHub
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_1) [m].[Id], [m].[SenderName], [m].[Content], [m].[IsRead], [m].[CreatedAt]
+      FROM [Messages] AS [m]
+      WHERE [m].[ReceiverId] = @__userId_0
+      ORDER BY [m].[CreatedAt] DESC
+Client sO1TxVZYZ2DL6S7cUSczZg đã kết nối và được thêm vào nhóm Admins.
+Client sO1TxVZYZ2DL6S7cUSczZg đã ngắt kết nối và được xóa khỏi nhóm Admins.

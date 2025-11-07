@@ -1,0 +1,1654 @@
+[
+  {
+    "product_id": 1,
+    "image_url": "/images/a074d525-a03f-4090-8c86-0abc384bd265.jpg",
+    "product_name": "Product 1",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a074d525-a03f-4090-8c86-0abc384bd265.jpg"
+  },
+  {
+    "product_id": 2,
+    "image_url": "/images/44d49e95-7329-46e8-b27d-1191dddef44e.jpg",
+    "product_name": "Product 2",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/44d49e95-7329-46e8-b27d-1191dddef44e.jpg"
+  },
+  {
+    "product_id": 3,
+    "image_url": "/images/9e6ecbc3-bc23-4087-bb0c-3aaf8c74853f.jpg",
+    "product_name": "Product 3",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/9e6ecbc3-bc23-4087-bb0c-3aaf8c74853f.jpg"
+  },
+  {
+    "product_id": 4,
+    "image_url": "/images/3c088525-2069-406c-aae6-994ccd662a18.jpg",
+    "product_name": "Product 4",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/3c088525-2069-406c-aae6-994ccd662a18.jpg"
+  },
+  {
+    "product_id": 5,
+    "image_url": "/images/1fda8a74-9449-4c91-b87b-93be9bb41f8c.jpg",
+    "product_name": "Product 5",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/1fda8a74-9449-4c91-b87b-93be9bb41f8c.jpg"
+  },
+  {
+    "product_id": 6,
+    "image_url": "/images/d1fad4aa-63d9-46bb-b773-d554167e2df6.jpg",
+    "product_name": "Product 6",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d1fad4aa-63d9-46bb-b773-d554167e2df6.jpg"
+  },
+  {
+    "product_id": 7,
+    "image_url": "/images/d649444a-18cb-4c0c-a2c6-e65cb7014a46.jpg",
+    "product_name": "Product 7",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d649444a-18cb-4c0c-a2c6-e65cb7014a46.jpg"
+  },
+  {
+    "product_id": 8,
+    "image_url": "/images/b432fcab-655d-4e82-bbf0-ea571a7bd0f9.jpg",
+    "product_name": "Product 8",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b432fcab-655d-4e82-bbf0-ea571a7bd0f9.jpg"
+  },
+  {
+    "product_id": 9,
+    "image_url": "/images/2ca8cb0b-45bf-493d-9cf1-78f7a1a2768d.jpg",
+    "product_name": "Product 9",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2ca8cb0b-45bf-493d-9cf1-78f7a1a2768d.jpg"
+  },
+  {
+    "product_id": 10,
+    "image_url": "/images/81270f89-1037-4c92-adfa-65a525a87f70.jpg",
+    "product_name": "Product 10",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/81270f89-1037-4c92-adfa-65a525a87f70.jpg"
+  },
+  {
+    "product_id": 11,
+    "image_url": "/images/6e2115da-73bd-41c8-a979-679037e11917.jpg",
+    "product_name": "Product 11",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6e2115da-73bd-41c8-a979-679037e11917.jpg"
+  },
+  {
+    "product_id": 12,
+    "image_url": "/images/7c6e6385-8b76-4378-8be6-7a7e427b69fb.jpg",
+    "product_name": "Product 12",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7c6e6385-8b76-4378-8be6-7a7e427b69fb.jpg"
+  },
+  {
+    "product_id": 13,
+    "image_url": "/images/f4bdac78-9579-41de-9a10-4786d5672ac3.jpg",
+    "product_name": "Product 13",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f4bdac78-9579-41de-9a10-4786d5672ac3.jpg"
+  },
+  {
+    "product_id": 14,
+    "image_url": "/images/c0bbbed0-8b83-42d2-8e21-540a2c384d8c.jpg",
+    "product_name": "Product 14",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c0bbbed0-8b83-42d2-8e21-540a2c384d8c.jpg"
+  },
+  {
+    "product_id": 15,
+    "image_url": "/images/1656d053-bc9d-404d-a885-d4d961862765.jpg",
+    "product_name": "Product 15",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/1656d053-bc9d-404d-a885-d4d961862765.jpg"
+  },
+  {
+    "product_id": 16,
+    "image_url": "/images/8aa0e15b-10d6-427c-a41d-4dab29fc54ff.jpg",
+    "product_name": "Product 16",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/8aa0e15b-10d6-427c-a41d-4dab29fc54ff.jpg"
+  },
+  {
+    "product_id": 17,
+    "image_url": "/images/079f688f-7dd4-4e1f-8a2b-0b38e6883b83.jpg",
+    "product_name": "Product 17",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/079f688f-7dd4-4e1f-8a2b-0b38e6883b83.jpg"
+  },
+  {
+    "product_id": 18,
+    "image_url": "/images/a8ad98b4-3c5a-4764-ad5b-95c9f27e15a0.jpg",
+    "product_name": "Product 18",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a8ad98b4-3c5a-4764-ad5b-95c9f27e15a0.jpg"
+  },
+  {
+    "product_id": 19,
+    "image_url": "/images/1276458b-ec84-4369-8910-ae71f7066643.jpg",
+    "product_name": "Product 19",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/1276458b-ec84-4369-8910-ae71f7066643.jpg"
+  },
+  {
+    "product_id": 20,
+    "image_url": "/images/a9849886-9f22-4706-ad5e-aa77624aa6bf.jpg",
+    "product_name": "Product 20",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a9849886-9f22-4706-ad5e-aa77624aa6bf.jpg"
+  },
+  {
+    "product_id": 21,
+    "image_url": "/images/dfdcf250-34c0-4f49-851b-d37901277a7c.jpg",
+    "product_name": "Product 21",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/dfdcf250-34c0-4f49-851b-d37901277a7c.jpg"
+  },
+  {
+    "product_id": 22,
+    "image_url": "/images/471b1ed1-9021-48d9-b64a-58f3a12d824c.jpg",
+    "product_name": "Product 22",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/471b1ed1-9021-48d9-b64a-58f3a12d824c.jpg"
+  },
+  {
+    "product_id": 23,
+    "image_url": "/images/6d7075a7-f722-4698-9c33-cb1f6abf2c2f.jpg",
+    "product_name": "Product 23",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6d7075a7-f722-4698-9c33-cb1f6abf2c2f.jpg"
+  },
+  {
+    "product_id": 24,
+    "image_url": "/images/cdd27371-f72a-4472-8378-3f4a0beb9816.jpg",
+    "product_name": "Product 24",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cdd27371-f72a-4472-8378-3f4a0beb9816.jpg"
+  },
+  {
+    "product_id": 25,
+    "image_url": "/images/2960fbc6-dd3b-4d4c-8b8c-efaffb86699d.jpg",
+    "product_name": "Product 25",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2960fbc6-dd3b-4d4c-8b8c-efaffb86699d.jpg"
+  },
+  {
+    "product_id": 26,
+    "image_url": "/images/bd15a159-8f23-477c-bf51-e6b691240920.jpg",
+    "product_name": "Product 26",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/bd15a159-8f23-477c-bf51-e6b691240920.jpg"
+  },
+  {
+    "product_id": 27,
+    "image_url": "/images/105ad35a-b957-4a45-835f-671ea70224c3.jpg",
+    "product_name": "Product 27",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/105ad35a-b957-4a45-835f-671ea70224c3.jpg"
+  },
+  {
+    "product_id": 28,
+    "image_url": "/images/b16ebd47-6a85-47ef-9730-e1935b156704.jpg",
+    "product_name": "Product 28",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b16ebd47-6a85-47ef-9730-e1935b156704.jpg"
+  },
+  {
+    "product_id": 29,
+    "image_url": "/images/975b1ce7-105a-4bad-9a52-c57e16451642.jpg",
+    "product_name": "Product 29",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/975b1ce7-105a-4bad-9a52-c57e16451642.jpg"
+  },
+  {
+    "product_id": 30,
+    "image_url": "/images/bc2489b6-a457-4cf6-9de1-ea72bd092512.jpg",
+    "product_name": "Product 30",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/bc2489b6-a457-4cf6-9de1-ea72bd092512.jpg"
+  },
+  {
+    "product_id": 31,
+    "image_url": "/images/ecfaa6dc-3ad5-4e90-b6aa-a3491d96488f.jpg",
+    "product_name": "Product 31",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ecfaa6dc-3ad5-4e90-b6aa-a3491d96488f.jpg"
+  },
+  {
+    "product_id": 32,
+    "image_url": "/images/fb0a1b73-6dbb-4282-8faf-f78add3a3767.jpg",
+    "product_name": "Product 32",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/fb0a1b73-6dbb-4282-8faf-f78add3a3767.jpg"
+  },
+  {
+    "product_id": 33,
+    "image_url": "/images/0bc829f6-436e-45b5-a864-729ad45d103b.jpg",
+    "product_name": "Product 33",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0bc829f6-436e-45b5-a864-729ad45d103b.jpg"
+  },
+  {
+    "product_id": 34,
+    "image_url": "/images/912321cb-87da-4461-a916-b92eb2acbeea.jpg",
+    "product_name": "Product 34",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/912321cb-87da-4461-a916-b92eb2acbeea.jpg"
+  },
+  {
+    "product_id": 35,
+    "image_url": "/images/25d472ce-c3a7-42fb-95de-a4c1664bd66a.jpg",
+    "product_name": "Product 35",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/25d472ce-c3a7-42fb-95de-a4c1664bd66a.jpg"
+  },
+  {
+    "product_id": 36,
+    "image_url": "/images/42c82ce0-cb0b-4373-8368-c19d48d65744.jpg",
+    "product_name": "Product 36",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/42c82ce0-cb0b-4373-8368-c19d48d65744.jpg"
+  },
+  {
+    "product_id": 37,
+    "image_url": "/images/f9d5cb5b-f1a3-4574-b395-6be6869a9ee2.jpg",
+    "product_name": "Product 37",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f9d5cb5b-f1a3-4574-b395-6be6869a9ee2.jpg"
+  },
+  {
+    "product_id": 38,
+    "image_url": "/images/1acaca98-9252-4c56-aaf7-8402ee5ef56f.jpg",
+    "product_name": "Product 38",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/1acaca98-9252-4c56-aaf7-8402ee5ef56f.jpg"
+  },
+  {
+    "product_id": 39,
+    "image_url": "/images/f08d767b-45d6-4fe5-833b-dc17152c2042.jpg",
+    "product_name": "Product 39",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f08d767b-45d6-4fe5-833b-dc17152c2042.jpg"
+  },
+  {
+    "product_id": 40,
+    "image_url": "/images/b89107d5-c120-484b-baa7-b1f8e4fd15a3.jpg",
+    "product_name": "Product 40",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b89107d5-c120-484b-baa7-b1f8e4fd15a3.jpg"
+  },
+  {
+    "product_id": 41,
+    "image_url": "/images/c7ff9c39-0ab9-4a42-8eeb-421eac7f5671.jpg",
+    "product_name": "Product 41",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c7ff9c39-0ab9-4a42-8eeb-421eac7f5671.jpg"
+  },
+  {
+    "product_id": 42,
+    "image_url": "/images/d0e258ae-a449-48d0-aee0-2ca8c590cf6c.jpg",
+    "product_name": "Product 42",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d0e258ae-a449-48d0-aee0-2ca8c590cf6c.jpg"
+  },
+  {
+    "product_id": 43,
+    "image_url": "/images/hoacuoi.jpg",
+    "product_name": "Product 43",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/hoacuoi.jpg"
+  },
+  {
+    "product_id": 44,
+    "image_url": "/images/9408dea1-da71-45cf-a4ca-df7572512fbe.jpg",
+    "product_name": "Product 44",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/9408dea1-da71-45cf-a4ca-df7572512fbe.jpg"
+  },
+  {
+    "product_id": 45,
+    "image_url": "/images/f9e4ab5e-b843-4407-8059-cf8b6f268e77.jpg",
+    "product_name": "Product 45",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f9e4ab5e-b843-4407-8059-cf8b6f268e77.jpg"
+  },
+  {
+    "product_id": 46,
+    "image_url": "/images/a169f6d9-4a85-43a7-9263-f86c9de17a9c.jpg",
+    "product_name": "Product 46",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a169f6d9-4a85-43a7-9263-f86c9de17a9c.jpg"
+  },
+  {
+    "product_id": 47,
+    "image_url": "/images/c4cf7363-8208-44d4-9195-1bd03da5b8a7.jpg",
+    "product_name": "Product 47",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c4cf7363-8208-44d4-9195-1bd03da5b8a7.jpg"
+  },
+  {
+    "product_id": 48,
+    "image_url": "/images/cbd31050-28c2-4323-ba76-51cb68c60ca3.jpg",
+    "product_name": "Product 48",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cbd31050-28c2-4323-ba76-51cb68c60ca3.jpg"
+  },
+  {
+    "product_id": 49,
+    "image_url": "/images/04b72980-0e1e-40b8-be33-257bec1d5bce.jpg",
+    "product_name": "Product 49",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/04b72980-0e1e-40b8-be33-257bec1d5bce.jpg"
+  },
+  {
+    "product_id": 50,
+    "image_url": "/images/353acf23-ff44-4e5c-be2e-028190e33406.jpg",
+    "product_name": "Product 50",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/353acf23-ff44-4e5c-be2e-028190e33406.jpg"
+  },
+  {
+    "product_id": 51,
+    "image_url": "/images/4962b4aa-02b9-4243-9473-037b2974844a.jpg",
+    "product_name": "Product 51",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4962b4aa-02b9-4243-9473-037b2974844a.jpg"
+  },
+  {
+    "product_id": 52,
+    "image_url": "/images/74ea78d8-6076-46a3-b69b-f60ee341e8ec.jpg",
+    "product_name": "Product 52",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/74ea78d8-6076-46a3-b69b-f60ee341e8ec.jpg"
+  },
+  {
+    "product_id": 53,
+    "image_url": "/images/ad48bb64-d1b5-42b9-a7ae-e41d624a3651.jpg",
+    "product_name": "Product 53",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ad48bb64-d1b5-42b9-a7ae-e41d624a3651.jpg"
+  },
+  {
+    "product_id": 54,
+    "image_url": "/images/a8249e8c-2300-4d59-8db1-8d3bde24e859.jpg",
+    "product_name": "Product 54",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a8249e8c-2300-4d59-8db1-8d3bde24e859.jpg"
+  },
+  {
+    "product_id": 55,
+    "image_url": "/images/cod-logo.jpg",
+    "product_name": "Product 55",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cod-logo.jpg"
+  },
+  {
+    "product_id": 56,
+    "image_url": "/images/89a1900b-b63f-40d4-a1fc-12704705392a.jpg",
+    "product_name": "Product 56",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/89a1900b-b63f-40d4-a1fc-12704705392a.jpg"
+  },
+  {
+    "product_id": 57,
+    "image_url": "/images/30af36b3-5e69-43a6-87a0-6a27a5249575.jpg",
+    "product_name": "Product 57",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/30af36b3-5e69-43a6-87a0-6a27a5249575.jpg"
+  },
+  {
+    "product_id": 58,
+    "image_url": "/images/hoasinhnhat.jpg",
+    "product_name": "Product 58",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/hoasinhnhat.jpg"
+  },
+  {
+    "product_id": 59,
+    "image_url": "/images/6f6488c3-1b74-464d-b79a-3b024ff8939a.jpg",
+    "product_name": "Product 59",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6f6488c3-1b74-464d-b79a-3b024ff8939a.jpg"
+  },
+  {
+    "product_id": 60,
+    "image_url": "/images/hoachucmung.jpg",
+    "product_name": "Product 60",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/hoachucmung.jpg"
+  },
+  {
+    "product_id": 61,
+    "image_url": "/images/06a8bdfb-e3f6-4644-a728-7c5e621585c9.jpg",
+    "product_name": "Product 61",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/06a8bdfb-e3f6-4644-a728-7c5e621585c9.jpg"
+  },
+  {
+    "product_id": 62,
+    "image_url": "/images/264f1e27-1cd6-49a6-824e-0137211b4e60.jpg",
+    "product_name": "Product 62",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/264f1e27-1cd6-49a6-824e-0137211b4e60.jpg"
+  },
+  {
+    "product_id": 63,
+    "image_url": "/images/7b5307fc-35b0-4d52-a64c-a761b7b1c06a.jpg",
+    "product_name": "Product 63",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7b5307fc-35b0-4d52-a64c-a761b7b1c06a.jpg"
+  },
+  {
+    "product_id": 64,
+    "image_url": "/images/24693710-fe1f-4713-9383-53b48b6a8f7a.jpg",
+    "product_name": "Product 64",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/24693710-fe1f-4713-9383-53b48b6a8f7a.jpg"
+  },
+  {
+    "product_id": 65,
+    "image_url": "/images/7e6d6eba-4b3e-4b30-909a-98b44b451edf.jpg",
+    "product_name": "Product 65",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7e6d6eba-4b3e-4b30-909a-98b44b451edf.jpg"
+  },
+  {
+    "product_id": 66,
+    "image_url": "/images/a7ac793f-fcdc-4ed6-b5be-ce6e83b897ab.jpg",
+    "product_name": "Product 66",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a7ac793f-fcdc-4ed6-b5be-ce6e83b897ab.jpg"
+  },
+  {
+    "product_id": 67,
+    "image_url": "/images/d8c6bca1-1c4e-421a-a7e3-247235746f7a.jpg",
+    "product_name": "Product 67",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d8c6bca1-1c4e-421a-a7e3-247235746f7a.jpg"
+  },
+  {
+    "product_id": 68,
+    "image_url": "/images/256ed296-ea0b-4272-b6f6-43148c00de34.jpg",
+    "product_name": "Product 68",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/256ed296-ea0b-4272-b6f6-43148c00de34.jpg"
+  },
+  {
+    "product_id": 69,
+    "image_url": "/images/cacf1041-b67f-48d9-8fd2-576d07018553.jpg",
+    "product_name": "Product 69",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cacf1041-b67f-48d9-8fd2-576d07018553.jpg"
+  },
+  {
+    "product_id": 70,
+    "image_url": "/images/ea5ab311-f4f0-4db4-bfb7-4f8d07f58967.jpg",
+    "product_name": "Product 70",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ea5ab311-f4f0-4db4-bfb7-4f8d07f58967.jpg"
+  },
+  {
+    "product_id": 71,
+    "image_url": "/images/f9d89246-c6a6-441a-a600-0c2b6bde65bd.jpg",
+    "product_name": "Product 71",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f9d89246-c6a6-441a-a600-0c2b6bde65bd.jpg"
+  },
+  {
+    "product_id": 72,
+    "image_url": "/images/91c7a9d5-4e17-4244-b4f9-54476ab48ddf.jpg",
+    "product_name": "Product 72",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/91c7a9d5-4e17-4244-b4f9-54476ab48ddf.jpg"
+  },
+  {
+    "product_id": 73,
+    "image_url": "/images/960f35cc-aa75-402c-880f-060774145df5.jpg",
+    "product_name": "Product 73",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/960f35cc-aa75-402c-880f-060774145df5.jpg"
+  },
+  {
+    "product_id": 74,
+    "image_url": "/images/55eca030-fd0c-4259-aea6-39d437820f38.jpg",
+    "product_name": "Product 74",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/55eca030-fd0c-4259-aea6-39d437820f38.jpg"
+  },
+  {
+    "product_id": 75,
+    "image_url": "/images/37117719-e437-4b4f-8122-f86ce4c5bfa5.jpg",
+    "product_name": "Product 75",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/37117719-e437-4b4f-8122-f86ce4c5bfa5.jpg"
+  },
+  {
+    "product_id": 76,
+    "image_url": "/images/de8ed5f6-2ded-4df0-99ac-397a35fd7ddb.jpg",
+    "product_name": "Product 76",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/de8ed5f6-2ded-4df0-99ac-397a35fd7ddb.jpg"
+  },
+  {
+    "product_id": 77,
+    "image_url": "/images/cdc8f8ea-5210-41e6-9e39-7dfe0abf8885.jpg",
+    "product_name": "Product 77",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cdc8f8ea-5210-41e6-9e39-7dfe0abf8885.jpg"
+  },
+  {
+    "product_id": 78,
+    "image_url": "/images/5c539535-6824-457d-b662-2564ed389726.jpg",
+    "product_name": "Product 78",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/5c539535-6824-457d-b662-2564ed389726.jpg"
+  },
+  {
+    "product_id": 79,
+    "image_url": "/images/be75f223-65cf-476e-8385-8001a2a08ce0.jpg",
+    "product_name": "Product 79",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/be75f223-65cf-476e-8385-8001a2a08ce0.jpg"
+  },
+  {
+    "product_id": 80,
+    "image_url": "/images/30352819-efb0-45e3-8ef7-509bcd3b6159.jpg",
+    "product_name": "Product 80",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/30352819-efb0-45e3-8ef7-509bcd3b6159.jpg"
+  },
+  {
+    "product_id": 81,
+    "image_url": "/images/af60905f-e5aa-4f50-83ac-e77821ae19a5.jpg",
+    "product_name": "Product 81",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/af60905f-e5aa-4f50-83ac-e77821ae19a5.jpg"
+  },
+  {
+    "product_id": 82,
+    "image_url": "/images/c7b4eae7-8317-46e7-ab77-98f6c3926af9.jpg",
+    "product_name": "Product 82",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c7b4eae7-8317-46e7-ab77-98f6c3926af9.jpg"
+  },
+  {
+    "product_id": 83,
+    "image_url": "/images/ba767cf9-a49e-4d5a-a3b4-a236b3abf7e3.jpg",
+    "product_name": "Product 83",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ba767cf9-a49e-4d5a-a3b4-a236b3abf7e3.jpg"
+  },
+  {
+    "product_id": 84,
+    "image_url": "/images/57548325-df6d-4196-9ffd-a48d04948906.jpg",
+    "product_name": "Product 84",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/57548325-df6d-4196-9ffd-a48d04948906.jpg"
+  },
+  {
+    "product_id": 85,
+    "image_url": "/images/78091b3a-2f93-46b1-8747-6d71f557cf1c.jpg",
+    "product_name": "Product 85",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/78091b3a-2f93-46b1-8747-6d71f557cf1c.jpg"
+  },
+  {
+    "product_id": 86,
+    "image_url": "/images/bc534832-8dd2-4cef-beb2-ff21d45ca0e9.jpg",
+    "product_name": "Product 86",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/bc534832-8dd2-4cef-beb2-ff21d45ca0e9.jpg"
+  },
+  {
+    "product_id": 87,
+    "image_url": "/images/dd6f4ab2-9773-4316-a921-1c539211705e.jpg",
+    "product_name": "Product 87",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/dd6f4ab2-9773-4316-a921-1c539211705e.jpg"
+  },
+  {
+    "product_id": 88,
+    "image_url": "/images/629a64ba-f5ed-43df-a622-add5126bc85a.jpg",
+    "product_name": "Product 88",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/629a64ba-f5ed-43df-a622-add5126bc85a.jpg"
+  },
+  {
+    "product_id": 89,
+    "image_url": "/images/c65dc95f-cb10-438c-9ed6-47da99fc2d77.jpg",
+    "product_name": "Product 89",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c65dc95f-cb10-438c-9ed6-47da99fc2d77.jpg"
+  },
+  {
+    "product_id": 90,
+    "image_url": "/images/4c4ad259-d78c-420e-a15c-9a00f4225dea.jpg",
+    "product_name": "Product 90",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4c4ad259-d78c-420e-a15c-9a00f4225dea.jpg"
+  },
+  {
+    "product_id": 91,
+    "image_url": "/images/9f0a35b4-989f-4e16-883c-daf41c2f6363.jpg",
+    "product_name": "Product 91",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/9f0a35b4-989f-4e16-883c-daf41c2f6363.jpg"
+  },
+  {
+    "product_id": 92,
+    "image_url": "/images/164ecea2-0294-46d4-be67-5b193d6f8879.jpg",
+    "product_name": "Product 92",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/164ecea2-0294-46d4-be67-5b193d6f8879.jpg"
+  },
+  {
+    "product_id": 93,
+    "image_url": "/images/ce7b47a1-e15a-4cec-8b39-8c3e95c33c68.jpg",
+    "product_name": "Product 93",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ce7b47a1-e15a-4cec-8b39-8c3e95c33c68.jpg"
+  },
+  {
+    "product_id": 94,
+    "image_url": "/images/dad3d92e-c0ca-42fc-8de1-c076df879bfb.jpg",
+    "product_name": "Product 94",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/dad3d92e-c0ca-42fc-8de1-c076df879bfb.jpg"
+  },
+  {
+    "product_id": 95,
+    "image_url": "/images/a625a669-ca41-47b3-b69b-6dafe674f290.jpg",
+    "product_name": "Product 95",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a625a669-ca41-47b3-b69b-6dafe674f290.jpg"
+  },
+  {
+    "product_id": 96,
+    "image_url": "/images/11ebe86f-52c7-431c-b77d-10641a426fcd.jpg",
+    "product_name": "Product 96",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/11ebe86f-52c7-431c-b77d-10641a426fcd.jpg"
+  },
+  {
+    "product_id": 97,
+    "image_url": "/images/574ba52a-0722-4341-b646-9e74b16e4fb6.jpg",
+    "product_name": "Product 97",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/574ba52a-0722-4341-b646-9e74b16e4fb6.jpg"
+  },
+  {
+    "product_id": 98,
+    "image_url": "/images/4897568b-07a4-4a5f-94a6-efc2630f2b86.jpg",
+    "product_name": "Product 98",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4897568b-07a4-4a5f-94a6-efc2630f2b86.jpg"
+  },
+  {
+    "product_id": 99,
+    "image_url": "/images/fb521f92-8a01-4fba-af2a-553be4945563.jpg",
+    "product_name": "Product 99",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/fb521f92-8a01-4fba-af2a-553be4945563.jpg"
+  },
+  {
+    "product_id": 100,
+    "image_url": "/images/d824b512-fd42-45f3-8276-484280454349.jpg",
+    "product_name": "Product 100",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d824b512-fd42-45f3-8276-484280454349.jpg"
+  },
+  {
+    "product_id": 101,
+    "image_url": "/images/c15e3b7b-632d-4463-8432-2e05d363951b.jpg",
+    "product_name": "Product 101",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c15e3b7b-632d-4463-8432-2e05d363951b.jpg"
+  },
+  {
+    "product_id": 102,
+    "image_url": "/images/logo-momo.jpg",
+    "product_name": "Product 102",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/logo-momo.jpg"
+  },
+  {
+    "product_id": 103,
+    "image_url": "/images/23a6b74f-e916-4a4d-8624-0a07391b6484.jpg",
+    "product_name": "Product 103",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/23a6b74f-e916-4a4d-8624-0a07391b6484.jpg"
+  },
+  {
+    "product_id": 104,
+    "image_url": "/images/c185c5e4-3733-45e0-910a-8a6de08fceb7.jpg",
+    "product_name": "Product 104",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c185c5e4-3733-45e0-910a-8a6de08fceb7.jpg"
+  },
+  {
+    "product_id": 105,
+    "image_url": "/images/718aed56-5f83-4f48-be23-689d21bce1d1.jpg",
+    "product_name": "Product 105",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/718aed56-5f83-4f48-be23-689d21bce1d1.jpg"
+  },
+  {
+    "product_id": 106,
+    "image_url": "/images/6574edc3-db58-462c-94c1-72d0ef006c7d.jpg",
+    "product_name": "Product 106",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6574edc3-db58-462c-94c1-72d0ef006c7d.jpg"
+  },
+  {
+    "product_id": 107,
+    "image_url": "/images/d37c4c96-1eff-478c-89e6-03eeae480c7c.jpg",
+    "product_name": "Product 107",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d37c4c96-1eff-478c-89e6-03eeae480c7c.jpg"
+  },
+  {
+    "product_id": 108,
+    "image_url": "/images/0545fd69-2437-4a3b-851b-741270784830.jpg",
+    "product_name": "Product 108",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0545fd69-2437-4a3b-851b-741270784830.jpg"
+  },
+  {
+    "product_id": 109,
+    "image_url": "/images/690dce62-c3d4-497d-b0d5-9b7b14cceda1.jpg",
+    "product_name": "Product 109",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/690dce62-c3d4-497d-b0d5-9b7b14cceda1.jpg"
+  },
+  {
+    "product_id": 110,
+    "image_url": "/images/2160f674-6a9a-4bc4-a4d0-6e336b7720a7.jpg",
+    "product_name": "Product 110",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2160f674-6a9a-4bc4-a4d0-6e336b7720a7.jpg"
+  },
+  {
+    "product_id": 111,
+    "image_url": "/images/3d8bb0ac-7cc9-4339-967d-237f178dd162.jpg",
+    "product_name": "Product 111",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/3d8bb0ac-7cc9-4339-967d-237f178dd162.jpg"
+  },
+  {
+    "product_id": 112,
+    "image_url": "/images/9fdfac62-0885-4509-9ba2-4bdc1a24720f.jpg",
+    "product_name": "Product 112",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/9fdfac62-0885-4509-9ba2-4bdc1a24720f.jpg"
+  },
+  {
+    "product_id": 113,
+    "image_url": "/images/a4c6c562-74a3-4719-8dcb-398dacbdbead.jpg",
+    "product_name": "Product 113",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a4c6c562-74a3-4719-8dcb-398dacbdbead.jpg"
+  },
+  {
+    "product_id": 114,
+    "image_url": "/images/02c5cff4-a5fb-4b8f-b71d-e4abc5c4da97.jpg",
+    "product_name": "Product 114",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/02c5cff4-a5fb-4b8f-b71d-e4abc5c4da97.jpg"
+  },
+  {
+    "product_id": 115,
+    "image_url": "/images/a5393f0c-7051-4b2a-92bc-c2e651418c67.jpg",
+    "product_name": "Product 115",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a5393f0c-7051-4b2a-92bc-c2e651418c67.jpg"
+  },
+  {
+    "product_id": 116,
+    "image_url": "/images/08aa36ec-1ea5-4351-b9af-9f68876ac09a.jpg",
+    "product_name": "Product 116",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/08aa36ec-1ea5-4351-b9af-9f68876ac09a.jpg"
+  },
+  {
+    "product_id": 117,
+    "image_url": "/images/f86002cb-b995-4f1b-aeae-3454ee246f22.jpg",
+    "product_name": "Product 117",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f86002cb-b995-4f1b-aeae-3454ee246f22.jpg"
+  },
+  {
+    "product_id": 118,
+    "image_url": "/images/f16bc4e5-0bdb-46ce-b27a-16d48d6132d7.jpg",
+    "product_name": "Product 118",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f16bc4e5-0bdb-46ce-b27a-16d48d6132d7.jpg"
+  },
+  {
+    "product_id": 119,
+    "image_url": "/images/54320034-72e4-4788-a78a-638d02fa96bd.jpg",
+    "product_name": "Product 119",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/54320034-72e4-4788-a78a-638d02fa96bd.jpg"
+  },
+  {
+    "product_id": 120,
+    "image_url": "/images/cfa3db12-ad05-4488-90ae-d12edfd32295.jpg",
+    "product_name": "Product 120",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cfa3db12-ad05-4488-90ae-d12edfd32295.jpg"
+  },
+  {
+    "product_id": 121,
+    "image_url": "/images/e86f11a9-9ab0-4df4-9a12-b91485298d12.jpg",
+    "product_name": "Product 121",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/e86f11a9-9ab0-4df4-9a12-b91485298d12.jpg"
+  },
+  {
+    "product_id": 122,
+    "image_url": "/images/144e7b4a-8833-4dba-8006-6dca901fd640.jpg",
+    "product_name": "Product 122",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/144e7b4a-8833-4dba-8006-6dca901fd640.jpg"
+  },
+  {
+    "product_id": 123,
+    "image_url": "/images/6ec13eb1-83f6-4ae5-939a-f55b82a5ee58.jpg",
+    "product_name": "Product 123",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6ec13eb1-83f6-4ae5-939a-f55b82a5ee58.jpg"
+  },
+  {
+    "product_id": 124,
+    "image_url": "/images/a761bdda-404d-483c-82c8-5ec20fa7bdf0.jpg",
+    "product_name": "Product 124",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a761bdda-404d-483c-82c8-5ec20fa7bdf0.jpg"
+  },
+  {
+    "product_id": 125,
+    "image_url": "/images/f5c9fe23-5f61-4ea7-a23d-90e75f29d9fe.jpg",
+    "product_name": "Product 125",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f5c9fe23-5f61-4ea7-a23d-90e75f29d9fe.jpg"
+  },
+  {
+    "product_id": 126,
+    "image_url": "/images/b75a390b-f995-48b8-87b7-f5276049aff3.jpg",
+    "product_name": "Product 126",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b75a390b-f995-48b8-87b7-f5276049aff3.jpg"
+  },
+  {
+    "product_id": 127,
+    "image_url": "/images/bab4b7c9-bdc0-4a9a-b461-8c9fea9c48fa.jpg",
+    "product_name": "Product 127",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/bab4b7c9-bdc0-4a9a-b461-8c9fea9c48fa.jpg"
+  },
+  {
+    "product_id": 128,
+    "image_url": "/images/a65fa166-0e43-43d2-8793-0dd85b1df443.jpg",
+    "product_name": "Product 128",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a65fa166-0e43-43d2-8793-0dd85b1df443.jpg"
+  },
+  {
+    "product_id": 129,
+    "image_url": "/images/afaceeb5-3cf6-4e0f-bd35-47e51b899dab.jpg",
+    "product_name": "Product 129",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/afaceeb5-3cf6-4e0f-bd35-47e51b899dab.jpg"
+  },
+  {
+    "product_id": 130,
+    "image_url": "/images/985ed20e-c1c3-4f29-9493-d5b5040d310a.jpg",
+    "product_name": "Product 130",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/985ed20e-c1c3-4f29-9493-d5b5040d310a.jpg"
+  },
+  {
+    "product_id": 131,
+    "image_url": "/images/f64b8649-0202-4099-80aa-95a84ca5ea09.jpg",
+    "product_name": "Product 131",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f64b8649-0202-4099-80aa-95a84ca5ea09.jpg"
+  },
+  {
+    "product_id": 132,
+    "image_url": "/images/984ec3a8-7e90-4ddd-b023-fefd0984d38a.jpg",
+    "product_name": "Product 132",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/984ec3a8-7e90-4ddd-b023-fefd0984d38a.jpg"
+  },
+  {
+    "product_id": 133,
+    "image_url": "/images/5f90cdb8-6872-4765-bee2-9e761f7a9c60.jpg",
+    "product_name": "Product 133",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/5f90cdb8-6872-4765-bee2-9e761f7a9c60.jpg"
+  },
+  {
+    "product_id": 134,
+    "image_url": "/images/4ed66f1c-386f-4f1c-8cef-76acda08a8f7.jpg",
+    "product_name": "Product 134",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4ed66f1c-386f-4f1c-8cef-76acda08a8f7.jpg"
+  },
+  {
+    "product_id": 135,
+    "image_url": "/images/645aa646-0965-4841-9648-3fff71bbb550.jpg",
+    "product_name": "Product 135",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/645aa646-0965-4841-9648-3fff71bbb550.jpg"
+  },
+  {
+    "product_id": 136,
+    "image_url": "/images/16aa4a08-7605-49a8-8364-d5c9da50214a.jpg",
+    "product_name": "Product 136",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/16aa4a08-7605-49a8-8364-d5c9da50214a.jpg"
+  },
+  {
+    "product_id": 137,
+    "image_url": "/images/d06fb3f4-ba43-4b0a-8970-a373822ba45a.jpg",
+    "product_name": "Product 137",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d06fb3f4-ba43-4b0a-8970-a373822ba45a.jpg"
+  },
+  {
+    "product_id": 138,
+    "image_url": "/images/307eaf6e-8663-4e02-b204-6d40f80f1875.jpg",
+    "product_name": "Product 138",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/307eaf6e-8663-4e02-b204-6d40f80f1875.jpg"
+  },
+  {
+    "product_id": 139,
+    "image_url": "/images/8181e52e-3f73-4fe5-be9e-8f652169845e.jpg",
+    "product_name": "Product 139",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/8181e52e-3f73-4fe5-be9e-8f652169845e.jpg"
+  },
+  {
+    "product_id": 140,
+    "image_url": "/images/5b45c8cb-9617-4a89-bb59-f7adf31f23c9.jpg",
+    "product_name": "Product 140",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/5b45c8cb-9617-4a89-bb59-f7adf31f23c9.jpg"
+  },
+  {
+    "product_id": 141,
+    "image_url": "/images/f88b4802-2fbf-4f92-9e47-88a6135839b9.jpg",
+    "product_name": "Product 141",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/f88b4802-2fbf-4f92-9e47-88a6135839b9.jpg"
+  },
+  {
+    "product_id": 142,
+    "image_url": "/images/0fc5ca29-bce3-4d91-9308-e8c0e85f1205.jpg",
+    "product_name": "Product 142",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0fc5ca29-bce3-4d91-9308-e8c0e85f1205.jpg"
+  },
+  {
+    "product_id": 143,
+    "image_url": "/images/b1459797-18d9-45e0-87e2-83adb4a5bc56.jpg",
+    "product_name": "Product 143",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b1459797-18d9-45e0-87e2-83adb4a5bc56.jpg"
+  },
+  {
+    "product_id": 144,
+    "image_url": "/images/5a3b3bf9-512e-49b8-aaa0-bc6be68faa36.jpg",
+    "product_name": "Product 144",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/5a3b3bf9-512e-49b8-aaa0-bc6be68faa36.jpg"
+  },
+  {
+    "product_id": 145,
+    "image_url": "/images/540708c8-b52a-4b21-8012-6a15171081c2.jpg",
+    "product_name": "Product 145",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/540708c8-b52a-4b21-8012-6a15171081c2.jpg"
+  },
+  {
+    "product_id": 146,
+    "image_url": "/images/e9daddd8-7661-46c6-8600-27378ffeb623.jpg",
+    "product_name": "Product 146",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/e9daddd8-7661-46c6-8600-27378ffeb623.jpg"
+  },
+  {
+    "product_id": 147,
+    "image_url": "/images/e23a43d6-a95e-4558-8d0f-77e6351e5d91.jpg",
+    "product_name": "Product 147",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/e23a43d6-a95e-4558-8d0f-77e6351e5d91.jpg"
+  },
+  {
+    "product_id": 148,
+    "image_url": "/images/4334c309-ce59-42cd-90c8-4928a970131b.jpg",
+    "product_name": "Product 148",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4334c309-ce59-42cd-90c8-4928a970131b.jpg"
+  },
+  {
+    "product_id": 149,
+    "image_url": "/images/be41dc69-cf02-46fd-9837-5702860470a5.jpg",
+    "product_name": "Product 149",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/be41dc69-cf02-46fd-9837-5702860470a5.jpg"
+  },
+  {
+    "product_id": 150,
+    "image_url": "/images/bfb98887-b290-4e2f-8373-4ef5c782889f.jpg",
+    "product_name": "Product 150",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/bfb98887-b290-4e2f-8373-4ef5c782889f.jpg"
+  },
+  {
+    "product_id": 151,
+    "image_url": "/images/464011d9-eedd-4973-9e93-dc96a7cee440.jpg",
+    "product_name": "Product 151",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/464011d9-eedd-4973-9e93-dc96a7cee440.jpg"
+  },
+  {
+    "product_id": 152,
+    "image_url": "/images/2d210b2d-0fd5-48b1-9dcb-20ae1f19550b.jpg",
+    "product_name": "Product 152",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2d210b2d-0fd5-48b1-9dcb-20ae1f19550b.jpg"
+  },
+  {
+    "product_id": 153,
+    "image_url": "/images/cbe717fa-fa7a-4739-b050-e7f9485d3464.jpg",
+    "product_name": "Product 153",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cbe717fa-fa7a-4739-b050-e7f9485d3464.jpg"
+  },
+  {
+    "product_id": 154,
+    "image_url": "/images/ae7a393b-fe1e-4c48-964e-d072d961b55b.jpg",
+    "product_name": "Product 154",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ae7a393b-fe1e-4c48-964e-d072d961b55b.jpg"
+  },
+  {
+    "product_id": 155,
+    "image_url": "/images/7ef3065c-36e0-4cde-add8-f94bfa538dc9.jpg",
+    "product_name": "Product 155",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7ef3065c-36e0-4cde-add8-f94bfa538dc9.jpg"
+  },
+  {
+    "product_id": 156,
+    "image_url": "/images/7f5b7443-09af-4dde-876b-0869546cbbc2.jpg",
+    "product_name": "Product 156",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7f5b7443-09af-4dde-876b-0869546cbbc2.jpg"
+  },
+  {
+    "product_id": 157,
+    "image_url": "/images/08be29ae-509c-4941-bb4e-17454e1c29bd.jpg",
+    "product_name": "Product 157",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/08be29ae-509c-4941-bb4e-17454e1c29bd.jpg"
+  },
+  {
+    "product_id": 158,
+    "image_url": "/images/66029d5a-521c-4b62-b986-174ab720fa39.jpg",
+    "product_name": "Product 158",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/66029d5a-521c-4b62-b986-174ab720fa39.jpg"
+  },
+  {
+    "product_id": 159,
+    "image_url": "/images/92cad632-8df4-47d8-9ce8-63e938c3d1a8.jpg",
+    "product_name": "Product 159",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/92cad632-8df4-47d8-9ce8-63e938c3d1a8.jpg"
+  },
+  {
+    "product_id": 160,
+    "image_url": "/images/75b8bcd1-4cfb-49f9-8bf0-667dc26010ac.jpg",
+    "product_name": "Product 160",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/75b8bcd1-4cfb-49f9-8bf0-667dc26010ac.jpg"
+  },
+  {
+    "product_id": 161,
+    "image_url": "/images/9f23f8c3-ae48-4d2f-8246-6c2b61584b82.jpg",
+    "product_name": "Product 161",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/9f23f8c3-ae48-4d2f-8246-6c2b61584b82.jpg"
+  },
+  {
+    "product_id": 162,
+    "image_url": "/images/a4e91da6-f03e-4de6-a77d-c5f2f57de186.jpg",
+    "product_name": "Product 162",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a4e91da6-f03e-4de6-a77d-c5f2f57de186.jpg"
+  },
+  {
+    "product_id": 163,
+    "image_url": "/images/94fa84b0-4582-4e17-b6fa-7c6ea2d22dd0.jpg",
+    "product_name": "Product 163",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/94fa84b0-4582-4e17-b6fa-7c6ea2d22dd0.jpg"
+  },
+  {
+    "product_id": 164,
+    "image_url": "/images/c13a3932-eef3-460a-91aa-a436030d9452.jpg",
+    "product_name": "Product 164",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/c13a3932-eef3-460a-91aa-a436030d9452.jpg"
+  },
+  {
+    "product_id": 165,
+    "image_url": "/images/de00ff69-6aaa-485f-95fc-055d2984e594.jpg",
+    "product_name": "Product 165",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/de00ff69-6aaa-485f-95fc-055d2984e594.jpg"
+  },
+  {
+    "product_id": 166,
+    "image_url": "/images/0c435984-40cd-4986-a13e-b9ca3c789136.jpg",
+    "product_name": "Product 166",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0c435984-40cd-4986-a13e-b9ca3c789136.jpg"
+  },
+  {
+    "product_id": 167,
+    "image_url": "/images/5cd4fd41-4203-40d5-a7c5-8da4885b7b11.jpg",
+    "product_name": "Product 167",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/5cd4fd41-4203-40d5-a7c5-8da4885b7b11.jpg"
+  },
+  {
+    "product_id": 168,
+    "image_url": "/images/d6436b08-2df1-4b9d-9f0f-353422431848.jpg",
+    "product_name": "Product 168",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d6436b08-2df1-4b9d-9f0f-353422431848.jpg"
+  },
+  {
+    "product_id": 169,
+    "image_url": "/images/d0124816-25b4-4531-b1e5-8516c348805c.jpg",
+    "product_name": "Product 169",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d0124816-25b4-4531-b1e5-8516c348805c.jpg"
+  },
+  {
+    "product_id": 170,
+    "image_url": "/images/e11b0a18-57b8-4b30-a3df-a7b5de9d04a4.jpg",
+    "product_name": "Product 170",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/e11b0a18-57b8-4b30-a3df-a7b5de9d04a4.jpg"
+  },
+  {
+    "product_id": 171,
+    "image_url": "/images/edba6840-c4dc-4e95-8474-d22894c9fabf.jpg",
+    "product_name": "Product 171",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/edba6840-c4dc-4e95-8474-d22894c9fabf.jpg"
+  },
+  {
+    "product_id": 172,
+    "image_url": "/images/95c59099-87be-4c2f-a7ab-084d08242974.jpg",
+    "product_name": "Product 172",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/95c59099-87be-4c2f-a7ab-084d08242974.jpg"
+  },
+  {
+    "product_id": 173,
+    "image_url": "/images/0af70b71-cb8c-4bdc-b160-eafe54e54f12.jpg",
+    "product_name": "Product 173",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0af70b71-cb8c-4bdc-b160-eafe54e54f12.jpg"
+  },
+  {
+    "product_id": 174,
+    "image_url": "/images/2c7ae664-53a5-40f2-b437-60c4b6edc6bf.jpg",
+    "product_name": "Product 174",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2c7ae664-53a5-40f2-b437-60c4b6edc6bf.jpg"
+  },
+  {
+    "product_id": 175,
+    "image_url": "/images/25be2db4-ee05-4cf5-ab44-3af56e1daad9.jpg",
+    "product_name": "Product 175",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/25be2db4-ee05-4cf5-ab44-3af56e1daad9.jpg"
+  },
+  {
+    "product_id": 176,
+    "image_url": "/images/26dea184-a8a1-4b61-9245-e0c2ef30a718.jpg",
+    "product_name": "Product 176",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/26dea184-a8a1-4b61-9245-e0c2ef30a718.jpg"
+  },
+  {
+    "product_id": 177,
+    "image_url": "/images/93cb0bd4-1b4c-43f7-91d6-76923db12c3f.jpg",
+    "product_name": "Product 177",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/93cb0bd4-1b4c-43f7-91d6-76923db12c3f.jpg"
+  },
+  {
+    "product_id": 178,
+    "image_url": "/images/7dd436e6-3911-4746-93a2-0a06a4c1cd92.jpg",
+    "product_name": "Product 178",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7dd436e6-3911-4746-93a2-0a06a4c1cd92.jpg"
+  },
+  {
+    "product_id": 179,
+    "image_url": "/images/2e4df925-80f1-43a2-af6b-2e0867522987.jpg",
+    "product_name": "Product 179",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2e4df925-80f1-43a2-af6b-2e0867522987.jpg"
+  },
+  {
+    "product_id": 180,
+    "image_url": "/images/1653add0-dc15-4d91-af65-0c501290edc6.jpg",
+    "product_name": "Product 180",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/1653add0-dc15-4d91-af65-0c501290edc6.jpg"
+  },
+  {
+    "product_id": 181,
+    "image_url": "/images/56485aa8-6ac2-42c4-896b-96578e654b6f.jpg",
+    "product_name": "Product 181",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/56485aa8-6ac2-42c4-896b-96578e654b6f.jpg"
+  },
+  {
+    "product_id": 182,
+    "image_url": "/images/ea3efecb-f364-4dc7-97b0-4870fe0d9af5.jpg",
+    "product_name": "Product 182",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ea3efecb-f364-4dc7-97b0-4870fe0d9af5.jpg"
+  },
+  {
+    "product_id": 183,
+    "image_url": "/images/0b3881ef-7914-4942-a370-73e15e731031.jpg",
+    "product_name": "Product 183",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0b3881ef-7914-4942-a370-73e15e731031.jpg"
+  },
+  {
+    "product_id": 184,
+    "image_url": "/images/b4a7012b-96bf-4814-9252-eb50f78b5ee7.jpg",
+    "product_name": "Product 184",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b4a7012b-96bf-4814-9252-eb50f78b5ee7.jpg"
+  },
+  {
+    "product_id": 185,
+    "image_url": "/images/dfc2e319-2f1f-4a99-be0d-f61bdbe9efa2.jpg",
+    "product_name": "Product 185",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/dfc2e319-2f1f-4a99-be0d-f61bdbe9efa2.jpg"
+  },
+  {
+    "product_id": 186,
+    "image_url": "/images/98d57589-18d1-4dbc-8981-070679416ebf.jpg",
+    "product_name": "Product 186",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/98d57589-18d1-4dbc-8981-070679416ebf.jpg"
+  },
+  {
+    "product_id": 187,
+    "image_url": "/images/8f4f86f1-ef28-4771-a181-efc4ecc69aab.jpg",
+    "product_name": "Product 187",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/8f4f86f1-ef28-4771-a181-efc4ecc69aab.jpg"
+  },
+  {
+    "product_id": 188,
+    "image_url": "/images/cb75f696-8db7-4925-99c3-df1ab6b747e2.jpg",
+    "product_name": "Product 188",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cb75f696-8db7-4925-99c3-df1ab6b747e2.jpg"
+  },
+  {
+    "product_id": 189,
+    "image_url": "/images/5ed8e4ca-738c-4b12-b8ac-a0c7094fbb46.jpg",
+    "product_name": "Product 189",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/5ed8e4ca-738c-4b12-b8ac-a0c7094fbb46.jpg"
+  },
+  {
+    "product_id": 190,
+    "image_url": "/images/a4b7c317-b69b-483c-beab-9a09584998db.jpg",
+    "product_name": "Product 190",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a4b7c317-b69b-483c-beab-9a09584998db.jpg"
+  },
+  {
+    "product_id": 191,
+    "image_url": "/images/a9daf178-42b3-4c8f-8a38-fee7a99e0615.jpg",
+    "product_name": "Product 191",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/a9daf178-42b3-4c8f-8a38-fee7a99e0615.jpg"
+  },
+  {
+    "product_id": 192,
+    "image_url": "/images/1ebe933c-31ba-4185-b15c-5dee5ace3d5f.jpg",
+    "product_name": "Product 192",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/1ebe933c-31ba-4185-b15c-5dee5ace3d5f.jpg"
+  },
+  {
+    "product_id": 193,
+    "image_url": "/images/64359d04-9fd4-4048-b210-bf6a6e9b418e.jpg",
+    "product_name": "Product 193",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/64359d04-9fd4-4048-b210-bf6a6e9b418e.jpg"
+  },
+  {
+    "product_id": 194,
+    "image_url": "/images/e9cf2ee9-7659-4888-8cb1-2fa24c7e5339.jpg",
+    "product_name": "Product 194",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/e9cf2ee9-7659-4888-8cb1-2fa24c7e5339.jpg"
+  },
+  {
+    "product_id": 195,
+    "image_url": "/images/561968d7-dd39-4cdc-8a42-052dd58ab226.jpg",
+    "product_name": "Product 195",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/561968d7-dd39-4cdc-8a42-052dd58ab226.jpg"
+  },
+  {
+    "product_id": 196,
+    "image_url": "/images/2cad3221-f1c8-465c-b230-1e2bb078f3a5.jpg",
+    "product_name": "Product 196",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2cad3221-f1c8-465c-b230-1e2bb078f3a5.jpg"
+  },
+  {
+    "product_id": 197,
+    "image_url": "/images/526950a8-7ff0-4b19-b708-3411c0764b7c.jpg",
+    "product_name": "Product 197",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/526950a8-7ff0-4b19-b708-3411c0764b7c.jpg"
+  },
+  {
+    "product_id": 198,
+    "image_url": "/images/6f9c73c5-de5b-4bf6-888d-07dc7df57ca8.jpg",
+    "product_name": "Product 198",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6f9c73c5-de5b-4bf6-888d-07dc7df57ca8.jpg"
+  },
+  {
+    "product_id": 199,
+    "image_url": "/images/0bb01b69-f140-496d-bdac-0db021fc6c92.jpg",
+    "product_name": "Product 199",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0bb01b69-f140-496d-bdac-0db021fc6c92.jpg"
+  },
+  {
+    "product_id": 200,
+    "image_url": "/images/b60a3c97-40bd-4c13-9454-ae10afa09188.jpg",
+    "product_name": "Product 200",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/b60a3c97-40bd-4c13-9454-ae10afa09188.jpg"
+  },
+  {
+    "product_id": 201,
+    "image_url": "/images/2d5d5aa3-e749-4b47-a367-0218334a0510.jpg",
+    "product_name": "Product 201",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/2d5d5aa3-e749-4b47-a367-0218334a0510.jpg"
+  },
+  {
+    "product_id": 202,
+    "image_url": "/images/7ff139cc-8a56-4c31-a2f2-c75266398710.jpg",
+    "product_name": "Product 202",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/7ff139cc-8a56-4c31-a2f2-c75266398710.jpg"
+  },
+  {
+    "product_id": 203,
+    "image_url": "/images/27b4a521-e88d-4cea-8c31-5e6f58bd47eb.jpg",
+    "product_name": "Product 203",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/27b4a521-e88d-4cea-8c31-5e6f58bd47eb.jpg"
+  },
+  {
+    "product_id": 204,
+    "image_url": "/images/587d2f53-e661-41b2-93a2-a906c999d09d.jpg",
+    "product_name": "Product 204",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/587d2f53-e661-41b2-93a2-a906c999d09d.jpg"
+  },
+  {
+    "product_id": 205,
+    "image_url": "/images/82733a9d-3512-4496-9b6f-b3cafee6be8a.jpg",
+    "product_name": "Product 205",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/82733a9d-3512-4496-9b6f-b3cafee6be8a.jpg"
+  },
+  {
+    "product_id": 206,
+    "image_url": "/images/d3c38f01-a87a-4622-970b-1165b23c9b57.jpg",
+    "product_name": "Product 206",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/d3c38f01-a87a-4622-970b-1165b23c9b57.jpg"
+  },
+  {
+    "product_id": 207,
+    "image_url": "/images/320ee585-c9a3-4f4d-b53e-f92fa7165b06.jpg",
+    "product_name": "Product 207",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/320ee585-c9a3-4f4d-b53e-f92fa7165b06.jpg"
+  },
+  {
+    "product_id": 208,
+    "image_url": "/images/4bb52274-c988-4c9c-8a1f-3c6180cfd98b.jpg",
+    "product_name": "Product 208",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4bb52274-c988-4c9c-8a1f-3c6180cfd98b.jpg"
+  },
+  {
+    "product_id": 209,
+    "image_url": "/images/930f37e8-5422-4c1a-a67d-c9438c1d9a98.jpg",
+    "product_name": "Product 209",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/930f37e8-5422-4c1a-a67d-c9438c1d9a98.jpg"
+  },
+  {
+    "product_id": 210,
+    "image_url": "/images/cc71eef8-674c-40b0-bd57-28cfefdf069d.jpg",
+    "product_name": "Product 210",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cc71eef8-674c-40b0-bd57-28cfefdf069d.jpg"
+  },
+  {
+    "product_id": 211,
+    "image_url": "/images/ee8b6ca2-5d76-4989-be70-2e3c1ffe53a8.jpg",
+    "product_name": "Product 211",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ee8b6ca2-5d76-4989-be70-2e3c1ffe53a8.jpg"
+  },
+  {
+    "product_id": 212,
+    "image_url": "/images/6e083721-974e-404c-8ade-d6444d7e3a1f.jpg",
+    "product_name": "Product 212",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/6e083721-974e-404c-8ade-d6444d7e3a1f.jpg"
+  },
+  {
+    "product_id": 213,
+    "image_url": "/images/0d9fe970-282a-4240-9a57-0aeaae08bf40.jpg",
+    "product_name": "Product 213",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0d9fe970-282a-4240-9a57-0aeaae08bf40.jpg"
+  },
+  {
+    "product_id": 214,
+    "image_url": "/images/ae86f90b-91bf-4208-9bb9-bb0f986b37e1.jpg",
+    "product_name": "Product 214",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ae86f90b-91bf-4208-9bb9-bb0f986b37e1.jpg"
+  },
+  {
+    "product_id": 215,
+    "image_url": "/images/cb47ed7f-cb1a-4e11-a455-397935d2811e.jpg",
+    "product_name": "Product 215",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cb47ed7f-cb1a-4e11-a455-397935d2811e.jpg"
+  },
+  {
+    "product_id": 216,
+    "image_url": "/images/18e5214a-caae-4d5d-9949-3c7800241d96.jpg",
+    "product_name": "Product 216",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/18e5214a-caae-4d5d-9949-3c7800241d96.jpg"
+  },
+  {
+    "product_id": 217,
+    "image_url": "/images/ffcd234e-9e57-4028-b525-2974c1a1bf8d.jpg",
+    "product_name": "Product 217",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/ffcd234e-9e57-4028-b525-2974c1a1bf8d.jpg"
+  },
+  {
+    "product_id": 218,
+    "image_url": "/images/273d6984-26e7-45e5-a3c6-89c97cc091e5.jpg",
+    "product_name": "Product 218",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/273d6984-26e7-45e5-a3c6-89c97cc091e5.jpg"
+  },
+  {
+    "product_id": 219,
+    "image_url": "/images/571fc825-1012-432f-a13d-17c2cc14fc32.jpg",
+    "product_name": "Product 219",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/571fc825-1012-432f-a13d-17c2cc14fc32.jpg"
+  },
+  {
+    "product_id": 220,
+    "image_url": "/images/61977015-d823-4cc3-ab7a-e6234fb98d24.jpg",
+    "product_name": "Product 220",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/61977015-d823-4cc3-ab7a-e6234fb98d24.jpg"
+  },
+  {
+    "product_id": 221,
+    "image_url": "/images/0b622e33-aec4-44e3-88f1-37918bfd22b9.jpg",
+    "product_name": "Product 221",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0b622e33-aec4-44e3-88f1-37918bfd22b9.jpg"
+  },
+  {
+    "product_id": 222,
+    "image_url": "/images/38068737-2342-4b7d-81f1-9c42310cd0d4.jpg",
+    "product_name": "Product 222",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/38068737-2342-4b7d-81f1-9c42310cd0d4.jpg"
+  },
+  {
+    "product_id": 223,
+    "image_url": "/images/444895d6-1c48-4afe-a74b-ba92b7095f95.jpg",
+    "product_name": "Product 223",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/444895d6-1c48-4afe-a74b-ba92b7095f95.jpg"
+  },
+  {
+    "product_id": 224,
+    "image_url": "/images/4c0bcab9-8770-4f99-bf47-ca51845a9126.jpg",
+    "product_name": "Product 224",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/4c0bcab9-8770-4f99-bf47-ca51845a9126.jpg"
+  },
+  {
+    "product_id": 225,
+    "image_url": "/images/0619f742-8f74-40ba-bf3c-cf600fcfa258.jpg",
+    "product_name": "Product 225",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0619f742-8f74-40ba-bf3c-cf600fcfa258.jpg"
+  },
+  {
+    "product_id": 226,
+    "image_url": "/images/cedb4833-2e16-445f-9c22-269246f3ae76.jpg",
+    "product_name": "Product 226",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/cedb4833-2e16-445f-9c22-269246f3ae76.jpg"
+  },
+  {
+    "product_id": 227,
+    "image_url": "/images/426e46fb-6034-44ab-b506-e35af78b1a79.jpg",
+    "product_name": "Product 227",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/426e46fb-6034-44ab-b506-e35af78b1a79.jpg"
+  },
+  {
+    "product_id": 228,
+    "image_url": "/images/0f173f72-1464-4caf-b6c8-e52ee60e6827.jpg",
+    "product_name": "Product 228",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/0f173f72-1464-4caf-b6c8-e52ee60e6827.jpg"
+  },
+  {
+    "product_id": 229,
+    "image_url": "/images/Bloomie1.png",
+    "product_name": "Product 229",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/Bloomie1.png"
+  },
+  {
+    "product_id": 230,
+    "image_url": "/images/logo1.png",
+    "product_name": "Product 230",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/logo1.png"
+  },
+  {
+    "product_id": 231,
+    "image_url": "/images/BloomieFavicon.png",
+    "product_name": "Product 231",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/BloomieFavicon.png"
+  },
+  {
+    "product_id": 232,
+    "image_url": "/images/BloomieLogo.png",
+    "product_name": "Product 232",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/BloomieLogo.png"
+  },
+  {
+    "product_id": 233,
+    "image_url": "/images/banner2.gif",
+    "product_name": "Product 233",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/banner2.gif"
+  },
+  {
+    "product_id": 234,
+    "image_url": "/images/banner3.gif",
+    "product_name": "Product 234",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/banner3.gif"
+  },
+  {
+    "product_id": 235,
+    "image_url": "/images/banner1.gif",
+    "product_name": "Product 235",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/banner1.gif"
+  },
+  {
+    "product_id": 236,
+    "image_url": "/images/banner4.gif",
+    "product_name": "Product 236",
+    "product_price": 0.0,
+    "local_path": "/Users/lequangminh/Documents/DACN_Base-3/wwwroot/images/banner4.gif"
+  }
+]

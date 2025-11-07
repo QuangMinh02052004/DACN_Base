@@ -1,0 +1,10 @@
+USE [master]
+GO
+IF EXISTS (SELECT name FROM sys.databases WHERE name = N'Bloomie')
+BEGIN
+    ALTER DATABASE [Bloomie] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+    DROP DATABASE [Bloomie]
+END
+GO
+CREATE DATABASE [Bloomie]
+GO

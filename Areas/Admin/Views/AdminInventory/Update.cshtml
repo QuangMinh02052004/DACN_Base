@@ -30,8 +30,14 @@
 
                 <!-- Mã lô hàng -->
                 <div class="form-group mb-4">
-                    <label asp-for="SupplierId" class="control-label">Mã lô hàng</label>
-                    <input asp-for="SupplierId" class="form-control" readonly />
+                    <label asp-for="Id" class="control-label">Mã lô hàng</label>
+                    <input asp-for="Id" class="form-control" readonly />
+                </div>
+
+                <!-- Nhà cung cấp -->
+                <div class="form-group mb-4">
+                    <label class="control-label">Nhà cung cấp</label>
+                    <input value="@(Model.Supplier?.Name ?? "N/A")" class="form-control" readonly />
                 </div>
 
                 <!-- Ngày hết hạn -->
